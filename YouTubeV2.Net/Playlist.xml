@@ -1,0 +1,940 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:openSearch="http://a9.com/-/spec/opensearchrss/1.0/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:yt="http://gdata.youtube.com/schemas/2007" xmlns:gd="http://schemas.google.com/g/2005">
+  <id>http://gdata.youtube.com/feeds/api/playlists/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt</id>
+  <updated>2014-07-12T15:15:58.000Z</updated>
+  <category scheme="http://schemas.google.com/g/2005#kind" term="http://gdata.youtube.com/schemas/2007#playlist" />
+  <title type="text">Utattemita</title>
+  <subtitle type="text" />
+  <logo>http://www.gstatic.com/youtube/img/logo.png</logo>
+  <link rel="alternate" type="text/html" href="http://www.youtube.com/playlist?list=PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt" />
+  <link rel="http://schemas.google.com/g/2005#feed" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/playlists/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt" />
+  <link rel="http://schemas.google.com/g/2005#batch" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/playlists/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt/batch" />
+  <link rel="self" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/playlists/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt?start-index=1&amp;max-results=25" />
+  <author>
+    <name>andreas ingeholm</name>
+    <uri>http://gdata.youtube.com/feeds/api/users/zumwani1</uri>
+  </author>
+  <generator version="2.1" uri="http://gdata.youtube.com">YouTube data API</generator>
+  <openSearch:totalResults>10</openSearch:totalResults>
+  <openSearch:startIndex>1</openSearch:startIndex>
+  <openSearch:itemsPerPage>25</openSearch:itemsPerPage>
+  <media:group>
+    <media:content url="http://www.youtube.com/p/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt" type="application/x-shockwave-flash" yt:format="5" />
+    <media:thumbnail url="https://i.ytimg.com/vi/ophfdGyXhp8/default.jpg" height="90" width="120" yt:name="default" />
+    <media:thumbnail url="https://i.ytimg.com/vi/ophfdGyXhp8/mqdefault.jpg" height="180" width="320" yt:name="mqdefault" />
+    <media:thumbnail url="https://i.ytimg.com/vi/ophfdGyXhp8/hqdefault.jpg" height="360" width="480" yt:name="hqdefault" />
+    <media:title type="plain">Utattemita</media:title>
+  </media:group>
+  <yt:playlistId>PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt</yt:playlistId>
+  <entry>
+    <id>http://gdata.youtube.com/feeds/api/playlists/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt/PLWgPhuVIPdoyYJxjErIRMfrrFNoP7s5lISG7uiY8UnyA</id>
+    <published>2014-04-09T09:46:41.000Z</published>
+    <updated>1970-01-01T00:00:00.000Z</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://gdata.youtube.com/schemas/2007#video" />
+    <category scheme="http://gdata.youtube.com/schemas/2007/categories.cat" term="Music" label="Music" />
+    <title type="text">Kyrie Eleison [Guriri]</title>
+    <content type="text">Source:
+http://www.nicovideo.jp/watch/sm17393522
+
+「kyrie eleison」を歌ってみた【グリリ】</content>
+    <link rel="alternate" type="text/html" href="http://www.youtube.com/watch?v=ophfdGyXhp8&amp;feature=youtube_gdata" />
+    <link rel="http://gdata.youtube.com/schemas/2007#video.related" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/videos/ophfdGyXhp8/related" />
+    <link rel="http://gdata.youtube.com/schemas/2007#mobile" type="text/html" href="http://m.youtube.com/details?v=ophfdGyXhp8" />
+    <link rel="related" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/videos/ophfdGyXhp8" />
+    <link rel="self" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/playlists/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt/PLWgPhuVIPdoyYJxjErIRMfrrFNoP7s5lISG7uiY8UnyA" />
+    <author>
+      <name>nshaken</name>
+      <uri>http://gdata.youtube.com/feeds/api/users/nshaken</uri>
+    </author>
+    <gd:comments>
+      <gd:feedLink rel="http://gdata.youtube.com/schemas/2007#comments" href="http://gdata.youtube.com/feeds/api/videos/ophfdGyXhp8/comments" countHint="18" />
+    </gd:comments>
+    <media:group>
+      <media:category label="Music" scheme="http://gdata.youtube.com/schemas/2007/categories.cat">Music</media:category>
+      <media:content url="http://www.youtube.com/v/ophfdGyXhp8?version=3&amp;f=playlists&amp;app=youtube_gdata" type="application/x-shockwave-flash" medium="video" isDefault="true" expression="full" duration="358" yt:format="5" />
+      <media:content url="rtsp://r4---sn-4g57kuel.c.youtube.com/CiULENy73wIaHAmfhpdsdF-YohMYDSANFEgGUglwbGF5bGlzdHMM/0/0/0/video.3gp" type="video/3gpp" medium="video" expression="full" duration="358" yt:format="1" />
+      <media:content url="rtsp://r4---sn-4g57kuel.c.youtube.com/CiULENy73wIaHAmfhpdsdF-YohMYESARFEgGUglwbGF5bGlzdHMM/0/0/0/video.3gp" type="video/3gpp" medium="video" expression="full" duration="358" yt:format="6" />
+      <media:description type="plain">Source:
+http://www.nicovideo.jp/watch/sm17393522
+
+「kyrie eleison」を歌ってみた【グリリ】</media:description>
+      <media:keywords />
+      <media:player url="http://www.youtube.com/watch?v=ophfdGyXhp8&amp;feature=youtube_gdata_player" />
+      <media:thumbnail url="http://i.ytimg.com/vi/ophfdGyXhp8/0.jpg" height="360" width="480" time="00:02:59" />
+      <media:thumbnail url="http://i.ytimg.com/vi/ophfdGyXhp8/1.jpg" height="90" width="120" time="00:01:29.500" />
+      <media:thumbnail url="http://i.ytimg.com/vi/ophfdGyXhp8/2.jpg" height="90" width="120" time="00:02:59" />
+      <media:thumbnail url="http://i.ytimg.com/vi/ophfdGyXhp8/3.jpg" height="90" width="120" time="00:04:28.500" />
+      <media:title type="plain">Kyrie Eleison [Guriri]</media:title>
+      <yt:duration seconds="358" />
+    </media:group>
+    <gd:rating average="4.9786096" max="5" min="1" numRaters="374" rel="http://schemas.google.com/g/2005#overall" />
+    <yt:statistics favoriteCount="0" viewCount="19110" />
+    <yt:description>Source:
+http://www.nicovideo.jp/watch/sm17393522
+
+「kyrie eleison」を歌ってみた【グリリ】</yt:description>
+    <yt:position>1</yt:position>
+  </entry>
+  <entry>
+    <id>http://gdata.youtube.com/feeds/api/playlists/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt/PLWgPhuVIPdoyYJxjErIRMft_ztqhQPXVsiHBib58_zaA</id>
+    <published>2014-04-09T09:46:18.000Z</published>
+    <updated>1970-01-01T00:00:00.000Z</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://gdata.youtube.com/schemas/2007#video" />
+    <category scheme="http://gdata.youtube.com/schemas/2007/categories.cat" term="Music" label="Music" />
+    <title type="text">「Lost Story」[Guriri]</title>
+    <content type="text">-spazzes, dies, then flies to heaven-
+
+
+DISCLAIMER: I DO NOT OWN ANYTHING, EVERYTHING BELONGS TO THEIR RIGHTFUL OWNERS/CREATORS.
+
+Taken from Nico Nico Douga
+
+MP3:
+http://nicosound.anyap.info/sound/sm12072051
+Just Click "MP3 を抽出 "</content>
+    <link rel="alternate" type="text/html" href="http://www.youtube.com/watch?v=7GVwHj87qsI&amp;feature=youtube_gdata" />
+    <link rel="http://gdata.youtube.com/schemas/2007#video.related" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/videos/7GVwHj87qsI/related" />
+    <link rel="http://gdata.youtube.com/schemas/2007#mobile" type="text/html" href="http://m.youtube.com/details?v=7GVwHj87qsI" />
+    <link rel="related" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/videos/7GVwHj87qsI" />
+    <link rel="self" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/playlists/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt/PLWgPhuVIPdoyYJxjErIRMft_ztqhQPXVsiHBib58_zaA" />
+    <author>
+      <name>theultamania</name>
+      <uri>http://gdata.youtube.com/feeds/api/users/theultamania</uri>
+    </author>
+    <gd:comments>
+      <gd:feedLink rel="http://gdata.youtube.com/schemas/2007#comments" href="http://gdata.youtube.com/feeds/api/videos/7GVwHj87qsI/comments" countHint="22" />
+    </gd:comments>
+    <media:group>
+      <media:category label="Music" scheme="http://gdata.youtube.com/schemas/2007/categories.cat">Music</media:category>
+      <media:content url="http://www.youtube.com/v/7GVwHj87qsI?version=3&amp;f=playlists&amp;app=youtube_gdata" type="application/x-shockwave-flash" medium="video" isDefault="true" expression="full" duration="196" yt:format="5" />
+      <media:content url="rtsp://r4---sn-4g57kuek.c.youtube.com/CiULENy73wIaHAnCqjs_HnBl7BMYDSANFEgGUglwbGF5bGlzdHMM/0/0/0/video.3gp" type="video/3gpp" medium="video" expression="full" duration="196" yt:format="1" />
+      <media:content url="rtsp://r4---sn-4g57kuek.c.youtube.com/CiULENy73wIaHAnCqjs_HnBl7BMYESARFEgGUglwbGF5bGlzdHMM/0/0/0/video.3gp" type="video/3gpp" medium="video" expression="full" duration="196" yt:format="6" />
+      <media:description type="plain">-spazzes, dies, then flies to heaven-
+
+
+DISCLAIMER: I DO NOT OWN ANYTHING, EVERYTHING BELONGS TO THEIR RIGHTFUL OWNERS/CREATORS.
+
+Taken from Nico Nico Douga
+
+MP3:
+http://nicosound.anyap.info/sound/sm12072051
+Just Click "MP3 を抽出 "</media:description>
+      <media:keywords />
+      <media:player url="http://www.youtube.com/watch?v=7GVwHj87qsI&amp;feature=youtube_gdata_player" />
+      <media:thumbnail url="http://i.ytimg.com/vi/7GVwHj87qsI/0.jpg" height="360" width="480" time="00:01:38" />
+      <media:thumbnail url="http://i.ytimg.com/vi/7GVwHj87qsI/1.jpg" height="90" width="120" time="00:00:49" />
+      <media:thumbnail url="http://i.ytimg.com/vi/7GVwHj87qsI/2.jpg" height="90" width="120" time="00:01:38" />
+      <media:thumbnail url="http://i.ytimg.com/vi/7GVwHj87qsI/3.jpg" height="90" width="120" time="00:02:27" />
+      <media:title type="plain">「Lost Story」[Guriri]</media:title>
+      <yt:duration seconds="196" />
+    </media:group>
+    <gd:rating average="4.9633026" max="5" min="1" numRaters="218" rel="http://schemas.google.com/g/2005#overall" />
+    <yt:statistics favoriteCount="0" viewCount="16624" />
+    <yt:description>-spazzes, dies, then flies to heaven-
+
+
+DISCLAIMER: I DO NOT OWN ANYTHING, EVERYTHING BELONGS TO THEIR RIGHTFUL OWNERS/CREATORS.
+
+Taken from Nico Nico Douga
+
+MP3:
+http://nicosound.anyap.info/sound/sm12072051
+Just Click "MP3 を抽出 "</yt:description>
+    <yt:position>2</yt:position>
+  </entry>
+  <entry>
+    <id>http://gdata.youtube.com/feeds/api/playlists/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt/PLWgPhuVIPdoyYJxjErIRMfhJtj8rg9Dn9Vf5pcowJ7rA</id>
+    <published>2014-04-09T09:47:51.000Z</published>
+    <updated>1970-01-01T00:00:00.000Z</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://gdata.youtube.com/schemas/2007#video" />
+    <category scheme="http://gdata.youtube.com/schemas/2007/categories.cat" term="Music" label="Music" />
+    <title type="text">【Cover by Guriri/グリリ】「glow (normal)]</title>
+    <content type="text">This is Glow covered by Guriri on the original music.
+I feel her voice suits the original music than the Piano&amp;strings Acoustic version, so I mix this one.
+
+The orignal glow by keeno is from NICO NICO Douga
+http://www.nicovideo.jp/watch/sm11209477
+
+The version covered by Guriri
+http://www.nicovideo.jp/watch/sm15640282
+
+Here is the MP3 link.
+http://www.box.com/s/9oo9bp2qht4324vhsa03
+
+Picture glow | コト [pixiv]
+http://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=14967010</content>
+    <link rel="alternate" type="text/html" href="http://www.youtube.com/watch?v=GA-Cnr1SGmE&amp;feature=youtube_gdata" />
+    <link rel="http://gdata.youtube.com/schemas/2007#video.related" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/videos/GA-Cnr1SGmE/related" />
+    <link rel="http://gdata.youtube.com/schemas/2007#mobile" type="text/html" href="http://m.youtube.com/details?v=GA-Cnr1SGmE" />
+    <link rel="related" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/videos/GA-Cnr1SGmE" />
+    <link rel="self" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/playlists/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt/PLWgPhuVIPdoyYJxjErIRMfhJtj8rg9Dn9Vf5pcowJ7rA" />
+    <author>
+      <name>cless082</name>
+      <uri>http://gdata.youtube.com/feeds/api/users/cless082</uri>
+    </author>
+    <gd:comments>
+      <gd:feedLink rel="http://gdata.youtube.com/schemas/2007#comments" href="http://gdata.youtube.com/feeds/api/videos/GA-Cnr1SGmE/comments" countHint="40" />
+    </gd:comments>
+    <media:group>
+      <media:category label="Music" scheme="http://gdata.youtube.com/schemas/2007/categories.cat">Music</media:category>
+      <media:content url="http://www.youtube.com/v/GA-Cnr1SGmE?version=3&amp;f=playlists&amp;app=youtube_gdata" type="application/x-shockwave-flash" medium="video" isDefault="true" expression="full" duration="284" yt:format="5" />
+      <media:content url="rtsp://r4---sn-4g57kuee.c.youtube.com/CiULENy73wIaHAlhGlK9noIPGBMYDSANFEgGUglwbGF5bGlzdHMM/0/0/0/video.3gp" type="video/3gpp" medium="video" expression="full" duration="284" yt:format="1" />
+      <media:content url="rtsp://r4---sn-4g57kuee.c.youtube.com/CiULENy73wIaHAlhGlK9noIPGBMYESARFEgGUglwbGF5bGlzdHMM/0/0/0/video.3gp" type="video/3gpp" medium="video" expression="full" duration="284" yt:format="6" />
+      <media:description type="plain">This is Glow covered by Guriri on the original music.
+I feel her voice suits the original music than the Piano&amp;strings Acoustic version, so I mix this one.
+
+The orignal glow by keeno is from NICO NICO Douga
+http://www.nicovideo.jp/watch/sm11209477
+
+The version covered by Guriri
+http://www.nicovideo.jp/watch/sm15640282
+
+Here is the MP3 link.
+http://www.box.com/s/9oo9bp2qht4324vhsa03
+
+Picture glow | コト [pixiv]
+http://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=14967010</media:description>
+      <media:keywords />
+      <media:player url="http://www.youtube.com/watch?v=GA-Cnr1SGmE&amp;feature=youtube_gdata_player" />
+      <media:thumbnail url="http://i.ytimg.com/vi/GA-Cnr1SGmE/0.jpg" height="360" width="480" time="00:02:22" />
+      <media:thumbnail url="http://i.ytimg.com/vi/GA-Cnr1SGmE/1.jpg" height="90" width="120" time="00:01:11" />
+      <media:thumbnail url="http://i.ytimg.com/vi/GA-Cnr1SGmE/2.jpg" height="90" width="120" time="00:02:22" />
+      <media:thumbnail url="http://i.ytimg.com/vi/GA-Cnr1SGmE/3.jpg" height="90" width="120" time="00:03:33" />
+      <media:title type="plain">【Cover by Guriri/グリリ】「glow (normal)]</media:title>
+      <yt:duration seconds="284" />
+    </media:group>
+    <gd:rating average="4.9757085" max="5" min="1" numRaters="494" rel="http://schemas.google.com/g/2005#overall" />
+    <yt:statistics favoriteCount="0" viewCount="45654" />
+    <yt:description>This is Glow covered by Guriri on the original music.
+I feel her voice suits the original music than the Piano&amp;strings Acoustic version, so I mix this one.
+
+The orignal glow by keeno is from NICO NICO Douga
+http://www.nicovideo.jp/watch/sm11209477
+
+The version covered by Guriri
+http://www.nicovideo.jp/watch/sm15640282
+
+Here is the MP3 link.
+http://www.box.com/s/9oo9bp2qht4324vhsa03
+
+Picture glow | コト [pixiv]
+http://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=14967010</yt:description>
+    <yt:position>3</yt:position>
+  </entry>
+  <entry>
+    <id>http://gdata.youtube.com/feeds/api/playlists/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt/PLWgPhuVIPdoyYJxjErIRMfsSrnA9ce0_Qqjg5NWVMIx0</id>
+    <published>2014-04-09T09:48:18.000Z</published>
+    <updated>1970-01-01T00:00:00.000Z</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://gdata.youtube.com/schemas/2007#video" />
+    <category scheme="http://gdata.youtube.com/schemas/2007/categories.cat" term="Music" label="Music" />
+    <title type="text">Lost Story [Akiakane]</title>
+    <content type="text">Source: http://www.nicovideo.jp/watch/sm7676797
+Download: http://nicosound.anyap.info/sound/sm7676797 press パソコンへ転送
+
+Romaji lyrics: 
+nani mo nai koto ga shiawase na no nara
+kono sekai kara boku wo tsure satte yo
+boku wa waratteta kimi wa naiteita
+makkurana keshiki ga tsuzuiteta
+
+soko ni atta chigai hedatareta sekai
+tsunagatta hito shizuku
+migi ude ni tsutau imi no nai boku e
+oto no nai merodi ga
+
+kikoeru youna ki ga shitan da
+tada makkurana sekai de
+
+kanji nai koto ga tadashii no naraba
+sono kioku kara boku wo tachi kitte yo
+koboreta namida mo mou mieya shinai
+makkurana keshiki ga tsuzuiteta
+
+tsukihi wa dore dake namida ni kawatta darou
+migite ni imi wa nai koko kara kie you?
+
+nani mo nai koto ga shiawasena no nara
+kono sekai kara boku wo tsure satte yo
+boku wa waratteta kimi wa naiteita
+makkurana keshiki ga tsuzuiteta</content>
+    <link rel="alternate" type="text/html" href="http://www.youtube.com/watch?v=-AP9wCybv7Y&amp;feature=youtube_gdata" />
+    <link rel="http://gdata.youtube.com/schemas/2007#video.related" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/videos/-AP9wCybv7Y/related" />
+    <link rel="http://gdata.youtube.com/schemas/2007#mobile" type="text/html" href="http://m.youtube.com/details?v=-AP9wCybv7Y" />
+    <link rel="related" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/videos/-AP9wCybv7Y" />
+    <link rel="self" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/playlists/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt/PLWgPhuVIPdoyYJxjErIRMfsSrnA9ce0_Qqjg5NWVMIx0" />
+    <author>
+      <name>vocaloidvideoz</name>
+      <uri>http://gdata.youtube.com/feeds/api/users/vocaloidvideoz</uri>
+    </author>
+    <gd:comments>
+      <gd:feedLink rel="http://gdata.youtube.com/schemas/2007#comments" href="http://gdata.youtube.com/feeds/api/videos/-AP9wCybv7Y/comments" countHint="379" />
+    </gd:comments>
+    <media:group>
+      <media:category label="Music" scheme="http://gdata.youtube.com/schemas/2007/categories.cat">Music</media:category>
+      <media:content url="http://www.youtube.com/v/-AP9wCybv7Y?version=3&amp;f=playlists&amp;app=youtube_gdata" type="application/x-shockwave-flash" medium="video" isDefault="true" expression="full" duration="201" yt:format="5" />
+      <media:content url="rtsp://r2---sn-4g57kue6.c.youtube.com/CiULENy73wIaHAm2v5sswP0D-BMYDSANFEgGUglwbGF5bGlzdHMM/0/0/0/video.3gp" type="video/3gpp" medium="video" expression="full" duration="201" yt:format="1" />
+      <media:content url="rtsp://r2---sn-4g57kue6.c.youtube.com/CiULENy73wIaHAm2v5sswP0D-BMYESARFEgGUglwbGF5bGlzdHMM/0/0/0/video.3gp" type="video/3gpp" medium="video" expression="full" duration="201" yt:format="6" />
+      <media:description type="plain">Source: http://www.nicovideo.jp/watch/sm7676797
+Download: http://nicosound.anyap.info/sound/sm7676797 press パソコンへ転送
+
+Romaji lyrics: 
+nani mo nai koto ga shiawase na no nara
+kono sekai kara boku wo tsure satte yo
+boku wa waratteta kimi wa naiteita
+makkurana keshiki ga tsuzuiteta
+
+soko ni atta chigai hedatareta sekai
+tsunagatta hito shizuku
+migi ude ni tsutau imi no nai boku e
+oto no nai merodi ga
+
+kikoeru youna ki ga shitan da
+tada makkurana sekai de
+
+kanji nai koto ga tadashii no naraba
+sono kioku kara boku wo tachi kitte yo
+koboreta namida mo mou mieya shinai
+makkurana keshiki ga tsuzuiteta
+
+tsukihi wa dore dake namida ni kawatta darou
+migite ni imi wa nai koko kara kie you?
+
+nani mo nai koto ga shiawasena no nara
+kono sekai kara boku wo tsure satte yo
+boku wa waratteta kimi wa naiteita
+makkurana keshiki ga tsuzuiteta</media:description>
+      <media:keywords />
+      <media:player url="http://www.youtube.com/watch?v=-AP9wCybv7Y&amp;feature=youtube_gdata_player" />
+      <media:thumbnail url="http://i.ytimg.com/vi/-AP9wCybv7Y/0.jpg" height="360" width="480" time="00:01:40.500" />
+      <media:thumbnail url="http://i.ytimg.com/vi/-AP9wCybv7Y/1.jpg" height="90" width="120" time="00:00:50.250" />
+      <media:thumbnail url="http://i.ytimg.com/vi/-AP9wCybv7Y/2.jpg" height="90" width="120" time="00:01:40.500" />
+      <media:thumbnail url="http://i.ytimg.com/vi/-AP9wCybv7Y/3.jpg" height="90" width="120" time="00:02:30.750" />
+      <media:title type="plain">Lost Story [Akiakane]</media:title>
+      <yt:duration seconds="201" />
+    </media:group>
+    <gd:rating average="4.9532676" max="5" min="1" numRaters="2739" rel="http://schemas.google.com/g/2005#overall" />
+    <yt:statistics favoriteCount="0" viewCount="276770" />
+    <yt:description>Source: http://www.nicovideo.jp/watch/sm7676797
+Download: http://nicosound.anyap.info/sound/sm7676797 press パソコンへ転送
+
+Romaji lyrics: 
+nani mo nai koto ga shiawase na no nara
+kono sekai kara boku wo tsure satte yo
+boku wa waratteta kimi wa naiteita
+makkurana keshiki ga tsuzuiteta
+
+soko ni atta chigai hedatareta sekai
+tsunagatta hito shizuku
+migi ude ni tsutau imi no nai boku e
+oto no nai merodi ga
+
+kikoeru youna ki ga shitan da
+tada makkurana sekai de
+
+kanji nai koto ga tadashii no naraba
+sono kioku kara boku wo tachi kitte yo
+koboreta namida mo mou mieya shinai
+makkurana keshiki ga tsuzuiteta
+
+tsukihi wa dore dake namida ni kawatta darou
+migite ni imi wa nai koko kara kie you?
+
+nani mo nai koto ga shiawasena no nara
+kono sekai kara boku wo tsure satte yo
+boku wa waratteta kimi wa naiteita
+makkurana keshiki ga tsuzuiteta</yt:description>
+    <yt:position>4</yt:position>
+  </entry>
+  <entry>
+    <id>http://gdata.youtube.com/feeds/api/playlists/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt/PLWgPhuVIPdoyYJxjErIRMfmh3i7AWZ4tmnzKTXlt0B6k</id>
+    <published>2014-04-16T16:08:28.000Z</published>
+    <updated>1970-01-01T00:00:00.000Z</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://gdata.youtube.com/schemas/2007#video" />
+    <category scheme="http://gdata.youtube.com/schemas/2007/categories.cat" term="Music" label="Music" />
+    <title type="text">UPLIFT SPICE - Omega Rythm</title>
+    <content type="text">Encore un clip sur une musique bien pêchue !
+Mais vous verrez, le groupe a aussi dans son répertoire des chansons douces fantastiques...</content>
+    <link rel="alternate" type="text/html" href="http://www.youtube.com/watch?v=rvR2Dv1fT0c&amp;feature=youtube_gdata" />
+    <link rel="http://gdata.youtube.com/schemas/2007#video.related" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/videos/rvR2Dv1fT0c/related" />
+    <link rel="http://gdata.youtube.com/schemas/2007#mobile" type="text/html" href="http://m.youtube.com/details?v=rvR2Dv1fT0c" />
+    <link rel="related" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/videos/rvR2Dv1fT0c" />
+    <link rel="self" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/playlists/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt/PLWgPhuVIPdoyYJxjErIRMfmh3i7AWZ4tmnzKTXlt0B6k" />
+    <author>
+      <name>soundliciousrecords</name>
+      <uri>http://gdata.youtube.com/feeds/api/users/soundliciousrecords</uri>
+    </author>
+    <gd:comments>
+      <gd:feedLink rel="http://gdata.youtube.com/schemas/2007#comments" href="http://gdata.youtube.com/feeds/api/videos/rvR2Dv1fT0c/comments" countHint="119" />
+    </gd:comments>
+    <media:group>
+      <media:category label="Music" scheme="http://gdata.youtube.com/schemas/2007/categories.cat">Music</media:category>
+      <media:content url="http://www.youtube.com/v/rvR2Dv1fT0c?version=3&amp;f=playlists&amp;app=youtube_gdata" type="application/x-shockwave-flash" medium="video" isDefault="true" expression="full" duration="188" yt:format="5" />
+      <media:content url="rtsp://r7---sn-4g57kuel.c.youtube.com/CiULENy73wIaHAlHT1_9Dnb0rhMYDSANFEgGUglwbGF5bGlzdHMM/0/0/0/video.3gp" type="video/3gpp" medium="video" expression="full" duration="188" yt:format="1" />
+      <media:content url="rtsp://r7---sn-4g57kuel.c.youtube.com/CiULENy73wIaHAlHT1_9Dnb0rhMYESARFEgGUglwbGF5bGlzdHMM/0/0/0/video.3gp" type="video/3gpp" medium="video" expression="full" duration="188" yt:format="6" />
+      <media:description type="plain">Encore un clip sur une musique bien pêchue !
+Mais vous verrez, le groupe a aussi dans son répertoire des chansons douces fantastiques...</media:description>
+      <media:keywords />
+      <media:player url="http://www.youtube.com/watch?v=rvR2Dv1fT0c&amp;feature=youtube_gdata_player" />
+      <media:thumbnail url="http://i.ytimg.com/vi/rvR2Dv1fT0c/0.jpg" height="360" width="480" time="00:01:34" />
+      <media:thumbnail url="http://i.ytimg.com/vi/rvR2Dv1fT0c/1.jpg" height="90" width="120" time="00:00:47" />
+      <media:thumbnail url="http://i.ytimg.com/vi/rvR2Dv1fT0c/2.jpg" height="90" width="120" time="00:01:34" />
+      <media:thumbnail url="http://i.ytimg.com/vi/rvR2Dv1fT0c/3.jpg" height="90" width="120" time="00:02:21" />
+      <media:title type="plain">UPLIFT SPICE - Omega Rythm</media:title>
+      <yt:duration seconds="188" />
+    </media:group>
+    <gd:rating average="4.945066" max="5" min="1" numRaters="1966" rel="http://schemas.google.com/g/2005#overall" />
+    <yt:statistics favoriteCount="0" viewCount="351904" />
+    <yt:description>Encore un clip sur une musique bien pêchue !
+Mais vous verrez, le groupe a aussi dans son répertoire des chansons douces fantastiques...</yt:description>
+    <yt:position>5</yt:position>
+  </entry>
+  <entry>
+    <id>http://gdata.youtube.com/feeds/api/playlists/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt/PLWgPhuVIPdoyYJxjErIRMfpTDDOSWmtTm93lYTXp_YQ8</id>
+    <published>2014-04-18T10:31:17.000Z</published>
+    <updated>1970-01-01T00:00:00.000Z</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://gdata.youtube.com/schemas/2007#video" />
+    <category scheme="http://gdata.youtube.com/schemas/2007/categories.cat" term="Music" label="Music" />
+    <title type="text">[Poucet] Kyrie Eleison {French vers.} TY for +7000 subs and Happy New Year</title>
+    <content type="text">Mp3: https://app.box.com/s/pjfd83odev8w7cpp7878
+/!/WARNING: LONG DESCRIPTION/!/ .. I have many things to say, I don't know how to start..
+
+This song was a request I got on twitter. You know (or not) that I usually don't take requests but I listened to this one and.. "ahmygad, this. Is. Fabulous."
+So yeah, actually, I just adore this kind of song, really. Plus, my current mood is absolutely perfect for it haha.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Story of my life (if you are bored):
+
+After recording it, I spent my entire day trying to mix it and I almost cried because I didn't manage to take off saturation, and yeah, it was ugly. I felt too bad coz it was the first time I was not able to do anything with a mixing, and I was so excited to sing this cover...
+Then SukinaK offered to mix it and I was like "why not, I'm so pissed, I give up."
+And-and-and when I listened to his first preview, I actually cried because he managed to do something good with my lines and I was so impressed and too many emotions and sobs-
+Then we kept mixing until like 1:00 am and he was always patient and ready to change any details ;u;//
+So.. once again Nana, thank you SO MUCH, you illuminated my grey day haha, I'm forever grateful! That's not really a matter of mixing or something, but you were here for me and yeah-
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+About the translation, as usual I tried to keep the original meaning, but also I changed words to make the singing more beautiful. If you want to find another translation of this song, you can read Estrelia's one: http://www.youtube.com/watch?v=2DwM8-Ljkks 
+As she said, lyrics can have several meanings /o/
+
+About the singing: it was not easy at all to find a balance with the different ways of singing.. sometimes it's whisper, sometimes powerful, sometimes a mix with the both... 
+French note: j'ai remarqué que je faisais encore des erreurs de liaisons entre les mots.. ou plutôt que je ne faisais /pas/ certaines liaisons.. j'en suis consciente, je vais essayer de me corriger! ;A;//
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Finally, since it is my last cover for 2013, I wish you, guys, the best for 2014!!
+And thank you soooo much for + 7000 subs and for your support in YT comments and on twitter and everywhere! ;u;//
+Sorry for the very long description xD I love you! ///
+
+...
+Thought for Megu-
+...
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Credits:
+
+Title: kyrie Eleison
+Vocals, French translation, "art": Poucet
+Mix: http://www.youtube.com/user/SukinaKukki (thank you²²²²²²²²²²²²² dear Noodle!)
+Lyric: オカメP [ OkameP ]
+Music: オカメP [ OkameP ]
+Arrange: オカメP [ OkameP ]
+Original vocals: Hatsune Miku Append Dark</content>
+    <link rel="alternate" type="text/html" href="http://www.youtube.com/watch?v=XpVNiPOeLWA&amp;feature=youtube_gdata" />
+    <link rel="http://gdata.youtube.com/schemas/2007#video.related" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/videos/XpVNiPOeLWA/related" />
+    <link rel="http://gdata.youtube.com/schemas/2007#mobile" type="text/html" href="http://m.youtube.com/details?v=XpVNiPOeLWA" />
+    <link rel="related" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/videos/XpVNiPOeLWA" />
+    <link rel="self" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/playlists/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt/PLWgPhuVIPdoyYJxjErIRMfpTDDOSWmtTm93lYTXp_YQ8" />
+    <author>
+      <name>truepoucet</name>
+      <uri>http://gdata.youtube.com/feeds/api/users/truepoucet</uri>
+    </author>
+    <gd:comments>
+      <gd:feedLink rel="http://gdata.youtube.com/schemas/2007#comments" href="http://gdata.youtube.com/feeds/api/videos/XpVNiPOeLWA/comments" countHint="234" />
+    </gd:comments>
+    <media:group>
+      <media:category label="Music" scheme="http://gdata.youtube.com/schemas/2007/categories.cat">Music</media:category>
+      <media:content url="http://www.youtube.com/v/XpVNiPOeLWA?version=3&amp;f=playlists&amp;app=youtube_gdata" type="application/x-shockwave-flash" medium="video" isDefault="true" expression="full" duration="364" yt:format="5" />
+      <media:content url="rtsp://r1---sn-4g57kued.c.youtube.com/CiULENy73wIaHAlgLZ7ziE2VXhMYDSANFEgGUglwbGF5bGlzdHMM/0/0/0/video.3gp" type="video/3gpp" medium="video" expression="full" duration="364" yt:format="1" />
+      <media:content url="rtsp://r1---sn-4g57kued.c.youtube.com/CiULENy73wIaHAlgLZ7ziE2VXhMYESARFEgGUglwbGF5bGlzdHMM/0/0/0/video.3gp" type="video/3gpp" medium="video" expression="full" duration="364" yt:format="6" />
+      <media:description type="plain">Mp3: https://app.box.com/s/pjfd83odev8w7cpp7878
+/!/WARNING: LONG DESCRIPTION/!/ .. I have many things to say, I don't know how to start..
+
+This song was a request I got on twitter. You know (or not) that I usually don't take requests but I listened to this one and.. "ahmygad, this. Is. Fabulous."
+So yeah, actually, I just adore this kind of song, really. Plus, my current mood is absolutely perfect for it haha.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Story of my life (if you are bored):
+
+After recording it, I spent my entire day trying to mix it and I almost cried because I didn't manage to take off saturation, and yeah, it was ugly. I felt too bad coz it was the first time I was not able to do anything with a mixing, and I was so excited to sing this cover...
+Then SukinaK offered to mix it and I was like "why not, I'm so pissed, I give up."
+And-and-and when I listened to his first preview, I actually cried because he managed to do something good with my lines and I was so impressed and too many emotions and sobs-
+Then we kept mixing until like 1:00 am and he was always patient and ready to change any details ;u;//
+So.. once again Nana, thank you SO MUCH, you illuminated my grey day haha, I'm forever grateful! That's not really a matter of mixing or something, but you were here for me and yeah-
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+About the translation, as usual I tried to keep the original meaning, but also I changed words to make the singing more beautiful. If you want to find another translation of this song, you can read Estrelia's one: http://www.youtube.com/watch?v=2DwM8-Ljkks 
+As she said, lyrics can have several meanings /o/
+
+About the singing: it was not easy at all to find a balance with the different ways of singing.. sometimes it's whisper, sometimes powerful, sometimes a mix with the both... 
+French note: j'ai remarqué que je faisais encore des erreurs de liaisons entre les mots.. ou plutôt que je ne faisais /pas/ certaines liaisons.. j'en suis consciente, je vais essayer de me corriger! ;A;//
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Finally, since it is my last cover for 2013, I wish you, guys, the best for 2014!!
+And thank you soooo much for + 7000 subs and for your support in YT comments and on twitter and everywhere! ;u;//
+Sorry for the very long description xD I love you! ///
+
+...
+Thought for Megu-
+...
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Credits:
+
+Title: kyrie Eleison
+Vocals, French translation, "art": Poucet
+Mix: http://www.youtube.com/user/SukinaKukki (thank you²²²²²²²²²²²²² dear Noodle!)
+Lyric: オカメP [ OkameP ]
+Music: オカメP [ OkameP ]
+Arrange: オカメP [ OkameP ]
+Original vocals: Hatsune Miku Append Dark</media:description>
+      <media:keywords />
+      <media:player url="http://www.youtube.com/watch?v=XpVNiPOeLWA&amp;feature=youtube_gdata_player" />
+      <media:thumbnail url="http://i.ytimg.com/vi/XpVNiPOeLWA/0.jpg" height="360" width="480" time="00:03:02" />
+      <media:thumbnail url="http://i.ytimg.com/vi/XpVNiPOeLWA/1.jpg" height="90" width="120" time="00:01:31" />
+      <media:thumbnail url="http://i.ytimg.com/vi/XpVNiPOeLWA/2.jpg" height="90" width="120" time="00:03:02" />
+      <media:thumbnail url="http://i.ytimg.com/vi/XpVNiPOeLWA/3.jpg" height="90" width="120" time="00:04:33" />
+      <media:title type="plain">[Poucet] Kyrie Eleison {French vers.} TY for +7000 subs and Happy New Year</media:title>
+      <yt:duration seconds="364" />
+    </media:group>
+    <gd:rating average="4.965598" max="5" min="1" numRaters="1279" rel="http://schemas.google.com/g/2005#overall" />
+    <yt:statistics favoriteCount="0" viewCount="77507" />
+    <yt:description>Mp3: https://app.box.com/s/pjfd83odev8w7cpp7878
+/!/WARNING: LONG DESCRIPTION/!/ .. I have many things to say, I don't know how to start..
+
+This song was a request I got on twitter. You know (or not) that I usually don't take requests but I listened to this one and.. "ahmygad, this. Is. Fabulous."
+So yeah, actually, I just adore this kind of song, really. Plus, my current mood is absolutely perfect for it haha.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Story of my life (if you are bored):
+
+After recording it, I spent my entire day trying to mix it and I almost cried because I didn't manage to take off saturation, and yeah, it was ugly. I felt too bad coz it was the first time I was not able to do anything with a mixing, and I was so excited to sing this cover...
+Then SukinaK offered to mix it and I was like "why not, I'm so pissed, I give up."
+And-and-and when I listened to his first preview, I actually cried because he managed to do something good with my lines and I was so impressed and too many emotions and sobs-
+Then we kept mixing until like 1:00 am and he was always patient and ready to change any details ;u;//
+So.. once again Nana, thank you SO MUCH, you illuminated my grey day haha, I'm forever grateful! That's not really a matter of mixing or something, but you were here for me and yeah-
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+About the translation, as usual I tried to keep the original meaning, but also I changed words to make the singing more beautiful. If you want to find another translation of this song, you can read Estrelia's one: http://www.youtube.com/watch?v=2DwM8-Ljkks 
+As she said, lyrics can have several meanings /o/
+
+About the singing: it was not easy at all to find a balance with the different ways of singing.. sometimes it's whisper, sometimes powerful, sometimes a mix with the both... 
+French note: j'ai remarqué que je faisais encore des erreurs de liaisons entre les mots.. ou plutôt que je ne faisais /pas/ certaines liaisons.. j'en suis consciente, je vais essayer de me corriger! ;A;//
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Finally, since it is my last cover for 2013, I wish you, guys, the best for 2014!!
+And thank you soooo much for + 7000 subs and for your support in YT comments and on twitter and everywhere! ;u;//
+Sorry for the very long description xD I love you! ///
+
+...
+Thought for Megu-
+...
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Credits:
+
+Title: kyrie Eleison
+Vocals, French translation, "art": Poucet
+Mix: http://www.youtube.com/user/SukinaKukki (thank you²²²²²²²²²²²²² dear Noodle!)
+Lyric: オカメP [ OkameP ]
+Music: オカメP [ OkameP ]
+Arrange: オカメP [ OkameP ]
+Original vocals: Hatsune Miku Append Dark</yt:description>
+    <yt:position>6</yt:position>
+  </entry>
+  <entry>
+    <id>http://gdata.youtube.com/feeds/api/playlists/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt/PLWgPhuVIPdoyYJxjErIRMfuzlqes8kYXgv2e466JEn_o</id>
+    <published>2014-05-12T17:33:32.000Z</published>
+    <updated>1970-01-01T00:00:00.000Z</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://gdata.youtube.com/schemas/2007#video" />
+    <category scheme="http://gdata.youtube.com/schemas/2007/categories.cat" term="Music" label="Music" />
+    <title type="text">【Akiakane】『100度目のロックスター』【English Subs】</title>
+    <content type="text">Song from Akiakane's newest album, ぼろぼろな生き様. I highly suggest buying the album if you can, so you can support the artist. I did such before subbing this song.
+
+■ Song: 100度目のロックスター
+■ Lyrics: ゆよゆっぺ /SaiB
+■ Composer: ゆよゆっぺ /SaiB
+■ Vocals: Akiakane
+■ Illustration: Akiakane
+■ Translation: animeyay
+
+I do not own anything. The video will taken down if the original author requests.
+
+http://akiakane.net/
+http://www.amazon.co.jp/dp/B007A8B5AY/
+http://www.amazon.co.jp/dp/B007A8CS1O/
+-----
+I love this song, and while I requested a translation for Dryad, I also requested this one. The lyrics are very odd, as to be expected from a saiB/Akiakane song, I suppose.
+
+Transliteration and translation of the song here:
+http://www.animelyrics.com/doujin/akiakane/100domenorockstar.htm</content>
+    <link rel="alternate" type="text/html" href="http://www.youtube.com/watch?v=0fDaeRS4sZg&amp;feature=youtube_gdata" />
+    <link rel="http://gdata.youtube.com/schemas/2007#video.related" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/videos/0fDaeRS4sZg/related" />
+    <link rel="http://gdata.youtube.com/schemas/2007#mobile" type="text/html" href="http://m.youtube.com/details?v=0fDaeRS4sZg" />
+    <link rel="related" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/videos/0fDaeRS4sZg" />
+    <link rel="self" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/playlists/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt/PLWgPhuVIPdoyYJxjErIRMfuzlqes8kYXgv2e466JEn_o" />
+    <author>
+      <name>vocaloidspazz</name>
+      <uri>http://gdata.youtube.com/feeds/api/users/vocaloidspazz</uri>
+    </author>
+    <gd:comments>
+      <gd:feedLink rel="http://gdata.youtube.com/schemas/2007#comments" href="http://gdata.youtube.com/feeds/api/videos/0fDaeRS4sZg/comments" countHint="17" />
+    </gd:comments>
+    <yt:hd />
+    <media:group>
+      <media:category label="Music" scheme="http://gdata.youtube.com/schemas/2007/categories.cat">Music</media:category>
+      <media:content url="http://www.youtube.com/v/0fDaeRS4sZg?version=3&amp;f=playlists&amp;app=youtube_gdata" type="application/x-shockwave-flash" medium="video" isDefault="true" expression="full" duration="237" yt:format="5" />
+      <media:content url="rtsp://r4---sn-4g57kuer.c.youtube.com/CiULENy73wIaHAmYsbgUedrw0RMYDSANFEgGUglwbGF5bGlzdHMM/0/0/0/video.3gp" type="video/3gpp" medium="video" expression="full" duration="237" yt:format="1" />
+      <media:content url="rtsp://r4---sn-4g57kuer.c.youtube.com/CiULENy73wIaHAmYsbgUedrw0RMYESARFEgGUglwbGF5bGlzdHMM/0/0/0/video.3gp" type="video/3gpp" medium="video" expression="full" duration="237" yt:format="6" />
+      <media:description type="plain">Song from Akiakane's newest album, ぼろぼろな生き様. I highly suggest buying the album if you can, so you can support the artist. I did such before subbing this song.
+
+■ Song: 100度目のロックスター
+■ Lyrics: ゆよゆっぺ /SaiB
+■ Composer: ゆよゆっぺ /SaiB
+■ Vocals: Akiakane
+■ Illustration: Akiakane
+■ Translation: animeyay
+
+I do not own anything. The video will taken down if the original author requests.
+
+http://akiakane.net/
+http://www.amazon.co.jp/dp/B007A8B5AY/
+http://www.amazon.co.jp/dp/B007A8CS1O/
+-----
+I love this song, and while I requested a translation for Dryad, I also requested this one. The lyrics are very odd, as to be expected from a saiB/Akiakane song, I suppose.
+
+Transliteration and translation of the song here:
+http://www.animelyrics.com/doujin/akiakane/100domenorockstar.htm</media:description>
+      <media:keywords />
+      <media:player url="http://www.youtube.com/watch?v=0fDaeRS4sZg&amp;feature=youtube_gdata_player" />
+      <media:thumbnail url="http://i.ytimg.com/vi/0fDaeRS4sZg/0.jpg" height="360" width="480" time="00:01:58.500" />
+      <media:thumbnail url="http://i.ytimg.com/vi/0fDaeRS4sZg/1.jpg" height="90" width="120" time="00:00:59.250" />
+      <media:thumbnail url="http://i.ytimg.com/vi/0fDaeRS4sZg/2.jpg" height="90" width="120" time="00:01:58.500" />
+      <media:thumbnail url="http://i.ytimg.com/vi/0fDaeRS4sZg/3.jpg" height="90" width="120" time="00:02:57.750" />
+      <media:title type="plain">【Akiakane】『100度目のロックスター』【English Subs】</media:title>
+      <yt:duration seconds="237" />
+    </media:group>
+    <gd:rating average="4.9871793" max="5" min="1" numRaters="312" rel="http://schemas.google.com/g/2005#overall" />
+    <yt:statistics favoriteCount="0" viewCount="24276" />
+    <yt:description>Song from Akiakane's newest album, ぼろぼろな生き様. I highly suggest buying the album if you can, so you can support the artist. I did such before subbing this song.
+
+■ Song: 100度目のロックスター
+■ Lyrics: ゆよゆっぺ /SaiB
+■ Composer: ゆよゆっぺ /SaiB
+■ Vocals: Akiakane
+■ Illustration: Akiakane
+■ Translation: animeyay
+
+I do not own anything. The video will taken down if the original author requests.
+
+http://akiakane.net/
+http://www.amazon.co.jp/dp/B007A8B5AY/
+http://www.amazon.co.jp/dp/B007A8CS1O/
+-----
+I love this song, and while I requested a translation for Dryad, I also requested this one. The lyrics are very odd, as to be expected from a saiB/Akiakane song, I suppose.
+
+Transliteration and translation of the song here:
+http://www.animelyrics.com/doujin/akiakane/100domenorockstar.htm</yt:description>
+    <yt:position>7</yt:position>
+  </entry>
+  <entry>
+    <id>http://gdata.youtube.com/feeds/api/playlists/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt/PLWgPhuVIPdoyYJxjErIRMfpiprcVIknYm8lgARXZ2rtU</id>
+    <published>2014-07-02T20:48:02.000Z</published>
+    <updated>1970-01-01T00:00:00.000Z</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://gdata.youtube.com/schemas/2007#video" />
+    <category scheme="http://gdata.youtube.com/schemas/2007/categories.cat" term="Music" label="Music" />
+    <title type="text">【ゆらゆら】ユラギ、歌ってみた【秋赤音】</title>
+    <content type="text">| ‾◒◝)ﾉRemember to watch at the original first and mylisting the video at nico douga to help your fav singers in the nico rankings!!
+
+
+★Title: Yuragi
+★Singer: Akiakane
+★ニコ link:http://www.nicovideo.jp/watch/sm20822136
+
+MP3: http://nicosound.anyap.info/sound/sm20822136
+・‥...━━━━━━━━━★
+(Find &amp; click "MP3 を抽出")
+
+Original video description:
+
+■お久しかも、秋赤音です（∵）ノ
+ゆらゆらふらふらふわふわ生きていきたい。
+
+ゆらゆら潤い本家：niki（sm12262607）
+透明感溢れるMIX:madamxx(mylist/6063263)
+
+歌と動画：秋赤音（mylist/6625593）(@_akiakane)</content>
+    <link rel="alternate" type="text/html" href="http://www.youtube.com/watch?v=oNO7BTs33DU&amp;feature=youtube_gdata" />
+    <link rel="http://gdata.youtube.com/schemas/2007#video.related" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/videos/oNO7BTs33DU/related" />
+    <link rel="http://gdata.youtube.com/schemas/2007#mobile" type="text/html" href="http://m.youtube.com/details?v=oNO7BTs33DU" />
+    <link rel="related" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/videos/oNO7BTs33DU" />
+    <link rel="self" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/playlists/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt/PLWgPhuVIPdoyYJxjErIRMfpiprcVIknYm8lgARXZ2rtU" />
+    <author>
+      <name>melonotes</name>
+      <uri>http://gdata.youtube.com/feeds/api/users/melonotes</uri>
+    </author>
+    <gd:comments>
+      <gd:feedLink rel="http://gdata.youtube.com/schemas/2007#comments" href="http://gdata.youtube.com/feeds/api/videos/oNO7BTs33DU/comments" countHint="11" />
+    </gd:comments>
+    <media:group>
+      <media:category label="Music" scheme="http://gdata.youtube.com/schemas/2007/categories.cat">Music</media:category>
+      <media:content url="http://www.youtube.com/v/oNO7BTs33DU?version=3&amp;f=playlists&amp;app=youtube_gdata" type="application/x-shockwave-flash" medium="video" isDefault="true" expression="full" duration="204" yt:format="5" />
+      <media:content url="rtsp://r4---sn-4g57kuek.c.youtube.com/CiULENy73wIaHAk13Dc7BbvToBMYDSANFEgGUglwbGF5bGlzdHMM/0/0/0/video.3gp" type="video/3gpp" medium="video" expression="full" duration="204" yt:format="1" />
+      <media:content url="rtsp://r4---sn-4g57kuek.c.youtube.com/CiULENy73wIaHAk13Dc7BbvToBMYESARFEgGUglwbGF5bGlzdHMM/0/0/0/video.3gp" type="video/3gpp" medium="video" expression="full" duration="204" yt:format="6" />
+      <media:description type="plain">| ‾◒◝)ﾉRemember to watch at the original first and mylisting the video at nico douga to help your fav singers in the nico rankings!!
+
+
+★Title: Yuragi
+★Singer: Akiakane
+★ニコ link:http://www.nicovideo.jp/watch/sm20822136
+
+MP3: http://nicosound.anyap.info/sound/sm20822136
+・‥...━━━━━━━━━★
+(Find &amp; click "MP3 を抽出")
+
+Original video description:
+
+■お久しかも、秋赤音です（∵）ノ
+ゆらゆらふらふらふわふわ生きていきたい。
+
+ゆらゆら潤い本家：niki（sm12262607）
+透明感溢れるMIX:madamxx(mylist/6063263)
+
+歌と動画：秋赤音（mylist/6625593）(@_akiakane)</media:description>
+      <media:keywords />
+      <media:player url="http://www.youtube.com/watch?v=oNO7BTs33DU&amp;feature=youtube_gdata_player" />
+      <media:thumbnail url="http://i.ytimg.com/vi/oNO7BTs33DU/0.jpg" height="360" width="480" time="00:01:42" />
+      <media:thumbnail url="http://i.ytimg.com/vi/oNO7BTs33DU/1.jpg" height="90" width="120" time="00:00:51" />
+      <media:thumbnail url="http://i.ytimg.com/vi/oNO7BTs33DU/2.jpg" height="90" width="120" time="00:01:42" />
+      <media:thumbnail url="http://i.ytimg.com/vi/oNO7BTs33DU/3.jpg" height="90" width="120" time="00:02:33" />
+      <media:title type="plain">【ゆらゆら】ユラギ、歌ってみた【秋赤音】</media:title>
+      <yt:duration seconds="204" />
+    </media:group>
+    <gd:rating average="4.9832635" max="5" min="1" numRaters="239" rel="http://schemas.google.com/g/2005#overall" />
+    <yt:statistics favoriteCount="0" viewCount="8993" />
+    <yt:description>| ‾◒◝)ﾉRemember to watch at the original first and mylisting the video at nico douga to help your fav singers in the nico rankings!!
+
+
+★Title: Yuragi
+★Singer: Akiakane
+★ニコ link:http://www.nicovideo.jp/watch/sm20822136
+
+MP3: http://nicosound.anyap.info/sound/sm20822136
+・‥...━━━━━━━━━★
+(Find &amp; click "MP3 を抽出")
+
+Original video description:
+
+■お久しかも、秋赤音です（∵）ノ
+ゆらゆらふらふらふわふわ生きていきたい。
+
+ゆらゆら潤い本家：niki（sm12262607）
+透明感溢れるMIX:madamxx(mylist/6063263)
+
+歌と動画：秋赤音（mylist/6625593）(@_akiakane)</yt:description>
+    <yt:position>8</yt:position>
+  </entry>
+  <entry>
+    <id>http://gdata.youtube.com/feeds/api/playlists/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt/PLWgPhuVIPdoyYJxjErIRMfurkr7GyIV1VpbaheCPPpNA</id>
+    <published>2014-07-02T20:48:21.000Z</published>
+    <updated>1970-01-01T00:00:00.000Z</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://gdata.youtube.com/schemas/2007#video" />
+    <category scheme="http://gdata.youtube.com/schemas/2007/categories.cat" term="Music" label="Music" />
+    <title type="text">Love Is War-StrumMix- [Akiakane]</title>
+    <content type="text">Wow is this her first cover she put on Nico Douga?
+This one is from August 28th 2008. 
+
+Source: http://www.nicovideo.jp/watch/sm4434474
+Download: http://www.nicovideo.jp/watch/sm4434474</content>
+    <link rel="alternate" type="text/html" href="http://www.youtube.com/watch?v=Mr9qml_c9w8&amp;feature=youtube_gdata" />
+    <link rel="http://gdata.youtube.com/schemas/2007#video.related" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/videos/Mr9qml_c9w8/related" />
+    <link rel="http://gdata.youtube.com/schemas/2007#mobile" type="text/html" href="http://m.youtube.com/details?v=Mr9qml_c9w8" />
+    <link rel="related" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/videos/Mr9qml_c9w8" />
+    <link rel="self" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/playlists/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt/PLWgPhuVIPdoyYJxjErIRMfurkr7GyIV1VpbaheCPPpNA" />
+    <author>
+      <name>vocaloidvideoz</name>
+      <uri>http://gdata.youtube.com/feeds/api/users/vocaloidvideoz</uri>
+    </author>
+    <gd:comments>
+      <gd:feedLink rel="http://gdata.youtube.com/schemas/2007#comments" href="http://gdata.youtube.com/feeds/api/videos/Mr9qml_c9w8/comments" countHint="158" />
+    </gd:comments>
+    <media:group>
+      <media:category label="Music" scheme="http://gdata.youtube.com/schemas/2007/categories.cat">Music</media:category>
+      <media:content url="http://www.youtube.com/v/Mr9qml_c9w8?version=3&amp;f=playlists&amp;app=youtube_gdata" type="application/x-shockwave-flash" medium="video" isDefault="true" expression="full" duration="236" yt:format="5" />
+      <media:content url="rtsp://r6---sn-4g57kuer.c.youtube.com/CiULENy73wIaHAkP99xfmmq_MhMYDSANFEgGUglwbGF5bGlzdHMM/0/0/0/video.3gp" type="video/3gpp" medium="video" expression="full" duration="236" yt:format="1" />
+      <media:content url="rtsp://r6---sn-4g57kuer.c.youtube.com/CiULENy73wIaHAkP99xfmmq_MhMYESARFEgGUglwbGF5bGlzdHMM/0/0/0/video.3gp" type="video/3gpp" medium="video" expression="full" duration="236" yt:format="6" />
+      <media:description type="plain">Wow is this her first cover she put on Nico Douga?
+This one is from August 28th 2008. 
+
+Source: http://www.nicovideo.jp/watch/sm4434474
+Download: http://www.nicovideo.jp/watch/sm4434474</media:description>
+      <media:keywords />
+      <media:player url="http://www.youtube.com/watch?v=Mr9qml_c9w8&amp;feature=youtube_gdata_player" />
+      <media:thumbnail url="http://i.ytimg.com/vi/Mr9qml_c9w8/0.jpg" height="360" width="480" time="00:01:58" />
+      <media:thumbnail url="http://i.ytimg.com/vi/Mr9qml_c9w8/1.jpg" height="90" width="120" time="00:00:59" />
+      <media:thumbnail url="http://i.ytimg.com/vi/Mr9qml_c9w8/2.jpg" height="90" width="120" time="00:01:58" />
+      <media:thumbnail url="http://i.ytimg.com/vi/Mr9qml_c9w8/3.jpg" height="90" width="120" time="00:02:57" />
+      <media:title type="plain">Love Is War-StrumMix- [Akiakane]</media:title>
+      <yt:duration seconds="236" />
+    </media:group>
+    <gd:rating average="4.902534" max="5" min="1" numRaters="1026" rel="http://schemas.google.com/g/2005#overall" />
+    <yt:statistics favoriteCount="0" viewCount="83854" />
+    <yt:description>Wow is this her first cover she put on Nico Douga?
+This one is from August 28th 2008. 
+
+Source: http://www.nicovideo.jp/watch/sm4434474
+Download: http://www.nicovideo.jp/watch/sm4434474</yt:description>
+    <yt:position>9</yt:position>
+  </entry>
+  <entry>
+    <id>http://gdata.youtube.com/feeds/api/playlists/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt/PLWgPhuVIPdoyYJxjErIRMfnTxyMV9sg_v76qbNQtAKFg</id>
+    <published>2014-07-08T18:29:47.000Z</published>
+    <updated>1970-01-01T00:00:00.000Z</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://gdata.youtube.com/schemas/2007#video" />
+    <category scheme="http://gdata.youtube.com/schemas/2007/categories.cat" term="Music" label="Music" />
+    <title type="text">Mozaik Role [Rishe]</title>
+    <content type="text">http://www.nicovideo.jp/watch/sm11459549
+
+Romaji yrics: 
+toaru kotoba ga kimi ni tsuki sasari
+kizuguchi kara more dasu eki o "ai" to keiyō shite mita
+
+omoi yari no ketsujo to katachi dake no kōbi wa
+kusare en no kimi to atashi ni yoku nite iru
+"sore demo suki..." toka (lol)
+
+aishitatte ī ja naika
+shibari daremo fure nai yō
+kore mo unmei ja nai ka
+kieru kieru toaru aise
+
+owaru koro niwa kimi ni ai teru yo
+ai ka yoku ka wakarazu hanatsu koto wa nanto shiyō ka
+
+omoi yari no ketsujo to katachi dake no kōbi wa
+kusare en no kimi to atashi ni yoku nite iru
+sore demo ī kara...
+
+aishita tte iu no desu ka?
+shigami tsui te mogaku koto o
+koroshita tte ī ja nai ka
+kimi ga kirau atashi nante
+
+aishitatte ī ja naika
+shibari daremo fure nai yō
+kore mo unmei ja nai ka
+kieru kieru toaru aise</content>
+    <link rel="alternate" type="text/html" href="http://www.youtube.com/watch?v=7mHQ5yZjUCU&amp;feature=youtube_gdata" />
+    <link rel="http://gdata.youtube.com/schemas/2007#video.related" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/videos/7mHQ5yZjUCU/related" />
+    <link rel="http://gdata.youtube.com/schemas/2007#mobile" type="text/html" href="http://m.youtube.com/details?v=7mHQ5yZjUCU" />
+    <link rel="related" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/videos/7mHQ5yZjUCU" />
+    <link rel="self" type="application/atom+xml" href="http://gdata.youtube.com/feeds/api/playlists/PLKlpkfN-1UcC42oziTzpro2v3lApj5pLt/PLWgPhuVIPdoyYJxjErIRMfnTxyMV9sg_v76qbNQtAKFg" />
+    <author>
+      <name>vocaloidvideoz</name>
+      <uri>http://gdata.youtube.com/feeds/api/users/vocaloidvideoz</uri>
+    </author>
+    <gd:comments>
+      <gd:feedLink rel="http://gdata.youtube.com/schemas/2007#comments" href="http://gdata.youtube.com/feeds/api/videos/7mHQ5yZjUCU/comments" countHint="65" />
+    </gd:comments>
+    <media:group>
+      <media:category label="Music" scheme="http://gdata.youtube.com/schemas/2007/categories.cat">Music</media:category>
+      <media:content url="http://www.youtube.com/v/7mHQ5yZjUCU?version=3&amp;f=playlists&amp;app=youtube_gdata" type="application/x-shockwave-flash" medium="video" isDefault="true" expression="full" duration="192" yt:format="5" />
+      <media:content url="rtsp://r3---sn-4g57kuel.c.youtube.com/CiULENy73wIaHAklUGMm59Bh7hMYDSANFEgGUglwbGF5bGlzdHMM/0/0/0/video.3gp" type="video/3gpp" medium="video" expression="full" duration="192" yt:format="1" />
+      <media:content url="rtsp://r3---sn-4g57kuel.c.youtube.com/CiULENy73wIaHAklUGMm59Bh7hMYESARFEgGUglwbGF5bGlzdHMM/0/0/0/video.3gp" type="video/3gpp" medium="video" expression="full" duration="192" yt:format="6" />
+      <media:description type="plain">http://www.nicovideo.jp/watch/sm11459549
+
+Romaji yrics: 
+toaru kotoba ga kimi ni tsuki sasari
+kizuguchi kara more dasu eki o "ai" to keiyō shite mita
+
+omoi yari no ketsujo to katachi dake no kōbi wa
+kusare en no kimi to atashi ni yoku nite iru
+"sore demo suki..." toka (lol)
+
+aishitatte ī ja naika
+shibari daremo fure nai yō
+kore mo unmei ja nai ka
+kieru kieru toaru aise
+
+owaru koro niwa kimi ni ai teru yo
+ai ka yoku ka wakarazu hanatsu koto wa nanto shiyō ka
+
+omoi yari no ketsujo to katachi dake no kōbi wa
+kusare en no kimi to atashi ni yoku nite iru
+sore demo ī kara...
+
+aishita tte iu no desu ka?
+shigami tsui te mogaku koto o
+koroshita tte ī ja nai ka
+kimi ga kirau atashi nante
+
+aishitatte ī ja naika
+shibari daremo fure nai yō
+kore mo unmei ja nai ka
+kieru kieru toaru aise</media:description>
+      <media:keywords />
+      <media:player url="http://www.youtube.com/watch?v=7mHQ5yZjUCU&amp;feature=youtube_gdata_player" />
+      <media:thumbnail url="http://i.ytimg.com/vi/7mHQ5yZjUCU/0.jpg" height="360" width="480" time="00:01:36" />
+      <media:thumbnail url="http://i.ytimg.com/vi/7mHQ5yZjUCU/1.jpg" height="90" width="120" time="00:00:48" />
+      <media:thumbnail url="http://i.ytimg.com/vi/7mHQ5yZjUCU/2.jpg" height="90" width="120" time="00:01:36" />
+      <media:thumbnail url="http://i.ytimg.com/vi/7mHQ5yZjUCU/3.jpg" height="90" width="120" time="00:02:24" />
+      <media:title type="plain">Mozaik Role [Rishe]</media:title>
+      <yt:duration seconds="192" />
+    </media:group>
+    <gd:rating average="4.972973" max="5" min="1" numRaters="592" rel="http://schemas.google.com/g/2005#overall" />
+    <yt:statistics favoriteCount="0" viewCount="45403" />
+    <yt:description>http://www.nicovideo.jp/watch/sm11459549
+
+Romaji yrics: 
+toaru kotoba ga kimi ni tsuki sasari
+kizuguchi kara more dasu eki o "ai" to keiyō shite mita
+
+omoi yari no ketsujo to katachi dake no kōbi wa
+kusare en no kimi to atashi ni yoku nite iru
+"sore demo suki..." toka (lol)
+
+aishitatte ī ja naika
+shibari daremo fure nai yō
+kore mo unmei ja nai ka
+kieru kieru toaru aise
+
+owaru koro niwa kimi ni ai teru yo
+ai ka yoku ka wakarazu hanatsu koto wa nanto shiyō ka
+
+omoi yari no ketsujo to katachi dake no kōbi wa
+kusare en no kimi to atashi ni yoku nite iru
+sore demo ī kara...
+
+aishita tte iu no desu ka?
+shigami tsui te mogaku koto o
+koroshita tte ī ja nai ka
+kimi ga kirau atashi nante
+
+aishitatte ī ja naika
+shibari daremo fure nai yō
+kore mo unmei ja nai ka
+kieru kieru toaru aise</yt:description>
+    <yt:position>10</yt:position>
+  </entry>
+</feed>

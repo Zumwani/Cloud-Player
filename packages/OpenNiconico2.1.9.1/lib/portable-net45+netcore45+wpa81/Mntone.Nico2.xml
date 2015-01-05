@@ -1,0 +1,3353 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mntone.Nico2</name>
+    </assembly>
+    <members>
+        <member name="T:Mntone.Nico2.Channels.ChannelApi">
+            <summary>
+            ニコニコ チャンネル API 群
+            </summary>
+        </member>
+        <member name="M:Mntone.Nico2.Channels.ChannelApi.GetIconAsync(System.String)">
+            <summary>
+            [非ログオン可] 非同期操作としてチャンネル アイコンを取得します
+            </summary>
+            <param name="requestChannelId">目的のチャンネル ID</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="T:Mntone.Nico2.Communities.CommunityApi">
+            <summary>
+            ニコニコ コミュニティー API 群
+            </summary>
+        </member>
+        <member name="M:Mntone.Nico2.Communities.CommunityApi.GetIconAsync(System.String)">
+            <summary>
+            [非ログオン可] 非同期操作としてコミュニティー アイコンを取得します
+            </summary>
+            <param name="requestCommunityId">目的のコミュニティー ID</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="T:Mntone.Nico2.Dictionaries.Category">
+            <summary>
+            大百科のカテゴリー
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Dictionaries.Category.Word">
+            <summary>
+            単語
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Dictionaries.Category.Video">
+            <summary>
+            動画
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Dictionaries.Category.Live">
+            <summary>
+            生放送
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Dictionaries.Category.Community">
+            <summary>
+            コミュニティー
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Dictionaries.Category.User">
+            <summary>
+            ユーザー
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Dictionaries.Category.Goods">
+            <summary>
+            商品
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Dictionaries.DictionaryApi">
+            <summary>
+            ニコニコ大百科 API 群
+            </summary>
+        </member>
+        <member name="M:Mntone.Nico2.Dictionaries.DictionaryApi.WordExistAsync(System.String)">
+            <summary>
+            [非ログオン可] 非同期操作として大百科に単語記事が存在するかを確認します
+            </summary>
+            <param name="targetWord">目的の単語</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.Dictionaries.DictionaryApi.GetSummaryAsync(System.String)">
+            <summary>
+            [非ログオン可] 非同期操作として大百科に単語記事の概要を要求します
+            </summary>
+            <param name="targetWord">目的の単語</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.Dictionaries.DictionaryApi.ExistAsync(Mntone.Nico2.Dictionaries.Category,System.String)">
+            <summary>
+            [非ログオン可] 非同期操作として大百科の指定したカテゴリーに単語が存在するかを確認します
+            </summary>
+            <param name="targetCategory">目的のカテゴリー</param>
+            <param name="targetWord">目的の単語</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.Dictionaries.DictionaryApi.GetRecentAsync">
+            <summary>
+            [非ログオン可] 非同期操作として大百科に最近登録された単語の一覧を取得します
+            </summary>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="T:Mntone.Nico2.Dictionaries.Recent.RecentResponse">
+            <summary>
+            ニコニコ大百科の最近追加された単語を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Dictionaries.Recent.RecentResponse.Words">
+            <summary>
+            単語の一覧
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Dictionaries.Recent.Word">
+            <summary>
+            単語の情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Dictionaries.Recent.Word.Category">
+            <summary>
+            カテゴリー
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Dictionaries.Recent.Word.Title">
+            <summary>
+            題名
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Dictionaries.Recent.Word.ViewTitle">
+            <summary>
+            表示名
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Dictionaries.Recent.Word.Summary">
+            <summary>
+            概要
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Dictionaries.Summary.SummaryResponse">
+            <summary>
+            ニコニコ大百科の summary を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Dictionaries.Summary.SummaryResponse.Title">
+            <summary>
+            単語の題名
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Dictionaries.Summary.SummaryResponse.ViewTitle">
+            <summary>
+            単語の表示名
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Dictionaries.Summary.SummaryResponse.Summary">
+            <summary>
+            単語の概要
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Images.Illusts.BlogPartsRanking.BlogPartsRankingResponse">
+            <summary>
+            blogparts?mode=ranking の情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Illusts.BlogPartsRanking.BlogPartsRankingResponse.PageUrl">
+            <summary>
+            視聴ページ
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Illusts.BlogPartsRanking.BlogPartsRankingResponse.Images">
+            <summary>
+            画像の一覧
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Images.Illusts.BlogPartsRanking.DurationType">
+            <summary>
+            期間の種類
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.BlogPartsRanking.DurationType.Fresh">
+            <summary>
+            新着
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.BlogPartsRanking.DurationType.Hourly">
+            <summary>
+            毎時
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.BlogPartsRanking.DurationType.Daily">
+            <summary>
+            毎日
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.BlogPartsRanking.DurationType.Weekly">
+            <summary>
+            週間
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.BlogPartsRanking.DurationType.Monthly">
+            <summary>
+            月間
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.BlogPartsRanking.DurationType.Total">
+            <summary>
+            合計
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Images.Illusts.BlogPartsRanking.Image">
+            <summary>
+            画像の情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Illusts.BlogPartsRanking.Image.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Illusts.BlogPartsRanking.Image.Rank">
+            <summary>
+            順位
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Illusts.BlogPartsRanking.Image.Title">
+            <summary>
+            題名
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Illusts.BlogPartsRanking.Image.UserName">
+            <summary>
+            ユーザー名
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Images.Illusts.GenreOrCategory">
+            <summary>
+            ジャンルとカテゴリー
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.GenreOrCategory.Creation">
+            <summary>
+            創作
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.GenreOrCategory.Original">
+            <summary>
+            オリジナル
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.GenreOrCategory.Portrait">
+            <summary>
+            似顔絵
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.GenreOrCategory.FanArt">
+            <summary>
+            ファンアート
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.GenreOrCategory.Anime">
+            <summary>
+            アニメ
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.GenreOrCategory.Game">
+            <summary>
+            ゲーム
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.GenreOrCategory.Character">
+            <summary>
+            キャラクター
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.GenreOrCategory.Popular">
+            <summary>
+            殿堂入り
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.GenreOrCategory.Toho">
+            <summary>
+            東方
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.GenreOrCategory.Vocaloid">
+            <summary>
+            ボーカロイド
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.GenreOrCategory.KanColle">
+            <summary>
+            艦これ
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.GenreOrCategory.Adult">
+            <summary>
+            春画 (R-15)
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.GenreOrCategory.Rate15">
+            <summary>
+            R-15
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Images.Illusts.Site">
+            <summary>
+            サイト
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.Site.Illust">
+            <summary>
+            ニコニコ静画(イラスト)
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.Site.Adult">
+            <summary>
+            ニコニコ春画(R-15)
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Images.Illusts.BlogParts.BlogPartsResponse">
+            <summary>
+            blogparts の情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Illusts.BlogParts.BlogPartsResponse.PageUrl">
+            <summary>
+            視聴ページ
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Illusts.BlogParts.BlogPartsResponse.Images">
+            <summary>
+            画像の一覧
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Images.Illusts.BlogParts.Image">
+            <summary>
+            画像の情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Illusts.BlogParts.Image.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Illusts.BlogParts.Image.Title">
+            <summary>
+            題名
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Illusts.BlogParts.Image.UserName">
+            <summary>
+            ユーザー名
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Images.Illusts.Genre">
+            <summary>
+            ジャンル
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.Genre.Creation">
+            <summary>
+            創作
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.Genre.FanArt">
+            <summary>
+            ファンアート
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.Genre.Popular">
+            <summary>
+            殿堂入り
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Images.Illusts.Genre.Adult">
+            <summary>
+            春画 (R-15)
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Images.Illusts.IllustApi">
+            <summary>
+            ニコニコ静画のイラスト API 群
+            </summary>
+        </member>
+        <member name="M:Mntone.Nico2.Images.Illusts.IllustApi.GetClipAsync(System.UInt32)">
+            <summary>
+            [非ログオン可] 非同期操作としてクリップの一部 (最大 25 件) を取得します
+            </summary>
+            <param name="requestClipId">目的のクリップ ID</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.Images.Illusts.IllustApi.GetUserAsync(System.UInt32)">
+            <summary>
+            [非ログオン可] 非同期操作としてユーザーのイラスト リストの一部 (最大 25 件) を取得します
+            </summary>
+            <param name="requestUserId">目的のユーザー ID</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.Images.Illusts.IllustApi.GetRankingAsync(Mntone.Nico2.Images.Illusts.BlogPartsRanking.DurationType,Mntone.Nico2.Images.Illusts.GenreOrCategory)">
+            <summary>
+            [非ログオン可] 非同期操作としてユーザーのイラスト リストの一部 (最大 25 件) を取得します
+            </summary>
+            <param name="targetDuration">目的の期間</param>
+            <param name="targetGenreOrCategory">目的のジャンル または カテゴリー</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="T:Mntone.Nico2.Images.ImageApi">
+            <summary>
+            ニコニコ静画 API 群
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.ImageApi.Illust">
+            <summary>
+            ニコニコ静画のイラスト API 群
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.ImageApi.User">
+            <summary>
+            ニコニコ静画のユーザー API 群
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Images.Comment">
+            <summary>
+            コメントの情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Comment.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Comment.ImageId">
+            <summary>
+            画像 ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Comment.ResId">
+            <summary>
+            レス先 ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Comment.Value">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Comment.Command">
+            <summary>
+            コマンド
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Comment.PostedAt">
+            <summary>
+            投稿日時
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Comment.Frame">
+            <summary>
+            フレーム (?)
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Comment.UserHash">
+            <summary>
+            ユーザー ハッシュ
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Comment.IsAnonymous">
+            <summary>
+            匿名か
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.Description.DescriptionResponse">
+            <summary>
+            番組情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.Description.DescriptionResponse.Title">
+            <summary>
+            題名
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.Description.DescriptionResponse.Description">
+            <summary>
+            説明
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.Description.DescriptionResponse.IsHighQuality">
+            <summary>
+            高画質配信か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.Description.DescriptionResponse.ThumbnailUrl">
+            <summary>
+            サムネール
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.Description.DescriptionResponse.OpenedAt">
+            <summary>
+            開場時間
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.OtherStreams.OtherStream">
+            <summary>
+            放送中の番組情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStream.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStream.Status">
+            <summary>
+            番組の状態
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStream.Title">
+            <summary>
+            題名
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStream.Description">
+            <summary>
+            説明
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStream.IsHidden">
+            <summary>
+            リストに表示しないか
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStream.IsPrivate">
+            <summary>
+            private か (?)
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStream.IsProduct">
+            <summary>
+            製品番組か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStream.TimeshiftEnabled">
+            <summary>
+            タイムシフトが有効か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStream.IsTimeshiftClosed">
+            <summary>
+            タイムシフト期間が終了しているか
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStream.IsTimeshiftPreparing">
+            <summary>
+            タイムシフトが準備中か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStream.ThumbnailUrl">
+            <summary>
+            サムネール URL
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStream.TicketPageUrl">
+            <summary>
+            チケット購入ページ URL
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStream.IsTwitterDisabled">
+            <summary>
+            Twitter が無効か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStream.TwitterHashtag">
+            <summary>
+            Twitter のハッシュタグ
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStream.ViewCount">
+            <summary>
+            来場者数
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStream.CommentCount">
+            <summary>
+            コメント数
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStream.TimeshiftReservedCount">
+            <summary>
+            タイムシフト予約数
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStream.StartedAt">
+            <summary>
+            開始日時
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStream.EndedAt">
+            <summary>
+            終了日時
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStream.IsOfficial">
+            <summary>
+            公式配信か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStream.IsChannel">
+            <summary>
+            チャンネル配信か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStream.IsCommunity">
+            <summary>
+            コミュニティー配信か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStream.CommunityType">
+            <summary>
+            コミュニティーの種類
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStream.IsChannelIconEnabled">
+            <summary>
+            Twitter が無効か
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.OtherStreams.OtherStreamsResponse">
+            <summary>
+            番組を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OtherStreams.OtherStreamsResponse.Streams">
+            <summary>
+            番組の一覧
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.PlayerStatus.Command">
+            <summary>
+            コマンドを格納するクラス
+            </summary>
+            <remarks>
+            タイムシフトでは stream/quesheet による放送再現を行う
+            </remarks>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Command.Position">
+            <summary>
+            実行時間
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Command.Mail">
+            <summary>
+            文字コマンド
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Command.Name">
+            <summary>
+            投稿者名
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Command.Value">
+            <summary>
+            コマンドの内容
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.PlayerStatus.Comment">
+            <summary>
+            コメントの情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Comment.IsLocked">
+            <summary>
+            コメント ロックされているか
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Comment.Scale">
+            <summary>
+            コメント スケール率
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Comment.Perm">
+            <summary>
+            perm
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Comment.Position">
+            <summary>
+            コメント表示位置
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Comment.FilteringLevel">
+            <summary>
+            フィルタリング レベル
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Comment.SexMode">
+            <summary>
+            性別による装飾方法
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Comment.Commands">
+            <summary>
+            コマンド
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Comment.IsRestrict">
+            <summary>
+            厳密に評価するか
+            </summary>
+            <remarks>
+            厳密に評価する場合、試用版では LimitType に応じて機能が制限されます。
+            LimitType = Allow, Restrict: コメントは制限されません。
+            LimitType = Deny: コメントは制限されます (購入者のみ投稿できます)
+            </remarks>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Comment.LimitMode">
+            <summary>
+            製品のコメント モード
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Comment.Server">
+            <summary>
+            コメント サーバー情報
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.PlayerStatus.CommentPosition">
+            <summary>
+            コメント表示位置
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.CommentPosition.Default">
+            <summary>
+            通常
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.CommentPosition.Top">
+            <summary>
+            上
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.CommentPosition.Bottom">
+            <summary>
+            下
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.CommentPosition.Both">
+            <summary>
+            上下両方
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.PlayerStatus.CommentServer">
+            <summary>
+            コメント サーバーの情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.CommentServer.Host">
+            <summary>
+            ホスト名
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.CommentServer.Port">
+            <summary>
+            ポート番号
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.CommentServer.ThreadIds">
+            <summary>
+            スレッド ID
+            </summary>
+            <remarks>
+            配信者がこの API を叩くと、複数のスレッド ID を得ることができる。
+            それにより、メインと立ち見の部屋を移動することができる。
+            </remarks>
+        </member>
+        <member name="T:Mntone.Nico2.Live.PlayerStatus.CommentSexMode">
+            <summary>
+            性別によるコメント装飾方法
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.CommentSexMode.Disable">
+            <summary>
+            無効
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.CommentSexMode.Both">
+            <summary>
+            両方
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.CommentSexMode.MaleOnly">
+            <summary>
+            男性のみ
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.CommentSexMode.FemaleOnly">
+            <summary>
+            女性のみ
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.PlayerStatus.Content">
+            <summary>
+            コンテンツを格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Content.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Content.IsAudioDisabled">
+            <summary>
+            音声が無効か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Content.IsVideoDisabled">
+            <summary>
+            映像が無効か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Content.StartedAt">
+            <summary>
+            開始日時
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Content.Duration">
+            <summary>
+            再生時間
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Content.Title">
+            <summary>
+            題名
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Content.Value">
+            <summary>
+            コンテンツ
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.PlayerStatus.Marquee">
+            <summary>
+            Marquee 情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Marquee.Category">
+            <summary>
+            カテゴリー
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Marquee.GameKey">
+            <summary>
+            ゲーム キー
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Marquee.GameTime">
+            <summary>
+            ゲーム時間
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Marquee.IsNotInterruptionForced">
+            <summary>
+            割り込みを強制しないか
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.PlayerStatus.NetDuetto">
+            <summary>
+            ネット デュエットの情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.NetDuetto.IsEnabled">
+            <summary>
+            有効か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.NetDuetto.Token">
+            <summary>
+            トークン
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.PlayerStatus.CommentFilteringLevel">
+            <summary>
+            フィルタリング レベル
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.CommentFilteringLevel.None">
+            <summary>
+            なし
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.CommentFilteringLevel.Low">
+            <summary>
+            弱
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.CommentFilteringLevel.Middle">
+            <summary>
+            中
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.CommentFilteringLevel.High">
+            <summary>
+            高
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.PlayerStatus.PlayerStatusResponse">
+            <summary>
+            getplayerstatus の情報を格納するクラス
+            </summary>
+            <!--
+            よくわからないもの
+            - stream/is_kirei
+            - stream/press
+            -->
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.PlayerStatusResponse.LoadedAt">
+            <summary>
+            読み込み日時
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.PlayerStatusResponse.Program">
+            <summary>
+            番組情報
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.PlayerStatusResponse.Room">
+            <summary>
+            部屋情報
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.PlayerStatusResponse.Stream">
+            <summary>
+            ストリーム情報
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.PlayerStatusResponse.Comment">
+            <summary>
+            コメント情報
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.PlayerStatusResponse.Telop">
+            <summary>
+            テロップ情報
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.PlayerStatusResponse.NetDuetto">
+            <summary>
+            ネット デュエット情報
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.PlayerStatusResponse.Marquee">
+            <summary>
+            Marquee 情報
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.PlayerStatusResponse.User">
+            <summary>
+            ユーザー情報
+            </summary>
+            <remarks>
+            視聴者の情報が格納されています
+            </remarks>
+        </member>
+        <member name="T:Mntone.Nico2.Live.PlayerStatus.CommentLimitMode">
+            <summary>
+            製品番組の場合のコメント モード
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.CommentLimitMode.Allow">
+            <summary>
+            許可
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.CommentLimitMode.Restrict">
+            <summary>
+            制限あり
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.CommentLimitMode.Deny">
+            <summary>
+            禁止
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.PlayerStatus.Program">
+            <summary>
+            番組情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.Title">
+            <summary>
+            題名
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.Description">
+            <summary>
+            説明文
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.WatchCount">
+            <summary>
+            来場者数
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.CommentCount">
+            <summary>
+            コメント数
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.IsOfficial">
+            <summary>
+            公式配信か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.IsChannel">
+            <summary>
+            チャンネル配信か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.IsCommunity">
+            <summary>
+            コミュニティー配信か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.CommunityType">
+            <summary>
+            コミュニティーの種類
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.CommunityId">
+            <summary>
+            コミュニティーの ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.BroadcasterId">
+            <summary>
+            配信者 ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.BroadcasterName">
+            <summary>
+            配信者名
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.International">
+            <summary>
+            国際化定義
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.BaseAt">
+            <summary>
+            基準日時
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.OpenedAt">
+            <summary>
+            開場日時
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.StartedAt">
+            <summary>
+            開始日時
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.EndedAt">
+            <summary>
+            終了日時
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.TimeshiftAt">
+            <summary>
+            タイムシフト日時
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.CrowdedUrl">
+            <summary>
+            満員のときに飛ぶ URL
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.KickOutUrl">
+            <summary>
+            追い出されたときに飛ぶ URL
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.KickOutImageUrl">
+            <summary>
+            追い出し用画像 URL
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.CommunityImageUrl">
+            <summary>
+            コミュニティー画像 URL
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.CommunitySmallImageUrl">
+            <summary>
+            コミュニティーの小さい画像 URL
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.TicketUrl">
+            <summary>
+            チケット URL
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.BannerUrl">
+            <summary>
+            バナー URL
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.ShutterUrl">
+            <summary>
+            シャッター URL
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.IsRerun">
+            <summary>
+            再放送か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.IsArchive">
+            <summary>
+            タイムシフトか
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.IsLive">
+            <summary>
+            生放送か
+            </summary>
+            <remarks>
+            再放送も生放送として扱う
+            </remarks>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.IsNewComer">
+            <summary>
+            新着動画か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.IsCruise">
+            <summary>
+            クルーズか
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.IsNsen">
+            <summary>
+            Nsen か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.ExtendedType">
+            <summary>
+            番組の拡張タイプ
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.IsHighQuality">
+            <summary>
+            高画質配信か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.IsInfinity">
+            <summary>
+            時間制限なしの放送か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.IsReserved">
+            <summary>
+            予約番組か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.IsArchivePlayServer">
+            <summary>
+            (?)
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.IsTimeshiftEnabled">
+            <summary>
+            タイムシフトが有効か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.IsProductEnabled">
+            <summary>
+            製品番組か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.IsTrialEnabled">
+            <summary>
+            仕様が有効か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.IsBannerForced">
+            <summary>
+            バナー強制 (?)。
+            stream/product_fixed_banner
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.IsNoticeBalloonEnabled">
+            <summary>
+            注意バルーンが有効か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.IsErrorReportEnabled">
+            <summary>
+            エラー報告が有効か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.NsenType">
+            <summary>
+            Nsen のカテゴリー
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.NsenCommand">
+            <summary>
+            Nsen の現在のコマンド
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Program.Twitter">
+            <summary>
+            Twitter 情報
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.CommunityType">
+            <summary>
+            提供元の種類
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.CommunityType.Official">
+            <summary>
+            公式
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.CommunityType.Community">
+            <summary>
+            コミュニティー
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.CommunityType.Channel">
+            <summary>
+            チャンネル
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.PlayerStatus.ProgramExtendedType">
+            <summary>
+            番組の拡張タイプ
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.ProgramExtendedType.None">
+            <summary>
+            拡張なし
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.ProgramExtendedType.NewComer">
+            <summary>
+            世界の新着動画
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.ProgramExtendedType.Cruise">
+            <summary>
+            クルーズ
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.ProgramExtendedType.Nsen">
+            <summary>
+            Nsen
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.PlayerStatus.Room">
+            <summary>
+            部屋情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Room.Name">
+            <summary>
+            部屋名
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Room.SeatId">
+            <summary>
+            席番号
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Room.SeatToken">
+            <summary>
+            座席のトークン
+            </summary>
+            <remarks>
+            非ログインで使われる
+            </remarks>
+        </member>
+        <member name="T:Mntone.Nico2.Live.PlayerStatus.Stream">
+            <summary>
+            ストリーム情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Stream.IsFlashMediaServer">
+            <summary>
+            Flash Media サーバーか
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Stream.RtmptPort">
+            <summary>
+            rtmpt の場合のポート番号
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Stream.RtmpUrl">
+            <summary>
+            rtmp の URL
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Stream.Ticket">
+            <summary>
+            チケット
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Stream.Tickets">
+            <summary>
+            チケット
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Stream.Contents">
+            <summary>
+            コンテンツ
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Stream.Position">
+            <summary>
+            映像の表示位置
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Stream.Aspect">
+            <summary>
+            映像のアスペクト比
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Stream.BroadcastToken">
+            <summary>
+            配信のトークン
+            </summary>
+            <remarks>
+            配信で使われる
+            </remarks>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Stream.IsQualityOfServiceAnalyticsEnabled">
+            <summary>
+            QoS 分析が有効か
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.PlayerStatus.ProgramTwitter">
+            <summary>
+            番組の Twitter 情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.ProgramTwitter.IsEnabled">
+            <summary>
+            Twitter が有効か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.ProgramTwitter.Hashtag">
+            <summary>
+            ハッシュタグ
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.ProgramTwitter.VipModeCount">
+            <summary>
+            Vip アカウントとして表示するフォロワーの最低件数
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.PlayerStatus.Telop">
+            <summary>
+            テロップの情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Telop.IsEnabled">
+            <summary>
+            テロップが有効か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Telop.Mail">
+            <summary>
+            テロップのコマンド
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.Telop.Value">
+            <summary>
+            テロップの内容
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.PlayerStatus.User">
+            <summary>
+            ユーザー情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.User.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.User.Name">
+            <summary>
+            名前
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.User.IsPremium">
+            <summary>
+            プレミアム会員か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.User.Age">
+            <summary>
+            年齢
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.User.IsMale">
+            <summary>
+            男性か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.User.IsFemale">
+            <summary>
+            女性か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.User.Sex">
+            <summary>
+            性別
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.User.Domain">
+            <summary>
+            ドメイン
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.User.Prefecture">
+            <summary>
+            都道府県
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.User.Language">
+            <summary>
+            言語
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.User.HKey">
+            <summary>
+            (?)
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.User.IsOwner">
+            <summary>
+            コミュニティーのオーナーか
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.User.IsJoin">
+            <summary>
+            コミュニティーに参加しているか
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.User.IsReserved">
+            <summary>
+            タイムシフト予約したか
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.User.IsPrefecturePreferential">
+            <summary>
+            都道府県が優先的か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.User.IsPurchased">
+            <summary>
+            購入または利用したか
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.User.IsSerialUsing">
+            <summary>
+            シリアル コードを使ったか
+            </summary>
+            <remarks>
+            メッセージを変更するのに用いられる
+            </remarks>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.User.Twitter">
+            <summary>
+            Twitter 情報
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Images.Users.Data.DataResponse">
+            <summary>
+            user/data の情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Users.Data.DataResponse.Images">
+            <summary>
+            画像の一覧
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Users.Data.DataResponse.Comments">
+            <summary>
+            コメントの一覧
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Images.Users.Data.Image">
+            <summary>
+            画像の情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Users.Data.Image.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Users.Data.Image.UserId">
+            <summary>
+            ユーザー ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Users.Data.Image.Title">
+            <summary>
+            題名
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Users.Data.Image.Description">
+            <summary>
+            説明
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Users.Data.Image.ViewCount">
+            <summary>
+            閲覧数
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Users.Data.Image.CommentCount">
+            <summary>
+            コメント数
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Users.Data.Image.ClipCount">
+            <summary>
+            クリップ数
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Users.Data.Image.LastCommentBody">
+            <summary>
+            最新コメントの一部
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Users.Data.Image.Genre">
+            <summary>
+            ジャンル
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Users.Data.Image.IsAnonymous">
+            <summary>
+            匿名か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Users.Data.Image.ImageType">
+            <summary>
+            画像の種類 (?)
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Users.Data.Image.IllustType">
+            <summary>
+            イラストの種類 (?)
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Users.Data.Image.InspectionStatus">
+            <summary>
+            ?
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Users.Data.Image.PublicStatus">
+            <summary>
+            公開状態 (?)
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Users.Data.Image.IsDeleted">
+            <summary>
+            削除されたか
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Users.Data.Image.DeleteType">
+            <summary>
+            削除タイプ
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Users.Data.Image.PostedAt">
+            <summary>
+            投稿日時
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Images.Users.UserApi">
+            <summary>
+            ニコニコ静画のユーザー API 群
+            </summary>
+        </member>
+        <member name="M:Mntone.Nico2.Images.Users.UserApi.GetInfoAsync(System.UInt32)">
+            <summary>
+            [非ログオン可] 非同期操作として user/info を取得します
+            </summary>
+            <param name="requestUserId">目的のユーザー ID</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.Images.Users.UserApi.GetDataAsync(System.UInt32)">
+            <summary>
+            非同期操作として user/data を取得します
+            </summary>
+            <param name="requestUserId">目的のユーザー ID</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="T:Mntone.Nico2.Images.Users.Info.InfoResponse">
+            <summary>
+            user/info の情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Users.Info.InfoResponse.UserId">
+            <summary>
+            ユーザー ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Images.Users.Info.InfoResponse.UserName">
+            <summary>
+            ユーザー名
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.Heartbeat.HeartbeatResponse">
+            <summary>
+            heartbeat の情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.Heartbeat.HeartbeatResponse.LoadedAt">
+            <summary>
+            読み込み日時
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.Heartbeat.HeartbeatResponse.WatchCount">
+            <summary>
+            合計視聴者数
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.Heartbeat.HeartbeatResponse.CommentCount">
+            <summary>
+            合計コメント数
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.Heartbeat.HeartbeatResponse.IsRestrict">
+            <summary>
+            ?
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.Heartbeat.HeartbeatResponse.Ticket">
+            <summary>
+            チケット
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.Heartbeat.HeartbeatResponse.WaitDuration">
+            <summary>
+            待機時間
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.LiveApi">
+            <summary>
+            ニコニコ生放送 API 群
+            </summary>
+        </member>
+        <member name="M:Mntone.Nico2.Live.LiveApi.GetCKeyAsync(System.String,System.String)">
+            <summary>
+            非同期操作として CKey を取得します
+            </summary>
+            <param name="refererId">生放送リファラー ID</param>
+            <param name="requestId">目的の動画 ID</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.Live.LiveApi.GetDescriptionAsync(System.String)">
+            <summary>
+            非同期操作として番組説明を取得します
+            </summary>
+            <param name="requestId">目的の生放送 ID</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.Live.LiveApi.HeartbeatAsync(System.String)">
+            <summary>
+            非同期操作としてハートビートを行います
+            </summary>
+            <param name="requestId">目的の生放送 ID</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.Live.LiveApi.GetPlayerStatusAsync(System.String)">
+            <summary>
+            非同期操作としてプレイヤー情報を取得します
+            </summary>
+            <param name="requestId">目的の生放送 ID</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.Live.LiveApi.LeaveAsync(System.String)">
+            <summary>
+            非同期操作として放送を退出する要求を行います
+            </summary>
+            <param name="requestId">目的の生放送 ID</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.Live.LiveApi.GetOnAirStreamsIndexAsync">
+            <summary>
+            非同期操作として放送中の番組一覧を取得します
+            </summary>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.Live.LiveApi.GetOnAirStreamsIndexAsync(System.UInt16)">
+            <summary>
+            非同期操作として放送中の番組一覧を取得します
+            </summary>
+            <param name="pageIndex">目的のページ番号</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.Live.LiveApi.GetOnAirStreamsRecentAsync(System.UInt16,Mntone.Nico2.Live.OnAirStreams.Category)">
+            <summary>
+            非同期操作として放送中の番組一覧を取得します
+            </summary>
+            <param name="pageIndex">目的のページ番号</param>
+            <param name="category">カテゴリー</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.Live.LiveApi.GetOnAirStreamsRecentAsync(System.UInt16,Mntone.Nico2.Live.OnAirStreams.Category,Mntone.Nico2.SortDirection,Mntone.Nico2.Live.OnAirStreams.SortType)">
+            <summary>
+            非同期操作として放送中の番組一覧を取得します
+            </summary>
+            <param name="pageIndex">目的のページ番号</param>
+            <param name="category">カテゴリー</param>
+            <param name="direction">ソートの方向</param>
+            <param name="type">ソートの種類</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.Live.LiveApi.GetOtherStreamsAsync(Mntone.Nico2.Live.StatusType)">
+            <summary>
+            [非ログオン可] 非同期操作として指定した状態の番組一覧を取得します
+            </summary>
+            <param name="status">目的の状態</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.Live.LiveApi.GetOtherStreamsAsync(Mntone.Nico2.Live.StatusType,System.UInt16)">
+            <summary>
+            [非ログオン可] 非同期操作として指定した状態の番組一覧を取得します
+            </summary>
+            <param name="status">目的の状態</param>
+            <param name="pageIndex">目的のページ番号</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.Live.LiveApi.GetReservationsAsync">
+            <summary>
+            非同期操作としてタイムシフト予約している一覧を取得します
+            </summary>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.Live.LiveApi.GetReservationsInDetailAsync">
+            <summary>
+            非同期操作としてタイムシフト予約している一覧 (詳細) を取得します
+            </summary>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="T:Mntone.Nico2.Live.OnAirStreams.Category">
+            <summary>
+            生放送カテゴリー
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.OnAirStreams.Category.General">
+            <summary>
+            一般
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.OnAirStreams.Category.Challenge">
+            <summary>
+            やってみた
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.OnAirStreams.Category.Game">
+            <summary>
+            ゲーム
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.OnAirStreams.Category.Introduction">
+            <summary>
+            動画紹介
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.OnAirStreams.Category.FaceOut">
+            <summary>
+            顔出し
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.OnAirStreams.Category.Encounter">
+            <summary>
+            凸待ち
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.OnAirStreams.Category.Adult">
+            <summary>
+            R-18
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.OnAirStreams.OnAirStream">
+            <summary>
+            放送中の番組情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OnAirStreams.OnAirStream.IsHidden">
+            <summary>
+            リストに表示しないか
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OnAirStreams.OnAirStream.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OnAirStreams.OnAirStream.IsNsen">
+            <summary>
+            Nsen 番組か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OnAirStreams.OnAirStream.IsProduct">
+            <summary>
+            製品番組か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OnAirStreams.OnAirStream.IsZappingModeEnabled">
+            <summary>
+            ザッピング モードが有効か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OnAirStreams.OnAirStream.SmallThumbnailUrl">
+            <summary>
+            小さいサムネール URL
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OnAirStreams.OnAirStream.Title">
+            <summary>
+            題名
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OnAirStreams.OnAirStream.ViewCount">
+            <summary>
+            来場者数
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.OnAirStreams.OnAirStreamsResponse">
+            <summary>
+            放送中の番組を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OnAirStreams.OnAirStreamsResponse.OnAirStreams">
+            <summary>
+            放送中の番組の一覧
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OnAirStreams.OnAirStreamsResponse.ReservedStreams">
+            <summary>
+            予約している放送中の番組一覧 (index のみ)
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.OnAirStreams.ReservedStream">
+            <summary>
+            予約した放送中の番組情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OnAirStreams.ReservedStream.GaugeLevel">
+            <summary>
+            ?
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OnAirStreams.ReservedStream.IsHidden">
+            <summary>
+            リストに表示しないか
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OnAirStreams.ReservedStream.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OnAirStreams.ReservedStream.IsNsen">
+            <summary>
+            Nsen 番組か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OnAirStreams.ReservedStream.IsProduct">
+            <summary>
+            製品番組か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OnAirStreams.ReservedStream.IsZappingModeEnabled">
+            <summary>
+            ザッピング モードが有効か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OnAirStreams.ReservedStream.OpenedAt">
+            <summary>
+            開場時間
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OnAirStreams.ReservedStream.SmallThumbnailUrl">
+            <summary>
+            小さいサムネール URL
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.OnAirStreams.ReservedStream.Title">
+            <summary>
+            題名
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.OnAirStreams.SortType">
+            <summary>
+            整列方法
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.OnAirStreams.SortType.StartTime">
+            <summary>
+            放送日時順
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.OnAirStreams.SortType.ViewCount">
+            <summary>
+            来場者数順
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.OnAirStreams.SortType.CommentCount">
+            <summary>
+            コメント数順
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.OnAirStreams.SortType.CommunityLevel">
+            <summary>
+            コミュニティーレベル順
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.OnAirStreams.SortType.CommunityCreateTime">
+            <summary>
+            コミュニティー作成日時順
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.PlayerStatus.UserTwitter">
+            <summary>
+            ユーザーの Twitter 情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.UserTwitter.IsEnabled">
+            <summary>
+            Twitter 情報が有効か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.UserTwitter.ScreenName">
+            <summary>
+            スクリーン ネーム
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.UserTwitter.FollowersCount">
+            <summary>
+            フォロワー数
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.UserTwitter.IsVip">
+            <summary>
+            VIP アカウントか
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.UserTwitter.ProfileImageUrl">
+            <summary>
+            画像 URL
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.UserTwitter.IsAuthenticationRequired">
+            <summary>
+            認証が必要か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.PlayerStatus.UserTwitter.Token">
+            <summary>
+            トークン
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.PlayerStatus.VideoAspect">
+            <summary>
+            映像のアスペクト比
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.VideoAspect.Auto">
+            <summary>
+            自動決定
+            </summary>
+            <remarks>
+            横/縦 比が 1.4 を超えたら 16:9。
+            そうでなければ 4:3
+            </remarks>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.VideoAspect.Normal">
+            <summary>
+            4:3
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.VideoAspect.Wide">
+            <summary>
+            16:9
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.VideoAspect.Raw">
+            <summary>
+            映像のアスペクト比のまま
+            </summary>
+            <remarks>
+            ピクセルアスペクト比は 1:1
+            </remarks>
+        </member>
+        <member name="T:Mntone.Nico2.Live.PlayerStatus.VideoPosition">
+            <summary>
+            映像の表示位置
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.VideoPosition.Default">
+            <summary>
+            通常
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.VideoPosition.Top">
+            <summary>
+            上に表示
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.VideoPosition.Bottom">
+            <summary>
+            下に表示
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.PlayerStatus.VideoPosition.Small">
+            <summary>
+            小さく表示
+            </summary>
+            <remarks>
+            コメントが背面に流れるので、映像を小さく表示します
+            </remarks>
+        </member>
+        <member name="T:Mntone.Nico2.Live.ReservationsInDetail.ReservationsInDetailResponse">
+            <summary>
+            watchingreservation?mode=detaillist の情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.ReservationsInDetail.ReservationsInDetailResponse.ReservedProgram">
+            <summary>
+            画像の一覧
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.ReservationsInDetail.Program">
+            <summary>
+            画像の情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.ReservationsInDetail.Program.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.ReservationsInDetail.Program.Title">
+            <summary>
+            題名
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.ReservationsInDetail.Program.Status">
+            <summary>
+            状態
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.ReservationsInDetail.Program.IsUnwatched">
+            <summary>
+            未視聴か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Live.ReservationsInDetail.Program.ExpiredAt">
+            <summary>
+            有効期限日時
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Live.StatusType">
+            <summary>
+            番組の状態の種類
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.StatusType.Invalid">
+            <summary>
+            不明
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.StatusType.OnAir">
+            <summary>
+            放送中
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.StatusType.ComingSoon">
+            <summary>
+            放送予定
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Live.StatusType.Closed">
+            <summary>
+            放送終了
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.NiconicoAccountAuthority">
+            <summary>
+            ログインしたアカウントの権限
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.NiconicoAccountAuthority.NotSignedIn">
+            <summary>
+            ログインしていない
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.NiconicoAccountAuthority.Normal">
+            <summary>
+            一般会員でログインしている
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.NiconicoAccountAuthority.Premium">
+            <summary>
+            プレミアム会員でログインしている
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.NiconicoAuthenticationToken">
+            <summary>
+            ニコニコのログオン トークンを管理します
+            </summary>
+        </member>
+        <member name="M:Mntone.Nico2.NiconicoAuthenticationToken.#ctor">
+            <summary>
+            コンストラクター
+            </summary>
+        </member>
+        <member name="M:Mntone.Nico2.NiconicoAuthenticationToken.#ctor(System.String,System.String)">
+            <summary>
+            コンストラクター
+            </summary>
+            <param name="mailOrTelephone">メールアドレス または 電話番号</param>
+            <param name="password">パスワード</param>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoAuthenticationToken.MailOrTelephone">
+            <summary>
+            メールアドレス または 電話番号
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoAuthenticationToken.Password">
+            <summary>
+            パスワード
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.NiconicoContext">
+            <summary>
+            ニコニコの API コンテクスト
+            </summary>
+        </member>
+        <member name="M:Mntone.Nico2.NiconicoContext.#ctor">
+            <summary>
+            コンストラクター
+            </summary>
+            <remarks>
+            非ログイン API 用に使用できます
+            </remarks>
+        </member>
+        <member name="M:Mntone.Nico2.NiconicoContext.#ctor(Mntone.Nico2.NiconicoAuthenticationToken)">
+            <summary>
+            コンストラクター
+            </summary>
+            <param name="token">認証トークン</param>
+        </member>
+        <member name="M:Mntone.Nico2.NiconicoContext.#ctor(Mntone.Nico2.NiconicoAuthenticationToken,Mntone.Nico2.NiconicoSession)">
+            <summary>
+            コンストラクター
+            </summary>
+            <param name="token">認証トークン</param>
+            <param name="session">ログオン セッション</param>
+        </member>
+        <member name="M:Mntone.Nico2.NiconicoContext.Dispose">
+            <summary>
+            デストラクター
+            </summary>
+        </member>
+        <member name="M:Mntone.Nico2.NiconicoContext.SignInAsync">
+            <summary>
+            非同期操作としてログイン要求を送信します。
+            ログイン完了後、ログインが正常にできているかをチェックし、その状態をセッションに記録します。
+            </summary>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.NiconicoContext.GetIsSignedInAsync">
+            <summary>
+            非同期操作としてログイン確認のための要求を送信します。
+            ログインが正常にできている場合、その状態をセッションに記録します。
+            </summary>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.NiconicoContext.SignOutOffAsync">
+            <summary>
+            非同期操作としてログオフ要求を送信します
+            </summary>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoContext.Video">
+            <summary>
+            ニコニコ動画の API 群
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoContext.Live">
+            <summary>
+            ニコニコ生放送の API 群
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoContext.Image">
+            <summary>
+            ニコニコ静画の API 群
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoContext.Search">
+            <summary>
+            ニコニコ検索の API 群
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoContext.Dictionary">
+            <summary>
+            ニコニコ大百科の API 群
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoContext.Community">
+            <summary>
+            ニコニコ コミュニティー API 群
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoContext.Channel">
+            <summary>
+            ニコニコ チャンネル API 群
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoContext.User">
+            <summary>
+            ニコニコ ユーザー API 群
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoContext.AuthenticationToken">
+            <summary>
+            ニコニコ　トークン
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoContext.CurrentSession">
+            <summary>
+            ニコニコ セッション
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoContext.AdditionalUserAgent">
+            <summary>
+            追加のユーザー エージェント
+            </summary>
+            <remarks>
+            特に事情がない限り、各アプリ名を指定するなどしてください
+            </remarks>
+        </member>
+        <member name="T:Mntone.Nico2.NiconicoRegex">
+            <summary>
+            ニコニコに関する正規表現群
+            </summary>
+        </member>
+        <member name="M:Mntone.Nico2.NiconicoRegex.IsVideoId(System.String)">
+            <summary>
+            動画 ID として適切かどうかを調べます
+            </summary>
+            <param name="id">動画 ID (と思われるもの)</param>
+            <returns>動画 ID として適切か</returns>
+        </member>
+        <member name="M:Mntone.Nico2.NiconicoRegex.IsLiveId(System.String)">
+            <summary>
+            生放送 ID として適切かどうかを調べます
+            </summary>
+            <param name="id">生放送 ID (と思われるもの)</param>
+            <returns>生放送 ID として適切か</returns>
+        </member>
+        <member name="M:Mntone.Nico2.NiconicoRegex.IsImageId(System.String)">
+            <summary>
+            静画 ID として適切かどうかを調べます
+            </summary>
+            <param name="id">静画 ID (と思われるもの)</param>
+            <returns>静画 ID として適切か</returns>
+        </member>
+        <member name="M:Mntone.Nico2.NiconicoRegex.IsThemeId(System.String)">
+            <summary>
+            静画のお題 ID として適切かどうかを調べます
+            </summary>
+            <param name="id">静画のお題 ID (と思われるもの)</param>
+            <returns>静画のお題 ID として適切か</returns>
+        </member>
+        <member name="M:Mntone.Nico2.NiconicoRegex.IsIllustrationId(System.String)">
+            <summary>
+            静画のイラスト ID として適切かどうかを調べます
+            </summary>
+            <param name="id">静画のイラスト ID (と思われるもの)</param>
+            <returns>静画のイラスト ID として適切か</returns>
+        </member>
+        <member name="M:Mntone.Nico2.NiconicoRegex.IsMangaId(System.String)">
+            <summary>
+            静画の漫画 ID として適切かどうかを調べます
+            </summary>
+            <param name="id">静画の漫画 ID (と思われるもの)</param>
+            <returns>静画の漫画 ID として適切か</returns>
+        </member>
+        <member name="M:Mntone.Nico2.NiconicoRegex.IsElectronicBookId(System.String)">
+            <summary>
+            静画の電子書籍 ID として適切かどうかを調べます
+            </summary>
+            <param name="id">静画の電子書籍 ID (と思われるもの)</param>
+            <returns>静画の電子書籍 ID として適切か</returns>
+        </member>
+        <member name="M:Mntone.Nico2.NiconicoRegex.IsCommunityId(System.String)">
+            <summary>
+            コミュニティー ID として適切かどうかを調べます
+            </summary>
+            <param name="id">コミュニティー  ID (と思われるもの)</param>
+            <returns>コミュニティー  ID として適切か</returns>
+        </member>
+        <member name="M:Mntone.Nico2.NiconicoRegex.IsChannelId(System.String)">
+            <summary>
+            チャンネル ID として適切かどうかを調べます
+            </summary>
+            <param name="id">チャンネル ID (と思われるもの)</param>
+            <returns>チャンネル ID として適切か</returns>
+        </member>
+        <member name="T:Mntone.Nico2.NiconicoSession">
+            <summary>
+            ニコニコ セッションを管理します
+            </summary>
+        </member>
+        <member name="M:Mntone.Nico2.NiconicoSession.#ctor">
+            <summary>
+            コンストラクター
+            </summary>
+        </member>
+        <member name="M:Mntone.Nico2.NiconicoSession.#ctor(System.String,System.DateTimeOffset)">
+            <summary>
+            コンストラクター
+            </summary>
+            <param name="key">セッション キー</param>
+            <param name="expires">セッションの有効期限</param>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoSession.Key">
+            <summary>
+            セッション キー
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoSession.Expires">
+            <summary>
+            セッションの有効期限
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoSession.AccountAuthority">
+            <summary>
+            ユーザー権限
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoSession.UserId">
+            <summary>
+            ユーザー ID
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.NiconicoSignInStatus">
+            <summary>
+            ログイン状態
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.NiconicoSignInStatus.ServiceUnavailable">
+            <summary>
+            サービス停止中
+            </summary>
+            <remarks>
+            niconico がメインテナンス中の可能性があります
+            </remarks>
+        </member>
+        <member name="F:Mntone.Nico2.NiconicoSignInStatus.Failed">
+            <summary>
+            ログインに失敗した
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.NiconicoSignInStatus.Success">
+            <summary>
+            ログインに成功した
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.NiconicoUrls">
+            <summary>
+            ニコニコに関する URL 群
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.TopPageUrl">
+            <summary>
+            ニコニコ トップ ページ URL テキスト
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.VideoTopPageUrl">
+            <summary>
+            ニコニコ動画 トップ ページ URL テキスト
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.VideoMyPageUrl">
+            <summary>
+            ニコニコ動画 マイ ページ URL テキスト
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.VideoWatchPageUrl">
+            <summary>
+            ニコニコ動画 視聴ページ URL テキスト
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.LiveTopPageUrl">
+            <summary>
+            ニコニコ生放送 トップ ページ URL テキスト
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.LiveMyPageUrl">
+            <summary>
+            ニコニコ生放送 マイ ページ URL テキスト
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.LiveWatchPageUrl">
+            <summary>
+            ニコニコ生放送 視聴ページ URL テキスト
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.LiveGatePageUrl">
+            <summary>
+            ニコニコ生放送 ゲート ページ URL テキスト
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.ImageTopPageUrl">
+            <summary>
+            ニコニコ静画 トップ ページ URL テキスト
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.ImageMyPageUrl">
+            <summary>
+            ニコニコ静画 マイ ページ URL テキスト
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.ImageThemeTopPageUrl">
+            <summary>
+            ニコニコ静画 お題 トップ ページ URL テキスト
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.ImageIllustTopPageUrl">
+            <summary>
+            ニコニコ静画 イラスト トップ ページ URL テキスト
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.ImageIllustAdultTopPageUrl">
+            <summary>
+            ニコニコ春画 トップ ページ URL テキスト
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.ImageMangaTopPageUrl">
+            <summary>
+            ニコニコ静画 漫画 トップ ページ URL テキスト
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.ImageElectronicBookTopPageUrl">
+            <summary>
+            ニコニコ静画 電子書籍 トップ ページ URL テキスト
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.DictionaryTopPageUrl">
+            <summary>
+            ニコニコ大百科 トップ ページ URL テキスト
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.AppTopPageUrl">
+            <summary>
+            ニコニコアプリ トップ ページ URL テキスト
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.AppMyPageUrl">
+            <summary>
+            ニコニコアプリ マイ ページ URL テキスト
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.CommunityIconUrl">
+            <summary>
+            ニコニコ コミュニティー アイコン URL テキスト
+            {0}: CommunityID / 10000
+            {1}: CommunityID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.CommunitySmallIconUrl">
+            <summary>
+            ニコニコ コミュニティー 小アイコン URL テキスト
+            {0}: CommunityID / 10000
+            {1}: CommunityID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.CommunityBlankIconUrl">
+            <summary>
+            ニコニコ コミュニティー アイコン未設定 URL テキスト
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.ChannelIconUrl">
+            <summary>
+            ニコニコ チャンネル アイコン URL テキスト
+            {0}: ChannelID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.ChannelSmallIconUrl">
+            <summary>
+            ニコニコ チャンネル 小アイコン URL テキスト
+            {0}: ChannelID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.UserPageUrl">
+            <summary>
+            ニコニコ ユーザー ページ URL テキスト
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.UserIconUrl">
+            <summary>
+            ニコニコ ユーザー アイコン URL テキスト
+            {0}: UserID / 10000
+            {1}: UserID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.UserSmallIconUrl">
+            <summary>
+            ニコニコ ユーザー 小アイコン URL テキスト
+            {0}: UserID / 10000
+            {1}: UserID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.NiconicoUrls.UserBlankIconUrl">
+            <summary>
+            ニコニコ ユーザー アイコン未設定 URL テキスト
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Prefecture">
+            <summary>
+            都道府県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Hokkaido">
+            <summary>
+            北海道
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Aomori">
+            <summary>
+            青森県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Iwate">
+            <summary>
+            岩手県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Miyagi">
+            <summary>
+            宮城県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Akita">
+            <summary>
+            秋田県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Yamagata">
+            <summary>
+            山形県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Fukushima">
+            <summary>
+            福島県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Ibaraki">
+            <summary>
+            茨城県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Tochigi">
+            <summary>
+            栃木県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Gunma">
+            <summary>
+            群馬県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Saitama">
+            <summary>
+            埼玉県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Chiba">
+            <summary>
+            千葉県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Tokyo">
+            <summary>
+            東京都
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Kanagawa">
+            <summary>
+            神奈川県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Nigata">
+            <summary>
+            新潟県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Toyama">
+            <summary>
+            富山県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Ishikawa">
+            <summary>
+            石川県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Fukui">
+            <summary>
+            福井県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Yamanashi">
+            <summary>
+            山梨県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Nagano">
+            <summary>
+            長野県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Gifu">
+            <summary>
+            岐阜県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Shizuoka">
+            <summary>
+            静岡県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Aichi">
+            <summary>
+            愛知県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Mie">
+            <summary>
+            三重県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Shiga">
+            <summary>
+            滋賀県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Kyoto">
+            <summary>
+            京都府
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Osaka">
+            <summary>
+            大阪府
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Hyogo">
+            <summary>
+            兵庫県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Nara">
+            <summary>
+            奈良県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Wakayama">
+            <summary>
+            和歌山県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Tottori">
+            <summary>
+            鳥取県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Shimane">
+            <summary>
+            島根県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Okayama">
+            <summary>
+            岡山県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Hiroshima">
+            <summary>
+            広島県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Yamaguchi">
+            <summary>
+            山口県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Tokushima">
+            <summary>
+            徳島県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Kagawa">
+            <summary>
+            香川県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Kochi">
+            <summary>
+            高知県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Fukuoka">
+            <summary>
+            福岡県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Saga">
+            <summary>
+            佐賀県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Nagasaki">
+            <summary>
+            長崎県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Kumamoto">
+            <summary>
+            熊本県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Oita">
+            <summary>
+            大分県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Miyazaki">
+            <summary>
+            宮崎県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Kagoshima">
+            <summary>
+            鹿児島県
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Prefecture.Okinawa">
+            <summary>
+            沖縄県
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Searches.SearchApi">
+            <summary>
+            ニコニコ検索 API 群
+            </summary>
+        </member>
+        <member name="M:Mntone.Nico2.Searches.SearchApi.GetSuggestionAsync(System.String)">
+            <summary>
+            非同期操作として検索のサジェストを取得します
+            </summary>
+            <param name="targetWord">目的の単語</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="T:Mntone.Nico2.Searches.Suggestion.SuggestionResponse">
+            <summary>
+            ニコニコの検索候補を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Searches.Suggestion.SuggestionResponse.Candidates">
+            <summary>
+            候補一覧
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Sex">
+            <summary>
+            性別
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Sex.Male">
+            <summary>
+            男性
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Sex.Female">
+            <summary>
+            女性
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.SortDirection">
+            <summary>
+            整列方向
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.SortDirection.Ascending">
+            <summary>
+            昇順
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.SortDirection.Descending">
+            <summary>
+            降順
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Users.UserApi">
+            <summary>
+            ニコニコ ユーザー API 群
+            </summary>
+        </member>
+        <member name="M:Mntone.Nico2.Users.UserApi.GetIconAsync(System.UInt32)">
+            <summary>
+            [非ログオン可] 非同期操作としてユーザー アイコンを取得します
+            </summary>
+            <param name="requestUserId">目的のユーザー ID</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.Users.UserApi.GetInfoAsync">
+            <summary>
+            非同期操作としてユーザー情報を取得します
+            </summary>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="T:Mntone.Nico2.Users.Info.InfoResponse">
+            <summary>
+            ユーザー情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Users.Info.InfoResponse.Name">
+            <summary>
+            名前
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Users.Info.InfoResponse.Id">
+            <summary>
+            ユーザー ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Users.Info.InfoResponse.JoinedVersion">
+            <summary>
+            アカウントが加入したときのバージョン
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Users.Info.InfoResponse.IsPremium">
+            <summary>
+            プレミアムか
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Users.Info.InfoResponse.FavoriteCount">
+            <summary>
+            お気に入り登録された数
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Users.Info.InfoResponse.StampCount">
+            <summary>
+            スタンプ数
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Users.Info.InfoResponse.NicoruCount">
+            <summary>
+            ニコる数
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Users.Info.InfoResponse.Points">
+            <summary>
+            ニコニコポイント数
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Users.Info.InfoResponse.CreatorScore">
+            <summary>
+            クリエイター推奨スコア
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Videos.Flv.PrivateReasonType">
+            <summary>
+            動画が非公開にされている理由
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Videos.Flv.PrivateReasonType.None">
+            <summary>
+            なし (公開中)
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Videos.Flv.PrivateReasonType.PostedBy">
+            <summary>
+            投稿者
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Videos.Flv.PrivateReasonType.Publishers">
+            <summary>
+            運営
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Videos.Flv.PrivateReasonType.RightsHolders">
+            <summary>
+            権利者
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Videos.Flv.PrivateReasonType.Private">
+            <summary>
+            非公開
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Videos.Flv.FlvResponse">
+            <summary>
+            getflv の情報を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Flv.FlvResponse.ThreadId">
+            <summary>
+            スレッド ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Flv.FlvResponse.Length">
+            <summary>
+            長さ
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Flv.FlvResponse.VideoUrl">
+            <summary>
+            動画 URL
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Flv.FlvResponse.ReportUrl">
+            <summary>
+            連絡ページ URL
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Flv.FlvResponse.CommentServerUrl">
+            <summary>
+            コメント サーバー URL
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Flv.FlvResponse.SubCommentServerUrl">
+            <summary>
+            サブ コメント サーバー URL
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Flv.FlvResponse.PrivateReason">
+            <summary>
+            非公開理由
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Flv.FlvResponse.IsDeleted">
+            <summary>
+            削除されたか
+            </summary>
+            <remarks>
+            非公開動画は削除されたうちに入らない
+            </remarks>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Flv.FlvResponse.UserId">
+            <summary>
+            ユーザー ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Flv.FlvResponse.IsPremium">
+            <summary>
+            プレミアム会員か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Flv.FlvResponse.UserName">
+            <summary>
+            ユーザー名
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Flv.FlvResponse.LoadedAt">
+            <summary>
+            読み込み日時
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Flv.FlvResponse.IsKeyRequired">
+            <summary>
+            キーが必要か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Flv.FlvResponse.OptionalThreadId">
+            <summary>
+            追加のスレッド ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Flv.FlvResponse.ChannelFilter">
+            <summary>
+            チャンネル動画のフィルター
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Flv.FlvResponse.FlashMediaServerToken">
+            <summary>
+            Flash Media サーバーのトークン
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Flv.FlvResponse.AppsHost">
+            <summary>
+            ニコニコアプリのホスト名
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Flv.FlvResponse.AppsPort">
+            <summary>
+            ニコニコアプリのポート番号
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Flv.FlvResponse.AppsThreadId">
+            <summary>
+            ニコニコアプリのスレッド ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Flv.FlvResponse.AppsTicket">
+            <summary>
+            ニコニコアプリのチケット
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Videos.Histories.HistoriesResponse">
+            <summary>
+            視聴した動画の一覧を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Histories.HistoriesResponse.Token">
+            <summary>
+            トークン
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Histories.HistoriesResponse.Histories">
+            <summary>
+            視聴した動画の一覧
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Videos.Histories.History">
+            <summary>
+            視聴した動画を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Histories.History.IsDeleted">
+            <summary>
+            削除された (非公開含む) か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Histories.History.Device">
+            <summary>
+            デバイス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Histories.History.ItemId">
+            <summary>
+            要素の ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Histories.History.Length">
+            <summary>
+            長さ
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Histories.History.ThumbnailUrl">
+            <summary>
+            サムネール URL
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Histories.History.Title">
+            <summary>
+            題名
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Histories.History.Id">
+            <summary>
+            動画 ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Histories.History.WatchCount">
+            <summary>
+            閲覧数
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Histories.History.WatchedAt">
+            <summary>
+            開場時間
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Videos.RemoveHistory.RemoveHistoryResponse">
+            <summary>
+            履歴を削除した結果を格納するクラス
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.RemoveHistory.RemoveHistoryResponse.HistoryCount">
+            <summary>
+            履歴の件数
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.RemoveHistory.RemoveHistoryResponse.RemovedId">
+            <summary>
+            削除した動画の ID
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Videos.Thumbnail.MovieType">
+            <summary>
+            動画の種類
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Videos.Thumbnail.MovieType.Flv">
+            <summary>
+            FLV
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Videos.Thumbnail.MovieType.Mp4">
+            <summary>
+            MP4
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Videos.Thumbnail.MovieType.Swf">
+            <summary>
+            SWF
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Videos.Thumbnail.Tag">
+            <summary>
+            タグ情報
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.Tag.Category">
+            <summary>
+            カテゴリー タグか
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.Tag.Lock">
+            <summary>
+            ロックされているか
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.Tag.Value">
+            <summary>
+            タグの内容
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Videos.Thumbnail.Tags">
+            <summary>
+            タグ データ
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.Tags.Domain">
+            <summary>
+            タグのドメイン
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.Tags.Value">
+            <summary>
+            タグの一覧
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Videos.Thumbnail.ThumbnailResponse">
+            <summary>
+            サムネール情報
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.ThumbnailResponse.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.ThumbnailResponse.Title">
+            <summary>
+            題名
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.ThumbnailResponse.Description">
+            <summary>
+            説明
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.ThumbnailResponse.ThumbnailUrl">
+            <summary>
+            サムネールの URL
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.ThumbnailResponse.PostedAt">
+            <summary>
+            投稿日時
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.ThumbnailResponse.Length">
+            <summary>
+            長さ
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.ThumbnailResponse.MovieType">
+            <summary>
+            動画の種類
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.ThumbnailResponse.SizeHigh">
+            <summary>
+            高画質動画のサイズ
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.ThumbnailResponse.SizeLow">
+            <summary>
+            低画質動画のサイズ
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.ThumbnailResponse.ViewCount">
+            <summary>
+            閲覧数
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.ThumbnailResponse.CommentCount">
+            <summary>
+            コメント数
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.ThumbnailResponse.MylistCount">
+            <summary>
+            マイリスト数
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.ThumbnailResponse.LastCommentBody">
+            <summary>
+            最新コメントの一部
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.ThumbnailResponse.PageUrl">
+            <summary>
+            視聴ページ URL
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.ThumbnailResponse.ThumbnailType">
+            <summary>
+            サムネール情報の種類
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.ThumbnailResponse.IsEmbeddable">
+            <summary>
+            埋め込みが可能か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.ThumbnailResponse.CannotPlayInLive">
+            <summary>
+            生放送で再生不可能か
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.ThumbnailResponse.Tags">
+            <summary>
+            タグ情報
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.ThumbnailResponse.UserType">
+            <summary>
+            ユーザーの種類
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.ThumbnailResponse.UserId">
+            <summary>
+            ユーザー ID
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.ThumbnailResponse.UserName">
+            <summary>
+            ユーザー名
+            </summary>
+        </member>
+        <member name="P:Mntone.Nico2.Videos.Thumbnail.ThumbnailResponse.UserIconUrl">
+            <summary>
+            ユーザー アイコン URL
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Videos.Thumbnail.ThumbnailType">
+            <summary>
+            サムネール情報の種類
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Videos.Thumbnail.ThumbnailType.Video">
+            <summary>
+            ビデオ
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Videos.Thumbnail.ThumbnailType.MyMemory">
+            <summary>
+            マイ メモリー
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Videos.Thumbnail.UserType">
+            <summary>
+            ユーザーの種類
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Videos.Thumbnail.UserType.User">
+            <summary>
+            ユーザー
+            </summary>
+        </member>
+        <member name="F:Mntone.Nico2.Videos.Thumbnail.UserType.Channel">
+            <summary>
+            チャンネル
+            </summary>
+        </member>
+        <member name="T:Mntone.Nico2.Videos.VideoApi">
+            <summary>
+            ニコニコ動画 API 群
+            </summary>
+        </member>
+        <member name="M:Mntone.Nico2.Videos.VideoApi.GetFlvAsync(System.String)">
+            <summary>
+            非同期操作として flv 情報を取得します
+            </summary>
+            <param name="requestId">目的の動画 ID</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.Videos.VideoApi.GetFlvAsync(System.String,System.String)">
+            <summary>
+            非同期操作として flv 情報を取得します
+            </summary>
+            <param name="requestId">目的の動画 ID</param>
+            <param name="cKey">CKey</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.Videos.VideoApi.GetThumbnailAsync(System.String)">
+            <summary>
+            非同期操作として thumbnail 情報を取得します
+            </summary>
+            <param name="requestId">目的の動画 ID</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.Videos.VideoApi.GetHistoriesAsync">
+            <summary>
+            非同期操作として videoviewhistory/list 情報を取得します
+            </summary>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.Videos.VideoApi.RemoveHistoryAsync(System.String,System.String)">
+            <summary>
+            非同期操作として videoviewhistory/remove で履歴を削除します
+            </summary>
+            <param name="token">視聴履歴を取得したときに取得したトークン</param>
+            <param name="requestId">目的の動画 ID</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+        <member name="M:Mntone.Nico2.Videos.VideoApi.RemoveAllHistoriesAsync(System.String)">
+            <summary>
+            非同期操作として videoviewhistory/remove ですべての履歴を削除します
+            </summary>
+            <param name="token">視聴履歴を取得したときに取得したトークン</param>
+            <returns>非同期操作を表すオブジェクト</returns>
+        </member>
+    </members>
+</doc>

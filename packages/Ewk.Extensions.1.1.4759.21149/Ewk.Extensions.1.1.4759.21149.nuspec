@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Ewk.Extensions</id>
+    <version>1.1.4759.21149</version>
+    <title>Ewk.Extensions</title>
+    <authors>Coilz</authors>
+    <owners>Coilz</owners>
+    <licenseUrl>http://ewk.codeplex.com/license</licenseUrl>
+    <projectUrl>http://ewk.codeplex.com/</projectUrl>
+    <iconUrl>http://download.codeplex.com/download/Avatar.ashx?DownloadId=343877</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Contains extensions for strings, Uri and reference types.</description>
+    <releaseNotes>Target .Net framework 4.5</releaseNotes>
+    <copyright>Copyright 2012</copyright>
+    <tags>Coilz Ewk Extensions String ArgumentNull Uri</tags>
+  </metadata>
+</package>

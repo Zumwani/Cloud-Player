@@ -1,0 +1,843 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="AddFromTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AddFromTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="AddFromTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 420</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AddFromTab.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="AddFromTab.Text" xml:space="preserve">
+    <value>Add from:</value>
+  </data>
+  <data name="&gt;&gt;AddFromTab.Name" xml:space="preserve">
+    <value>AddFromTab</value>
+  </data>
+  <data name="&gt;&gt;AddFromTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AddFromTab.Parent" xml:space="preserve">
+    <value>PanoramaTabControl1</value>
+  </data>
+  <data name="&gt;&gt;AddFromTab.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DiskAddButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="DiskAddButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt</value>
+  </data>
+  <data name="DiskAddButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DiskAddButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 141</value>
+  </data>
+  <data name="DiskAddButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>402, 30</value>
+  </data>
+  <data name="DiskAddButton.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="DiskAddButton.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="&gt;&gt;DiskAddButton.Name" xml:space="preserve">
+    <value>DiskAddButton</value>
+  </data>
+  <data name="&gt;&gt;DiskAddButton.Type" xml:space="preserve">
+    <value>Zumwani.CommonLibrary.Controls.MetroButton, Zumwani.CommonLibrary, Version=1.0.2.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DiskAddButton.Parent" xml:space="preserve">
+    <value>DiskTab</value>
+  </data>
+  <data name="&gt;&gt;DiskAddButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DiskPreviewBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt</value>
+  </data>
+  <data name="DiskPreviewBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 74</value>
+  </data>
+  <data name="DiskPreviewBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="DiskPreviewBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>390, 60</value>
+  </data>
+  <data name="DiskPreviewBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;DiskPreviewBox.Name" xml:space="preserve">
+    <value>DiskPreviewBox</value>
+  </data>
+  <data name="&gt;&gt;DiskPreviewBox.Type" xml:space="preserve">
+    <value>Zumwani.CloudPlayer.ListItem, Cloud Player, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DiskPreviewBox.Parent" xml:space="preserve">
+    <value>DiskTab</value>
+  </data>
+  <data name="&gt;&gt;DiskPreviewBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="BrowseButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BrowseButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt</value>
+  </data>
+  <data name="BrowseButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BrowseButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>409, 41</value>
+  </data>
+  <data name="BrowseButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 25</value>
+  </data>
+  <data name="BrowseButton.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="BrowseButton.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="&gt;&gt;BrowseButton.Name" xml:space="preserve">
+    <value>BrowseButton</value>
+  </data>
+  <data name="&gt;&gt;BrowseButton.Type" xml:space="preserve">
+    <value>Zumwani.CommonLibrary.Controls.MetroButton, Zumwani.CommonLibrary, Version=1.0.2.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BrowseButton.Parent" xml:space="preserve">
+    <value>DiskTab</value>
+  </data>
+  <data name="&gt;&gt;BrowseButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="LocalPathBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt</value>
+  </data>
+  <data name="LocalPathBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 42</value>
+  </data>
+  <data name="LocalPathBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>366, 25</value>
+  </data>
+  <data name="LocalPathBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;LocalPathBox.Name" xml:space="preserve">
+    <value>LocalPathBox</value>
+  </data>
+  <data name="&gt;&gt;LocalPathBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LocalPathBox.Parent" xml:space="preserve">
+    <value>DiskTab</value>
+  </data>
+  <data name="&gt;&gt;LocalPathBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt</value>
+  </data>
+  <data name="Label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 20</value>
+  </data>
+  <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 19</value>
+  </data>
+  <data name="Label4.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="Label4.Text" xml:space="preserve">
+    <value>Path to media file:</value>
+  </data>
+  <data name="&gt;&gt;Label4.Name" xml:space="preserve">
+    <value>Label4</value>
+  </data>
+  <data name="&gt;&gt;Label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label4.Parent" xml:space="preserve">
+    <value>DiskTab</value>
+  </data>
+  <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="DiskTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="DiskTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>30, 20, 30, 30</value>
+  </data>
+  <data name="DiskTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 420</value>
+  </data>
+  <data name="DiskTab.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="DiskTab.Text" xml:space="preserve">
+    <value>Disk</value>
+  </data>
+  <data name="&gt;&gt;DiskTab.Name" xml:space="preserve">
+    <value>DiskTab</value>
+  </data>
+  <data name="&gt;&gt;DiskTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DiskTab.Parent" xml:space="preserve">
+    <value>PanoramaTabControl1</value>
+  </data>
+  <data name="&gt;&gt;DiskTab.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="YouTubeSearchResultBox.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="YouTubeSearchResultBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 88</value>
+  </data>
+  <data name="YouTubeSearchResultBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="YouTubeSearchResultBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 307</value>
+  </data>
+  <data name="YouTubeSearchResultBox.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;YouTubeSearchResultBox.Name" xml:space="preserve">
+    <value>YouTubeSearchResultBox</value>
+  </data>
+  <data name="&gt;&gt;YouTubeSearchResultBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;YouTubeSearchResultBox.Parent" xml:space="preserve">
+    <value>YouTubeTab</value>
+  </data>
+  <data name="&gt;&gt;YouTubeSearchResultBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="YouTubeSearchBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt</value>
+  </data>
+  <data name="YouTubeSearchBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 42</value>
+  </data>
+  <data name="YouTubeSearchBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 25</value>
+  </data>
+  <data name="YouTubeSearchBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;YouTubeSearchBox.Name" xml:space="preserve">
+    <value>YouTubeSearchBox</value>
+  </data>
+  <data name="&gt;&gt;YouTubeSearchBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;YouTubeSearchBox.Parent" xml:space="preserve">
+    <value>YouTubeTab</value>
+  </data>
+  <data name="&gt;&gt;YouTubeSearchBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt</value>
+  </data>
+  <data name="Label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 20</value>
+  </data>
+  <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 19</value>
+  </data>
+  <data name="Label3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Label3.Text" xml:space="preserve">
+    <value>Type something:</value>
+  </data>
+  <data name="&gt;&gt;Label3.Name" xml:space="preserve">
+    <value>Label3</value>
+  </data>
+  <data name="&gt;&gt;Label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
+    <value>YouTubeTab</value>
+  </data>
+  <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="YouTubeTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="YouTubeTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>30, 20, 30, 30</value>
+  </data>
+  <data name="YouTubeTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 420</value>
+  </data>
+  <data name="YouTubeTab.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="YouTubeTab.Text" xml:space="preserve">
+    <value>YouTube</value>
+  </data>
+  <data name="&gt;&gt;YouTubeTab.Name" xml:space="preserve">
+    <value>YouTubeTab</value>
+  </data>
+  <data name="&gt;&gt;YouTubeTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;YouTubeTab.Parent" xml:space="preserve">
+    <value>PanoramaTabControl1</value>
+  </data>
+  <data name="&gt;&gt;YouTubeTab.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="NicoNicoResultsBox.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NicoNicoResultsBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 88</value>
+  </data>
+  <data name="NicoNicoResultsBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="NicoNicoResultsBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 307</value>
+  </data>
+  <data name="NicoNicoResultsBox.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;NicoNicoResultsBox.Name" xml:space="preserve">
+    <value>NicoNicoResultsBox</value>
+  </data>
+  <data name="&gt;&gt;NicoNicoResultsBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NicoNicoResultsBox.Parent" xml:space="preserve">
+    <value>NicoNicoTab</value>
+  </data>
+  <data name="&gt;&gt;NicoNicoResultsBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="NicoNicoSearchBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt</value>
+  </data>
+  <data name="NicoNicoSearchBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 42</value>
+  </data>
+  <data name="NicoNicoSearchBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 25</value>
+  </data>
+  <data name="NicoNicoSearchBox.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;NicoNicoSearchBox.Name" xml:space="preserve">
+    <value>NicoNicoSearchBox</value>
+  </data>
+  <data name="&gt;&gt;NicoNicoSearchBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NicoNicoSearchBox.Parent" xml:space="preserve">
+    <value>NicoNicoTab</value>
+  </data>
+  <data name="&gt;&gt;NicoNicoSearchBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt</value>
+  </data>
+  <data name="Label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 20</value>
+  </data>
+  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 19</value>
+  </data>
+  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>Type something:</value>
+  </data>
+  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
+    <value>Label2</value>
+  </data>
+  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
+    <value>NicoNicoTab</value>
+  </data>
+  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="NicoNicoTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="NicoNicoTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>30, 20, 30, 30</value>
+  </data>
+  <data name="NicoNicoTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 420</value>
+  </data>
+  <data name="NicoNicoTab.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="NicoNicoTab.Text" xml:space="preserve">
+    <value>Nico Nico</value>
+  </data>
+  <data name="&gt;&gt;NicoNicoTab.Name" xml:space="preserve">
+    <value>NicoNicoTab</value>
+  </data>
+  <data name="&gt;&gt;NicoNicoTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NicoNicoTab.Parent" xml:space="preserve">
+    <value>PanoramaTabControl1</value>
+  </data>
+  <data name="&gt;&gt;NicoNicoTab.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="SoundCloudResultsBox.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SoundCloudResultsBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 88</value>
+  </data>
+  <data name="SoundCloudResultsBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="SoundCloudResultsBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 307</value>
+  </data>
+  <data name="SoundCloudResultsBox.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;SoundCloudResultsBox.Name" xml:space="preserve">
+    <value>SoundCloudResultsBox</value>
+  </data>
+  <data name="&gt;&gt;SoundCloudResultsBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SoundCloudResultsBox.Parent" xml:space="preserve">
+    <value>SoundCloudTab</value>
+  </data>
+  <data name="&gt;&gt;SoundCloudResultsBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="SoundCloudSearchBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt</value>
+  </data>
+  <data name="SoundCloudSearchBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 42</value>
+  </data>
+  <data name="SoundCloudSearchBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 25</value>
+  </data>
+  <data name="SoundCloudSearchBox.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;SoundCloudSearchBox.Name" xml:space="preserve">
+    <value>SoundCloudSearchBox</value>
+  </data>
+  <data name="&gt;&gt;SoundCloudSearchBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SoundCloudSearchBox.Parent" xml:space="preserve">
+    <value>SoundCloudTab</value>
+  </data>
+  <data name="&gt;&gt;SoundCloudSearchBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt</value>
+  </data>
+  <data name="Label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 20</value>
+  </data>
+  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 19</value>
+  </data>
+  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>Type something:</value>
+  </data>
+  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
+    <value>Label1</value>
+  </data>
+  <data name="&gt;&gt;Label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
+    <value>SoundCloudTab</value>
+  </data>
+  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="SoundCloudTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="SoundCloudTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>30, 20, 30, 30</value>
+  </data>
+  <data name="SoundCloudTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 420</value>
+  </data>
+  <data name="SoundCloudTab.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="SoundCloudTab.Text" xml:space="preserve">
+    <value>SoundCloud</value>
+  </data>
+  <data name="&gt;&gt;SoundCloudTab.Name" xml:space="preserve">
+    <value>SoundCloudTab</value>
+  </data>
+  <data name="&gt;&gt;SoundCloudTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SoundCloudTab.Parent" xml:space="preserve">
+    <value>PanoramaTabControl1</value>
+  </data>
+  <data name="&gt;&gt;SoundCloudTab.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="PanoramaTabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="PanoramaTabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 40</value>
+  </data>
+  <data name="PanoramaTabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 420</value>
+  </data>
+  <data name="PanoramaTabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PanoramaTabControl1.Name" xml:space="preserve">
+    <value>PanoramaTabControl1</value>
+  </data>
+  <data name="&gt;&gt;PanoramaTabControl1.Type" xml:space="preserve">
+    <value>Zumwani.CommonLibrary.Controls.PanoramaTabControl, Zumwani.CommonLibrary, Version=1.0.2.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;PanoramaTabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PanoramaTabControl1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="AddedVideosList.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AddedVideosList.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="AddedVideosList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>502, 40</value>
+  </data>
+  <data name="AddedVideosList.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="AddedVideosList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 420</value>
+  </data>
+  <data name="AddedVideosList.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;AddedVideosList.Name" xml:space="preserve">
+    <value>AddedVideosList</value>
+  </data>
+  <data name="&gt;&gt;AddedVideosList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AddedVideosList.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;AddedVideosList.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Header1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="Header1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 13pt</value>
+  </data>
+  <data name="Header1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Header1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>917, 40</value>
+  </data>
+  <data name="Header1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Header1.Name" xml:space="preserve">
+    <value>Header1</value>
+  </data>
+  <data name="&gt;&gt;Header1.Type" xml:space="preserve">
+    <value>Zumwani.CommonLibrary.Controls.TabHeader, Zumwani.CommonLibrary, Version=1.0.2.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Header1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Header1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="AddButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="AddButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="AddButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt</value>
+  </data>
+  <data name="AddButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="AddButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>832, 475</value>
+  </data>
+  <data name="AddButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="AddButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 30</value>
+  </data>
+  <data name="AddButton.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="AddButton.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="&gt;&gt;AddButton.Name" xml:space="preserve">
+    <value>AddButton</value>
+  </data>
+  <data name="&gt;&gt;AddButton.Type" xml:space="preserve">
+    <value>Zumwani.CommonLibrary.Controls.MetroButton, Zumwani.CommonLibrary, Version=1.0.2.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;AddButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;AddButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="CancelButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="CancelButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="CancelButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt</value>
+  </data>
+  <data name="CancelButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 475</value>
+  </data>
+  <data name="CancelButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="CancelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 30</value>
+  </data>
+  <data name="CancelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="CancelButton.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;CancelButton.Name" xml:space="preserve">
+    <value>CancelButton</value>
+  </data>
+  <data name="&gt;&gt;CancelButton.Type" xml:space="preserve">
+    <value>Zumwani.CommonLibrary.Controls.MetroButton, Zumwani.CommonLibrary, Version=1.0.2.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;CancelButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CancelButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>917, 520</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 60</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Add videos...</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AddVideoDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Zumwani.CommonLibrary.Templates.Dialog, Zumwani.CommonLibrary, Version=1.0.2.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>
