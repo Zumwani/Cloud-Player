@@ -301,119 +301,29 @@
   <data name="ContentPanel.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="Shadow1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>81, 60</value>
+  <data name="PlaylistOptionsShadowPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
   </data>
-  <data name="Shadow1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>536, 108</value>
+  <data name="PlaylistOptionsShadowPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 580</value>
   </data>
-  <data name="Shadow1.TabIndex" type="System.Int32, mscorlib">
+  <data name="PlaylistOptionsShadowPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 10</value>
+  </data>
+  <data name="PlaylistOptionsShadowPanel.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;Shadow1.Name" xml:space="preserve">
-    <value>Shadow1</value>
+  <data name="&gt;&gt;PlaylistOptionsShadowPanel.Name" xml:space="preserve">
+    <value>PlaylistOptionsShadowPanel</value>
   </data>
-  <data name="&gt;&gt;Shadow1.Type" xml:space="preserve">
-    <value>Zumwani.CloudPlayer.Shadow, Cloud Player, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;PlaylistOptionsShadowPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Shadow1.Parent" xml:space="preserve">
-    <value>ContentPanel</value>
+  <data name="&gt;&gt;PlaylistOptionsShadowPanel.Parent" xml:space="preserve">
+    <value>InnerContentPanel</value>
   </data>
-  <data name="&gt;&gt;Shadow1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;PlaylistOptionsShadowPanel.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;PlaylistTitleLabel.Name" xml:space="preserve">
-    <value>PlaylistTitleLabel</value>
-  </data>
-  <data name="&gt;&gt;PlaylistTitleLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PlaylistTitleLabel.Parent" xml:space="preserve">
-    <value>InnerContentPanel</value>
-  </data>
-  <data name="&gt;&gt;PlaylistTitleLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;VideoGradientPanel.Name" xml:space="preserve">
-    <value>VideoGradientPanel</value>
-  </data>
-  <data name="&gt;&gt;VideoGradientPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;VideoGradientPanel.Parent" xml:space="preserve">
-    <value>InnerContentPanel</value>
-  </data>
-  <data name="&gt;&gt;VideoGradientPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;List.Name" xml:space="preserve">
-    <value>List</value>
-  </data>
-  <data name="&gt;&gt;List.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;List.Parent" xml:space="preserve">
-    <value>InnerContentPanel</value>
-  </data>
-  <data name="&gt;&gt;List.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;MediaPlayer1.Name" xml:space="preserve">
-    <value>MediaPlayer1</value>
-  </data>
-  <data name="&gt;&gt;MediaPlayer1.Type" xml:space="preserve">
-    <value>Zumwani.CloudPlayer.MediaPlayer, Cloud Player, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;MediaPlayer1.Parent" xml:space="preserve">
-    <value>InnerContentPanel</value>
-  </data>
-  <data name="&gt;&gt;MediaPlayer1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="InnerContentPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 0</value>
-  </data>
-  <data name="InnerContentPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 590</value>
-  </data>
-  <data name="InnerContentPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;InnerContentPanel.Name" xml:space="preserve">
-    <value>InnerContentPanel</value>
-  </data>
-  <data name="&gt;&gt;InnerContentPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;InnerContentPanel.Parent" xml:space="preserve">
-    <value>ContentPanel</value>
-  </data>
-  <data name="&gt;&gt;InnerContentPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="ContentPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ContentPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="ContentPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>681, 633</value>
-  </data>
-  <data name="ContentPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;ContentPanel.Name" xml:space="preserve">
-    <value>ContentPanel</value>
-  </data>
-  <data name="&gt;&gt;ContentPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ContentPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ContentPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="PlaylistTitleLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -452,7 +362,7 @@
     <value>InnerContentPanel</value>
   </data>
   <data name="&gt;&gt;PlaylistTitleLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="VideoGradientPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -476,7 +386,7 @@
     <value>InnerContentPanel</value>
   </data>
   <data name="&gt;&gt;VideoGradientPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="List.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -506,7 +416,76 @@
     <value>InnerContentPanel</value>
   </data>
   <data name="&gt;&gt;List.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
+  </data>
+  <data name="MediaPlayer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="MediaPlayer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="MediaPlayer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 300</value>
+  </data>
+  <data name="MediaPlayer1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;MediaPlayer1.Name" xml:space="preserve">
+    <value>MediaPlayer1</value>
+  </data>
+  <data name="&gt;&gt;MediaPlayer1.Type" xml:space="preserve">
+    <value>Zumwani.CloudPlayer.MediaPlayer, Cloud Player, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;MediaPlayer1.Parent" xml:space="preserve">
+    <value>InnerContentPanel</value>
+  </data>
+  <data name="&gt;&gt;MediaPlayer1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="InnerContentPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="InnerContentPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 590</value>
+  </data>
+  <data name="InnerContentPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;InnerContentPanel.Name" xml:space="preserve">
+    <value>InnerContentPanel</value>
+  </data>
+  <data name="&gt;&gt;InnerContentPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;InnerContentPanel.Parent" xml:space="preserve">
+    <value>ContentPanel</value>
+  </data>
+  <data name="&gt;&gt;InnerContentPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ContentPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ContentPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ContentPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>681, 633</value>
+  </data>
+  <data name="ContentPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;ContentPanel.Name" xml:space="preserve">
+    <value>ContentPanel</value>
+  </data>
+  <data name="&gt;&gt;ContentPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ContentPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ContentPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="PlaylistOptionsPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom</value>
@@ -639,30 +618,6 @@
   </data>
   <data name="ToolStripMenuItem4.Text" xml:space="preserve">
     <value>ToolStripMenuItem4</value>
-  </data>
-  <data name="MediaPlayer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="MediaPlayer1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="MediaPlayer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 300</value>
-  </data>
-  <data name="MediaPlayer1.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;MediaPlayer1.Name" xml:space="preserve">
-    <value>MediaPlayer1</value>
-  </data>
-  <data name="&gt;&gt;MediaPlayer1.Type" xml:space="preserve">
-    <value>Zumwani.CloudPlayer.MediaPlayer, Cloud Player, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;MediaPlayer1.Parent" xml:space="preserve">
-    <value>InnerContentPanel</value>
-  </data>
-  <data name="&gt;&gt;MediaPlayer1.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

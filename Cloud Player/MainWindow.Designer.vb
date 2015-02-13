@@ -34,6 +34,7 @@ Partial Class MainWindow
         Me.PlaylistTitleLabel = New System.Windows.Forms.Label()
         Me.VideoGradientPanel = New System.Windows.Forms.Panel()
         Me.List = New System.Windows.Forms.FlowLayoutPanel()
+        Me.MediaPlayer1 = New Zumwani.CloudPlayer.MediaPlayer()
         Me.PlaylistOptionsPanel = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -41,8 +42,7 @@ Partial Class MainWindow
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MediaPlayer1 = New Zumwani.CloudPlayer.MediaPlayer()
-        Me.Shadow1 = New Zumwani.CloudPlayer.Shadow()
+        Me.PlaylistOptionsShadowPanel = New System.Windows.Forms.Panel()
         Me.ContentPanel.SuspendLayout()
         Me.InnerContentPanel.SuspendLayout()
         Me.PlaylistOptionsPanel.SuspendLayout()
@@ -98,13 +98,13 @@ Partial Class MainWindow
         'ContentPanel
         '
         resources.ApplyResources(Me.ContentPanel, "ContentPanel")
-        Me.ContentPanel.Controls.Add(Me.Shadow1)
         Me.ContentPanel.Controls.Add(Me.InnerContentPanel)
         Me.ContentPanel.Name = "ContentPanel"
         '
         'InnerContentPanel
         '
         Me.InnerContentPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.InnerContentPanel.Controls.Add(Me.PlaylistOptionsShadowPanel)
         Me.InnerContentPanel.Controls.Add(Me.PlaylistTitleLabel)
         Me.InnerContentPanel.Controls.Add(Me.VideoGradientPanel)
         Me.InnerContentPanel.Controls.Add(Me.List)
@@ -128,6 +128,11 @@ Partial Class MainWindow
         resources.ApplyResources(Me.List, "List")
         Me.List.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.List.Name = "List"
+        '
+        'MediaPlayer1
+        '
+        resources.ApplyResources(Me.MediaPlayer1, "MediaPlayer1")
+        Me.MediaPlayer1.Name = "MediaPlayer1"
         '
         'PlaylistOptionsPanel
         '
@@ -171,15 +176,10 @@ Partial Class MainWindow
         Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
         resources.ApplyResources(Me.ToolStripMenuItem4, "ToolStripMenuItem4")
         '
-        'MediaPlayer1
+        'PlaylistOptionsShadowPanel
         '
-        resources.ApplyResources(Me.MediaPlayer1, "MediaPlayer1")
-        Me.MediaPlayer1.Name = "MediaPlayer1"
-        '
-        'Shadow1
-        '
-        resources.ApplyResources(Me.Shadow1, "Shadow1")
-        Me.Shadow1.Name = "Shadow1"
+        resources.ApplyResources(Me.PlaylistOptionsShadowPanel, "PlaylistOptionsShadowPanel")
+        Me.PlaylistOptionsShadowPanel.Name = "PlaylistOptionsShadowPanel"
         '
         'MainWindow
         '
@@ -220,6 +220,6 @@ Partial Class MainWindow
     Friend WithEvents ToolStripMenuItem4 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MediaPlayer1 As Zumwani.CloudPlayer.MediaPlayer
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Shadow1 As Zumwani.CloudPlayer.Shadow
+    Friend WithEvents PlaylistOptionsShadowPanel As System.Windows.Forms.Panel
 
 End Class

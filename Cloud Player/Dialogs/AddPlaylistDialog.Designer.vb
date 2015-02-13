@@ -26,7 +26,7 @@ Partial Class AddPlaylistDialog
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AddPlaylistDialog))
         Me.Header1 = New Zumwani.CommonLibrary.Controls.TabHeader()
         Me.PanoramaTabControl1 = New Zumwani.CommonLibrary.Controls.PanoramaTabControl()
-        Me.CreateNewTab = New System.Windows.Forms.TabPage()
+        Me.LocalTab = New System.Windows.Forms.TabPage()
         Me.BrowseButton = New Zumwani.CommonLibrary.Controls.MetroButton()
         Me.ThumbnailBox = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -46,7 +46,7 @@ Partial Class AddPlaylistDialog
         Me.CancelButton = New Zumwani.CommonLibrary.Controls.MetroButton()
         Me.AddButton = New Zumwani.CommonLibrary.Controls.MetroButton()
         Me.PanoramaTabControl1.SuspendLayout()
-        Me.CreateNewTab.SuspendLayout()
+        Me.LocalTab.SuspendLayout()
         Me.YouTubeTab.SuspendLayout()
         Me.SoundCloudTab.SuspendLayout()
         Me.PlaylistPreviewPanel.SuspendLayout()
@@ -54,49 +54,49 @@ Partial Class AddPlaylistDialog
         '
         'Header1
         '
-        resources.ApplyResources(Me.Header1, "Header1")
         Me.Header1.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(27, Byte), Integer))
         Me.Header1.ColorHover = System.Drawing.Color.FromArgb(CType(CType(198, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(198, Byte), Integer))
         Me.Header1.ColorSelected = System.Drawing.Color.White
         Me.Header1.ColorUnselected = System.Drawing.Color.FromArgb(CType(CType(129, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.Header1.DisabledTabPages = New String() {"...Or import from:"}
+        resources.ApplyResources(Me.Header1, "Header1")
         Me.Header1.HiddenTabPages = New String() {"SoundCloud"}
         Me.Header1.Name = "Header1"
         Me.Header1.TabControl = Me.PanoramaTabControl1
         '
         'PanoramaTabControl1
         '
-        resources.ApplyResources(Me.PanoramaTabControl1, "PanoramaTabControl1")
         Me.PanoramaTabControl1.AnimationDirection = Zumwani.CommonLibrary.Controls.PanoramaTabControl.AnimationDirections.Horizontal
         Me.PanoramaTabControl1.AnimationType = Zumwani.CommonLibrary.Controls.PanoramaTabControl.AnimationTypes.None
-        Me.PanoramaTabControl1.Controls.Add(Me.CreateNewTab)
+        Me.PanoramaTabControl1.Controls.Add(Me.LocalTab)
         Me.PanoramaTabControl1.Controls.Add(Me.Or_ImportFromTab)
         Me.PanoramaTabControl1.Controls.Add(Me.YouTubeTab)
         Me.PanoramaTabControl1.Controls.Add(Me.SoundCloudTab)
         Me.PanoramaTabControl1.DisplayTabs = Zumwani.CommonLibrary.Controls.PanoramaTabControl.DisplayTabsEnum.Never
+        resources.ApplyResources(Me.PanoramaTabControl1, "PanoramaTabControl1")
         Me.PanoramaTabControl1.Name = "PanoramaTabControl1"
         Me.PanoramaTabControl1.SelectedIndex = 0
         Me.PanoramaTabControl1.Speed = 9
         '
-        'CreateNewTab
+        'LocalTab
         '
-        resources.ApplyResources(Me.CreateNewTab, "CreateNewTab")
-        Me.CreateNewTab.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.CreateNewTab.Controls.Add(Me.BrowseButton)
-        Me.CreateNewTab.Controls.Add(Me.ThumbnailBox)
-        Me.CreateNewTab.Controls.Add(Me.Label2)
-        Me.CreateNewTab.Controls.Add(Me.TitleBox)
-        Me.CreateNewTab.Controls.Add(Me.Label1)
-        Me.CreateNewTab.Name = "CreateNewTab"
+        Me.LocalTab.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.LocalTab.Controls.Add(Me.BrowseButton)
+        Me.LocalTab.Controls.Add(Me.ThumbnailBox)
+        Me.LocalTab.Controls.Add(Me.Label2)
+        Me.LocalTab.Controls.Add(Me.TitleBox)
+        Me.LocalTab.Controls.Add(Me.Label1)
+        resources.ApplyResources(Me.LocalTab, "LocalTab")
+        Me.LocalTab.Name = "LocalTab"
         '
         'BrowseButton
         '
-        resources.ApplyResources(Me.BrowseButton, "BrowseButton")
         Me.BrowseButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.BrowseButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.BrowseButton.FlatAppearance.BorderSize = 0
         Me.BrowseButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(50, Byte), Integer))
         Me.BrowseButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(82, Byte), Integer))
+        resources.ApplyResources(Me.BrowseButton, "BrowseButton")
         Me.BrowseButton.Name = "BrowseButton"
         Me.BrowseButton.UseVisualStyleBackColor = False
         '
@@ -128,11 +128,11 @@ Partial Class AddPlaylistDialog
         '
         'YouTubeTab
         '
-        resources.ApplyResources(Me.YouTubeTab, "YouTubeTab")
         Me.YouTubeTab.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.YouTubeTab.Controls.Add(Me.YouTubeSearchResultBox)
         Me.YouTubeTab.Controls.Add(Me.YouTubeSearchBox)
         Me.YouTubeTab.Controls.Add(Me.Label4)
+        resources.ApplyResources(Me.YouTubeTab, "YouTubeTab")
         Me.YouTubeTab.Name = "YouTubeTab"
         '
         'YouTubeSearchResultBox
@@ -153,16 +153,15 @@ Partial Class AddPlaylistDialog
         '
         'SoundCloudTab
         '
-        resources.ApplyResources(Me.SoundCloudTab, "SoundCloudTab")
         Me.SoundCloudTab.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.SoundCloudTab.Controls.Add(Me.SoundCloudPreview)
         Me.SoundCloudTab.Controls.Add(Me.TextBox1)
         Me.SoundCloudTab.Controls.Add(Me.Label3)
+        resources.ApplyResources(Me.SoundCloudTab, "SoundCloudTab")
         Me.SoundCloudTab.Name = "SoundCloudTab"
         '
         'SoundCloudPreview
         '
-        resources.ApplyResources(Me.SoundCloudPreview, "SoundCloudPreview")
         Me.SoundCloudPreview.AllowDelete = False
         Me.SoundCloudPreview.AllowEdit = False
         Me.SoundCloudPreview.AllowOpenLocation = False
@@ -171,6 +170,7 @@ Partial Class AddPlaylistDialog
         Me.SoundCloudPreview.AutomaticallySetCurrentlyPlayingStatus = True
         Me.SoundCloudPreview.BackColor = System.Drawing.Color.Transparent
         Me.SoundCloudPreview.Cursor = System.Windows.Forms.Cursors.Hand
+        resources.ApplyResources(Me.SoundCloudPreview, "SoundCloudPreview")
         Me.SoundCloudPreview.ForeColor = System.Drawing.Color.White
         Me.SoundCloudPreview.Name = "SoundCloudPreview"
         Me.SoundCloudPreview.Selected = False
@@ -191,14 +191,13 @@ Partial Class AddPlaylistDialog
         '
         'PlaylistPreviewPanel
         '
-        resources.ApplyResources(Me.PlaylistPreviewPanel, "PlaylistPreviewPanel")
         Me.PlaylistPreviewPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.PlaylistPreviewPanel.Controls.Add(Me.PlaylistPreview)
+        resources.ApplyResources(Me.PlaylistPreviewPanel, "PlaylistPreviewPanel")
         Me.PlaylistPreviewPanel.Name = "PlaylistPreviewPanel"
         '
         'PlaylistPreview
         '
-        resources.ApplyResources(Me.PlaylistPreview, "PlaylistPreview")
         Me.PlaylistPreview.AllowDelete = False
         Me.PlaylistPreview.AllowEdit = False
         Me.PlaylistPreview.AllowOpenLocation = False
@@ -207,6 +206,7 @@ Partial Class AddPlaylistDialog
         Me.PlaylistPreview.AutomaticallySetCurrentlyPlayingStatus = True
         Me.PlaylistPreview.BackColor = System.Drawing.Color.Transparent
         Me.PlaylistPreview.Cursor = System.Windows.Forms.Cursors.Hand
+        resources.ApplyResources(Me.PlaylistPreview, "PlaylistPreview")
         Me.PlaylistPreview.ForeColor = System.Drawing.Color.White
         Me.PlaylistPreview.Name = "PlaylistPreview"
         Me.PlaylistPreview.Selected = False
@@ -252,8 +252,8 @@ Partial Class AddPlaylistDialog
         Me.Controls.Add(Me.Header1)
         Me.Name = "AddPlaylistDialog"
         Me.PanoramaTabControl1.ResumeLayout(False)
-        Me.CreateNewTab.ResumeLayout(False)
-        Me.CreateNewTab.PerformLayout()
+        Me.LocalTab.ResumeLayout(False)
+        Me.LocalTab.PerformLayout()
         Me.YouTubeTab.ResumeLayout(False)
         Me.YouTubeTab.PerformLayout()
         Me.SoundCloudTab.ResumeLayout(False)
@@ -264,7 +264,7 @@ Partial Class AddPlaylistDialog
     End Sub
     Friend WithEvents Header1 As Zumwani.CommonLibrary.Controls.TabHeader
     Friend WithEvents PanoramaTabControl1 As Zumwani.CommonLibrary.Controls.PanoramaTabControl
-    Friend WithEvents CreateNewTab As System.Windows.Forms.TabPage
+    Friend WithEvents LocalTab As System.Windows.Forms.TabPage
     Friend WithEvents Or_ImportFromTab As System.Windows.Forms.TabPage
     Friend WithEvents YouTubeTab As System.Windows.Forms.TabPage
     Friend WithEvents TitleBox As System.Windows.Forms.TextBox

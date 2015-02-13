@@ -31,7 +31,6 @@ Partial Class SplashScreen
         Me.ErrorMessageLabel = New System.Windows.Forms.Label()
         Me.ErrorDeleteButton = New Zumwani.CommonLibrary.Controls.MetroButton()
         Me.ErrorIgnoreButton = New Zumwani.CommonLibrary.Controls.MetroButton()
-        Me.RetryButton = New Zumwani.CommonLibrary.Controls.MetroButton()
         Me.UpgradeTab = New System.Windows.Forms.TabPage()
         Me.UpgradeMessageLabel = New System.Windows.Forms.Label()
         Me.UpgradeDeleteButton = New Zumwani.CommonLibrary.Controls.MetroButton()
@@ -50,35 +49,34 @@ Partial Class SplashScreen
         '
         'Panel1
         '
-        resources.ApplyResources(Me.Panel1, "Panel1")
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(27, Byte), Integer))
         Me.Panel1.Controls.Add(Me.PanoramaTabControl1)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.ProgressBar1)
         Me.Panel1.Controls.Add(Me.LoadingLabel)
+        resources.ApplyResources(Me.Panel1, "Panel1")
         Me.Panel1.Name = "Panel1"
         '
         'PanoramaTabControl1
         '
-        resources.ApplyResources(Me.PanoramaTabControl1, "PanoramaTabControl1")
         Me.PanoramaTabControl1.AnimationDirection = Zumwani.CommonLibrary.Controls.PanoramaTabControl.AnimationDirections.Horizontal
         Me.PanoramaTabControl1.AnimationType = Zumwani.CommonLibrary.Controls.PanoramaTabControl.AnimationTypes.None
         Me.PanoramaTabControl1.Controls.Add(Me.ErrorTab)
         Me.PanoramaTabControl1.Controls.Add(Me.UpgradeTab)
         Me.PanoramaTabControl1.DisplayTabs = Zumwani.CommonLibrary.Controls.PanoramaTabControl.DisplayTabsEnum.OnlyInDesignMode
+        resources.ApplyResources(Me.PanoramaTabControl1, "PanoramaTabControl1")
         Me.PanoramaTabControl1.Name = "PanoramaTabControl1"
         Me.PanoramaTabControl1.SelectedIndex = 0
         Me.PanoramaTabControl1.Speed = 9
         '
         'ErrorTab
         '
-        resources.ApplyResources(Me.ErrorTab, "ErrorTab")
         Me.ErrorTab.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(27, Byte), Integer))
         Me.ErrorTab.Controls.Add(Me.ErrorOKButton)
         Me.ErrorTab.Controls.Add(Me.ErrorMessageLabel)
         Me.ErrorTab.Controls.Add(Me.ErrorDeleteButton)
         Me.ErrorTab.Controls.Add(Me.ErrorIgnoreButton)
-        Me.ErrorTab.Controls.Add(Me.RetryButton)
+        resources.ApplyResources(Me.ErrorTab, "ErrorTab")
         Me.ErrorTab.Name = "ErrorTab"
         '
         'ErrorOKButton
@@ -119,25 +117,14 @@ Partial Class SplashScreen
         Me.ErrorIgnoreButton.Name = "ErrorIgnoreButton"
         Me.ErrorIgnoreButton.UseVisualStyleBackColor = True
         '
-        'RetryButton
-        '
-        resources.ApplyResources(Me.RetryButton, "RetryButton")
-        Me.RetryButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.RetryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.RetryButton.FlatAppearance.BorderSize = 0
-        Me.RetryButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.RetryButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.RetryButton.Name = "RetryButton"
-        Me.RetryButton.UseVisualStyleBackColor = False
-        '
         'UpgradeTab
         '
-        resources.ApplyResources(Me.UpgradeTab, "UpgradeTab")
         Me.UpgradeTab.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(27, Byte), Integer))
         Me.UpgradeTab.Controls.Add(Me.UpgradeMessageLabel)
         Me.UpgradeTab.Controls.Add(Me.UpgradeDeleteButton)
         Me.UpgradeTab.Controls.Add(Me.UpgradeIgnoreButton)
         Me.UpgradeTab.Controls.Add(Me.UpgradeUpgradeButton)
+        resources.ApplyResources(Me.UpgradeTab, "UpgradeTab")
         Me.UpgradeTab.Name = "UpgradeTab"
         '
         'UpgradeMessageLabel
@@ -220,7 +207,6 @@ Partial Class SplashScreen
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents LoadingLabel As System.Windows.Forms.Label
     Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
-    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
     Friend WithEvents DotTimer As System.Windows.Forms.Timer
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents PanoramaTabControl1 As Zumwani.CommonLibrary.Controls.PanoramaTabControl
@@ -234,5 +220,5 @@ Partial Class SplashScreen
     Friend WithEvents ErrorMessageLabel As System.Windows.Forms.Label
     Friend WithEvents ErrorDeleteButton As Zumwani.CommonLibrary.Controls.MetroButton
     Friend WithEvents ErrorIgnoreButton As Zumwani.CommonLibrary.Controls.MetroButton
-    Friend WithEvents RetryButton As Zumwani.CommonLibrary.Controls.MetroButton
+    Public WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
 End Class

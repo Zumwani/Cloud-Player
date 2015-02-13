@@ -117,16 +117,52 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PanoramaTabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 148</value>
+  </data>
+  <data name="Panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 30</value>
+  </data>
+  <data name="ProgressBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 1</value>
+  </data>
+  <data name="LoadingLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 40</value>
+  </data>
+  <data name="LoadingLabel.Text" xml:space="preserve">
+    <value>Laddar...</value>
+  </data>
+  <data name="Panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>612, 279</value>
+  </data>
+  <data name="ErrorTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>544, 118</value>
+  </data>
+  <data name="ErrorOKButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>438, 92</value>
+  </data>
+  <data name="ErrorMessageLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>544, 122</value>
+  </data>
+  <data name="ErrorDeleteButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>198, 92</value>
+  </data>
   <data name="ErrorDeleteButton.Text" xml:space="preserve">
     <value>Ta bort den</value>
+  </data>
+  <data name="ErrorIgnoreButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-4, 92</value>
   </data>
   <data name="ErrorIgnoreButton.Text" xml:space="preserve">
     <value>Ignorera den</value>
   </data>
+  <data name="RetryButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>323, 92</value>
+  </data>
   <data name="RetryButton.Text" xml:space="preserve">
     <value>Försök igen</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="UpgradeDeleteButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>329, 131</value>
   </data>
@@ -146,7 +182,7 @@
   <data name="UpgradeUpgradeButton.Text" xml:space="preserve">
     <value>Upgradera den</value>
   </data>
-  <data name="LoadingLabel.Text" xml:space="preserve">
-    <value>Laddar</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>614, 281</value>
   </data>
 </root>

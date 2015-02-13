@@ -51,7 +51,7 @@ Public Class AddVideoDialog
     Private Function CreateItem(Video As Video, Optional AllowDelete As Boolean = False) As ListItem
 
         If Me.InvokeRequired Then
-            Return Me.BeginInvoke(Sub() CreateItem(Video))
+            Return Me.BeginInvoke(Function() CreateItem(Video))
         End If
 
         Dim a As New ListItem(Video)

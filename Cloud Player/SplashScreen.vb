@@ -6,121 +6,65 @@ Imports System.Globalization
 
 Public Class SplashScreen
     Inherits Zumwani.CommonLibrary.Templates.Window
-    'TODO: Fix localization
-#Region "Window"
 
-    Private Sub SplashScreen_Load(sender As Object, e As EventArgs) Handles Me.Load
-        If PlaylistStore.GetFiles.Count = 0 Then
-            'No need to show form
-            MainWindow.PlaylistManager = New PlaylistManager
-            MainWindow.Show()
-            Close()
+    Public CanContinue As Boolean = False
+
+    Public Sub SetProgress(Progress As Integer)
+
+        If Me.InvokeRequired Then
+            Me.BeginInvoke(Sub() SetProgress(Progress))
+            Return
         End If
+
+        ProgressBar1.Value = Progress
+        If Microsoft.WindowsAPICodePack.Taskbar.TaskbarManager.IsPlatformSupported Then
+            Microsoft.WindowsAPICodePack.Taskbar.TaskbarManager.Instance.SetProgressValue(Progress, 100)
+        End If
+
     End Sub
+
+    Public Sub ShowUpgrade(File As FileInfo, GeneratorVersion As String, PlaylistVersion As String)
+
+        If Me.InvokeRequired() Then
+            Me.BeginInvoke(Sub() ShowUpgrade(File, GeneratorVersion, PlaylistVersion))
+            Return
+        End If
+
+        CanContinue = False
+
+        _File = File
+
+        UpgradeMessageLabel.Text = String.Format(Locale.SplashScreen_Upgrade, File.Name, GeneratorVersion, PlaylistVersion)
+
+        PanoramaTabControl1.SelectedTab = UpgradeTab
+        Me.Size = Me.MaximumSize
+
+    End Sub
+
+    Public Sub ShowError(File As FileInfo, GeneratorVersion As String, ErrorMessage As String)
+
+        If Me.InvokeRequired() Then
+            Me.BeginInvoke(Sub() ShowError(File, GeneratorVersion, ErrorMessage))
+            Return
+        End If
+
+        CanContinue = False
+
+        _File = File
+
+        ErrorMessageLabel.Text = String.Format(Locale.SplashScreen_Error, File.Name, GeneratorVersion, ErrorMessage)
+
+        PanoramaTabControl1.SelectedTab = ErrorTab
+        Me.Size = Me.MaximumSize
+
+    End Sub
+
+#Region "Window"
 
     Private Sub SplashScreen_Shown(sender As Object, e As EventArgs) Handles Me.Shown
         Me.Size = Me.MinimumSize
-        BackgroundWorker1.RunWorkerAsync()
+        CanContinue = True
     End Sub
-
-#End Region
-#Region "Work"
-
-    Private Sub PauseWorker()
-        WorkerPaused = True
-        DotTimer.Stop()
-    End Sub
-
-    Private Sub ContinueWorker()
-        Me.Size = MinimumSize
-        DotTimer.Start()
-        _File = Nothing
-        WorkerPaused = False
-    End Sub
-
-    Private Sub BackgroundWorker1_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles BackgroundWorker1.DoWork
-
-        'Load all playlists
-        BackgroundWorker1.ReportProgress(0)
-
-        Dim pm As New PlaylistManager
-        Dim files As FileInfo() = PlaylistStore.GetFiles
-        Dim i As Integer = 1
-
-        For Each file In files
-            If file.Extension = ".xml" Then
-                Try
-                    pm.Add(PlaylistGenerator.Load(file, True, False))
-                Catch ex As PlaylistGenerator.ParseException
-                    If TypeOf ex.InnerException Is NotImplementedException Then
-                        'Playlist needs upgrading
-                        ShowUpgrade(ex.File, ex.GeneratorVersion, ex.PlaylistVersion)
-                        PauseWorker()
-                        Do Until Not WorkerPaused
-                            Thread.Sleep(100)
-                        Loop
-                    ElseIf TypeOf ex.InnerException Is Xml.XmlException Then
-                        'An error occured
-                        ShowError(ex.File, ex.GeneratorVersion, ex.InnerException.Message)
-                        PauseWorker()
-                        Do Until Not WorkerPaused
-                            Thread.Sleep(100)
-                        Loop
-                    End If
-                End Try
-            End If
-            BackgroundWorker1.ReportProgress(((i / files.Count) * 100))
-            i += 1
-        Next
-
-        'Done
-        BackgroundWorker1.ReportProgress(100)
-        e.Result = pm
-
-    End Sub
-
-    Private WorkerPaused As Boolean
-
-    Private Sub BackgroundWorker1_ProgressChanged(sender As Object, e As System.ComponentModel.ProgressChangedEventArgs) Handles BackgroundWorker1.ProgressChanged
-        ProgressBar1.Value = e.ProgressPercentage
-    End Sub
-
-    Private Sub BackgroundWorker1_RunWorkerCompleted(sender As Object, e As System.ComponentModel.RunWorkerCompletedEventArgs) Handles BackgroundWorker1.RunWorkerCompleted
-        MainWindow.PlaylistManager = e.Result
-        MainWindow.Show()
-        Close()
-    End Sub
-
-#End Region
-#Region "Dots"
-
-    Private i As Integer = 0
-    Private Sub DotTimer_Tick(sender As Object, e As EventArgs) Handles DotTimer.Tick
-
-        Select Case i
-            Case Is = 0
-                LoadingLabel.Text = Locale.Loading
-
-            Case Is = 1
-                LoadingLabel.Text = Locale.Loading & "."
-
-            Case Is = 2
-                LoadingLabel.Text = Locale.Loading & ".."
-
-            Case Is = 3
-                LoadingLabel.Text = Locale.Loading & "..."
-
-        End Select
-        If Not i = 3 Then
-            i += 1
-        Else
-            i = 0
-        End If
-
-    End Sub
-
-#End Region
-#Region "Move form"
 
     Public Const WM_NCLBUTTONDOWN As Integer = &HA1
     Public Const HT_CAPTION As Integer = &H2
@@ -142,72 +86,70 @@ Public Class SplashScreen
     End Sub
 
 #End Region
-#Region "Error + upgrade"
+#Region "UI and UI functionality"
 
     Private _File As FileInfo
 
-    Private Sub ShowUpgrade(File As FileInfo, GeneratorVersion As String, PlaylistVersion As String)
-
-        If Me.InvokeRequired() Then
-            Me.BeginInvoke(Sub() ShowUpgrade(File, GeneratorVersion, PlaylistVersion))
-            Return
-        End If
-
-        _File = File
-
-        UpgradeMessageLabel.Text = String.Format(Locale.SplashScreen_Upgrade, File.Name, GeneratorVersion, PlaylistVersion)
-
-        PanoramaTabControl1.SelectedTab = UpgradeTab
-        Me.Size = Me.MaximumSize
-
-    End Sub
-
-    Private Sub ShowError(File As FileInfo, GeneratorVersion As String, ErrorMessage As String)
-
-        If Me.InvokeRequired() Then
-            Me.BeginInvoke(Sub() ShowError(File, GeneratorVersion, ErrorMessage))
-            Return
-        End If
-
-        _File = File
-
-        ErrorMessageLabel.Text = String.Format(Locale.SplashScreen_Error, File.Name, GeneratorVersion, ErrorMessage)
-
-        PanoramaTabControl1.SelectedTab = ErrorTab
-        Me.Size = Me.MaximumSize
-
-    End Sub
-
     Private Sub ErrorIgnoreButton_Click(sender As Object, e As EventArgs) Handles ErrorIgnoreButton.Click
-        ContinueWorker()
+        CanContinue = True
     End Sub
 
     Private Sub ErrorDeleteButton_Click(sender As Object, e As EventArgs) Handles ErrorDeleteButton.Click
         If _File.Exists Then
             _File.MoveToRecycleBin()
         End If
-        ContinueWorker()
+        CanContinue = True
     End Sub
 
     Private Sub ErrorOKButton_Click(sender As Object, e As EventArgs) Handles ErrorOKButton.Click
-        ContinueWorker()
+        CanContinue = True
     End Sub
 
     Private Sub UpgradeIgnoreButton_Click(sender As Object, e As EventArgs) Handles UpgradeIgnoreButton.Click
-        ContinueWorker()
+        CanContinue = True
     End Sub
 
     Private Sub UpgradeDeleteButton_Click(sender As Object, e As EventArgs) Handles UpgradeDeleteButton.Click
         If _File.Exists Then
             _File.MoveToRecycleBin()
         End If
-        ContinueWorker()
+        CanContinue = True
     End Sub
 
     Private Sub UpgradeUpgradeButton_Click(sender As Object, e As EventArgs) Handles UpgradeUpgradeButton.Click
         PlaylistGenerator.UpgradePlaylist(_File.FullName)
         PlaylistGenerator.Load(_File)
-        ContinueWorker()
+        CanContinue = True
+    End Sub
+
+    Private i As Integer = 1
+    Private Sub DotTimer_Tick(sender As Object, e As EventArgs) Handles DotTimer.Tick
+
+        If Me.InvokeRequired Then
+            Me.BeginInvoke(Sub() DotTimer_Tick(sender, e))
+            Return
+        End If
+
+        Select Case i
+            Case Is = 0
+                LoadingLabel.Text = Locale.Loading
+
+            Case Is = 1
+                LoadingLabel.Text = Locale.Loading & "."
+
+            Case Is = 2
+                LoadingLabel.Text = Locale.Loading & ".."
+
+            Case Is = 3
+                LoadingLabel.Text = Locale.Loading & "..."
+
+        End Select
+        If Not i = 3 Then
+            i += 1
+        Else
+            i = 0
+        End If
+
     End Sub
 
 #End Region

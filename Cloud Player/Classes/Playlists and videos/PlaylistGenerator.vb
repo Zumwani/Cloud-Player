@@ -146,11 +146,20 @@ Public Class PlaylistGenerator
 
     Public Shared Function Load(File As FileInfo, Optional ThrowOnError As Boolean = True, Optional ShowErrorDialogInternally As Boolean = True) As Playlist
 
-
         'Validate the file before continuing
-        If ValidateFile(File, ThrowOnError, ShowErrorDialogInternally) = False Then
-            Return Nothing
-        End If
+        Try
+            If ValidateFile(File, True, ShowErrorDialogInternally) = False Then
+                Return Nothing
+            End If
+        Catch ex As FileNotFoundException
+            'File does not exist
+            If ThrowOnError Then
+                Throw New ParseException("File does not exist.", File, GeneratorVersion, "Unknown", ex)
+            End If
+        Catch ex1 As ArgumentException
+            'File does not have correct fileextension
+            Throw New ParseException("File was not of a proper playlist format", File, GeneratorVersion, "Unknown", ex1)
+        End Try
 
         Try
 
@@ -183,13 +192,11 @@ Public Class PlaylistGenerator
 
     End Function
 
-    Public Shared Sub Save(Playlist As Playlist)
-
+    Public Shared Sub Save(Playlist As Playlist, Filename As String)
         With Playlist
             Dim xml As XmlDocument = GenerateXml(Playlist)
-            xml.Save(PlaylistStore.GetFile(.ID.ToString + ".xml").FullName)
+            xml.Save(Filename)
         End With
-
     End Sub
 
     Private Shared Function GetGeneratorVersionOfPlaylist(XmlDocument As XmlDocument) As String
@@ -218,7 +225,7 @@ Public Class PlaylistGenerator
             End If
         End If
 
-        If Not File.Extension = ".xml" Then
+        If Not File.Extension = ".pl" Then
 
             If ShowErrorDialogInternally Then
 

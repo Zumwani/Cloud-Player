@@ -117,350 +117,53 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="ErrorDeleteButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 30</value>
-  </data>
-  <data name="&gt;&gt;ProgressBar1.Parent" xml:space="preserve">
-    <value>Panel1</value>
-  </data>
-  <data name="ErrorDeleteButton.Text" xml:space="preserve">
-    <value>Delete it</value>
-  </data>
-  <data name="ErrorIgnoreButton.Text" xml:space="preserve">
-    <value>Ignore it</value>
-  </data>
-  <data name="UpgradeTab.Text" xml:space="preserve">
-    <value>Upgrade</value>
-  </data>
-  <data name="&gt;&gt;ErrorIgnoreButton.Parent" xml:space="preserve">
-    <value>ErrorTab</value>
-  </data>
-  <data name="LoadingLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 30</value>
-  </data>
-  <data name="UpgradeUpgradeButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 30</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="UpgradeDeleteButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>15, 15, 15, 15</value>
-  </data>
-  <data name="&gt;&gt;UpgradeTab.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ErrorTab.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;PanoramaTabControl1.Parent" xml:space="preserve">
-    <value>Panel1</value>
-  </data>
-  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="&gt;&gt;ErrorMessageLabel.Parent" xml:space="preserve">
-    <value>ErrorTab</value>
-  </data>
-  <data name="UpgradeUpgradeButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="ErrorOKButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
   </data>
   <data name="ErrorOKButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="&gt;&gt;RetryButton.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;LoadingLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="ErrorDeleteButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 15, 0</value>
-  </data>
-  <data name="&gt;&gt;UpgradeIgnoreButton.Name" xml:space="preserve">
-    <value>UpgradeIgnoreButton</value>
-  </data>
-  <data name="&gt;&gt;ErrorIgnoreButton.Name" xml:space="preserve">
-    <value>ErrorIgnoreButton</value>
-  </data>
-  <data name="&gt;&gt;UpgradeUpgradeButton.Type" xml:space="preserve">
-    <value>Zumwani.CommonLibrary.Controls.MetroButton, Zumwani.CommonLibrary, Version=1.0.2.1, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="UpgradeDeleteButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>324, 131</value>
-  </data>
-  <data name="&gt;&gt;RetryButton.Parent" xml:space="preserve">
-    <value>ErrorTab</value>
-  </data>
-  <data name="&gt;&gt;ErrorDeleteButton.Parent" xml:space="preserve">
-    <value>ErrorTab</value>
-  </data>
-  <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="UpgradeIgnoreButton.Text" xml:space="preserve">
-    <value>Ignore it</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>SplashScreen</value>
-  </data>
-  <data name="&gt;&gt;ErrorDeleteButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="UpgradeDeleteButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="&gt;&gt;ProgressBar1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="UpgradeMessageLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>560, 117</value>
-  </data>
-  <data name="&gt;&gt;ErrorIgnoreButton.Type" xml:space="preserve">
-    <value>Zumwani.CommonLibrary.Controls.MetroButton, Zumwani.CommonLibrary, Version=1.0.2.1, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ErrorMessageLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;ErrorTab.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ErrorMessageLabel.Name" xml:space="preserve">
-    <value>ErrorMessageLabel</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 17</value>
-  </data>
-  <data name="&gt;&gt;LoadingLabel.Parent" xml:space="preserve">
-    <value>Panel1</value>
-  </data>
-  <data name="&gt;&gt;UpgradeTab.Name" xml:space="preserve">
-    <value>UpgradeTab</value>
-  </data>
-  <data name="&gt;&gt;ErrorOKButton.Parent" xml:space="preserve">
-    <value>ErrorTab</value>
-  </data>
-  <data name="Panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="UpgradeMessageLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;UpgradeIgnoreButton.Type" xml:space="preserve">
-    <value>Zumwani.CommonLibrary.Controls.MetroButton, Zumwani.CommonLibrary, Version=1.0.2.1, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="Panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="RetryButton.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;ErrorOKButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="ErrorIgnoreButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="UpgradeUpgradeButton.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;UpgradeUpgradeButton.Name" xml:space="preserve">
-    <value>UpgradeUpgradeButton</value>
-  </data>
-  <data name="&gt;&gt;UpgradeMessageLabel.Name" xml:space="preserve">
-    <value>UpgradeMessageLabel</value>
-  </data>
-  <data name="&gt;&gt;UpgradeTab.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>630, 320</value>
-  </data>
-  <data name="ErrorOKButton.Text" xml:space="preserve">
-    <value>Ok</value>
-  </data>
-  <data name="&gt;&gt;ErrorDeleteButton.Name" xml:space="preserve">
-    <value>ErrorDeleteButton</value>
-  </data>
-  <data name="&gt;&gt;Panel2.Name" xml:space="preserve">
-    <value>Panel2</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ErrorOKButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>438, 92</value>
   </data>
   <data name="ErrorOKButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="ErrorDeleteButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>214, 131</value>
-  </data>
-  <data name="&gt;&gt;ErrorTab.Name" xml:space="preserve">
-    <value>ErrorTab</value>
-  </data>
-  <data name="UpgradeIgnoreButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 30</value>
-  </data>
-  <data name="LoadingLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semilight, 14pt</value>
-  </data>
-  <data name="UpgradeMessageLabel.Text" xml:space="preserve">
-    <value>The playlist '{0}' could not be loaded. It was generated using a different generator version than the installed one. 
-Generator version: '{1}', Playlist version: '{2}'.
-
-What do you wish to do?</value>
-  </data>
-  <data name="Panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>568, 30</value>
-  </data>
   <data name="ErrorOKButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>110, 30</value>
   </data>
-  <data name="UpgradeDeleteButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 30</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ErrorOKButton.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <data name="&gt;&gt;UpgradeIgnoreButton.Parent" xml:space="preserve">
-    <value>UpgradeTab</value>
+  <data name="ErrorOKButton.Text" xml:space="preserve">
+    <value>Ok</value>
   </data>
-  <data name="&gt;&gt;UpgradeMessageLabel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ErrorOKButton.Name" xml:space="preserve">
+    <value>ErrorOKButton</value>
+  </data>
+  <data name="&gt;&gt;ErrorOKButton.Type" xml:space="preserve">
+    <value>Zumwani.CommonLibrary.Controls.MetroButton, Zumwani.CommonLibrary, Version=1.0.2.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ErrorOKButton.Parent" xml:space="preserve">
+    <value>ErrorTab</value>
+  </data>
+  <data name="&gt;&gt;ErrorOKButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="ProgressBar1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="ErrorMessageLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="ProgressBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>568, 1</value>
+  <data name="ErrorMessageLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>500, 120</value>
-  </data>
-  <data name="Panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>628, 318</value>
-  </data>
-  <data name="PanoramaTabControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="RetryButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>339, 131</value>
-  </data>
-  <data name="RetryButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 30</value>
-  </data>
-  <data name="&gt;&gt;UpgradeDeleteButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="ErrorIgnoreButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="UpgradeDeleteButton.Text" xml:space="preserve">
-    <value>Delete it</value>
-  </data>
-  <data name="&gt;&gt;DotTimer.Name" xml:space="preserve">
-    <value>DotTimer</value>
-  </data>
-  <data name="ErrorIgnoreButton.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="RetryButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="&gt;&gt;UpgradeIgnoreButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;RetryButton.Type" xml:space="preserve">
-    <value>Zumwani.CommonLibrary.Controls.MetroButton, Zumwani.CommonLibrary, Version=1.0.2.1, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="UpgradeIgnoreButton.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;UpgradeDeleteButton.Parent" xml:space="preserve">
-    <value>UpgradeTab</value>
-  </data>
-  <data name="UpgradeTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>560, 157</value>
-  </data>
-  <data name="UpgradeIgnoreButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 20, 20, 0</value>
-  </data>
-  <data name="&gt;&gt;BackgroundWorker1.Name" xml:space="preserve">
-    <value>BackgroundWorker1</value>
-  </data>
-  <data name="ProgressBar1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;BackgroundWorker1.Type" xml:space="preserve">
-    <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ErrorIgnoreButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 30</value>
-  </data>
-  <data name="UpgradeDeleteButton.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;UpgradeDeleteButton.Type" xml:space="preserve">
-    <value>Zumwani.CommonLibrary.Controls.MetroButton, Zumwani.CommonLibrary, Version=1.0.2.1, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="UpgradeIgnoreButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="&gt;&gt;PanoramaTabControl1.Type" xml:space="preserve">
-    <value>Zumwani.CommonLibrary.Controls.PanoramaTabControl, Zumwani.CommonLibrary, Version=1.0.2.1, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="LoadingLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>568, 40</value>
-  </data>
-  <data name="&gt;&gt;UpgradeDeleteButton.Name" xml:space="preserve">
-    <value>UpgradeDeleteButton</value>
-  </data>
-  <data name="UpgradeTab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="&gt;&gt;Panel2.Parent" xml:space="preserve">
-    <value>Panel1</value>
-  </data>
-  <data name="Panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="UpgradeDeleteButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="&gt;&gt;Panel1.Name" xml:space="preserve">
-    <value>Panel1</value>
-  </data>
-  <data name="&gt;&gt;DotTimer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ErrorDeleteButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="Panel1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>30, 30, 30, 30</value>
-  </data>
-  <data name="UpgradeUpgradeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>454, 131</value>
-  </data>
-  <data name="LoadingLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="UpgradeIgnoreButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-4, 131</value>
-  </data>
-  <data name="ErrorTab.Text" xml:space="preserve">
-    <value>Error</value>
-  </data>
-  <data name="PanoramaTabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>SplashScreen</value>
+  <data name="ErrorMessageLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>544, 122</value>
   </data>
   <data name="ErrorMessageLabel.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
-  </data>
-  <data name="LoadingLabel.Text" xml:space="preserve">
-    <value>Loading</value>
-  </data>
-  <data name="UpgradeTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 26</value>
   </data>
   <data name="ErrorMessageLabel.Text" xml:space="preserve">
     <value>The playlist '{0}' could not be loaded due to an error.
@@ -468,181 +171,442 @@ Generator version: '{1}', Playlist version: 'unknown'
 
 {2}</value>
   </data>
-  <data name="&gt;&gt;ErrorIgnoreButton.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="ErrorOKButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>454, 131</value>
-  </data>
-  <data name="ErrorTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 26</value>
-  </data>
-  <data name="ErrorMessageLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Zumwani.CommonLibrary.Templates.Window, Zumwani.CommonLibrary, Version=1.0.2.1, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="Panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 1</value>
-  </data>
-  <data name="RetryButton.Text" xml:space="preserve">
-    <value>Try again</value>
-  </data>
-  <data name="&gt;&gt;ProgressBar1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;ErrorTab.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="RetryButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 5, 0</value>
-  </data>
-  <data name="ErrorIgnoreButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="&gt;&gt;RetryButton.Name" xml:space="preserve">
-    <value>RetryButton</value>
-  </data>
-  <data name="ErrorOKButton.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="ErrorIgnoreButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-4, 131</value>
-  </data>
-  <data name="&gt;&gt;PanoramaTabControl1.Name" xml:space="preserve">
-    <value>PanoramaTabControl1</value>
-  </data>
-  <data name="&gt;&gt;ErrorDeleteButton.Type" xml:space="preserve">
-    <value>Zumwani.CommonLibrary.Controls.MetroButton, Zumwani.CommonLibrary, Version=1.0.2.1, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="ErrorOKButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="ProgressBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 70</value>
-  </data>
-  <data name="LoadingLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 0, 3, 10</value>
-  </data>
-  <data name="PanoramaTabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>568, 187</value>
-  </data>
-  <data name="&gt;&gt;ErrorTab.Parent" xml:space="preserve">
-    <value>PanoramaTabControl1</value>
-  </data>
-  <data name="UpgradeIgnoreButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="&gt;&gt;UpgradeUpgradeButton.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;UpgradeMessageLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ErrorOKButton.Name" xml:space="preserve">
-    <value>ErrorOKButton</value>
-  </data>
-  <data name="UpgradeUpgradeButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="ErrorMessageLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>560, 122</value>
-  </data>
-  <data name="&gt;&gt;LoadingLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PanoramaTabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 101</value>
-  </data>
-  <data name="&gt;&gt;UpgradeUpgradeButton.Parent" xml:space="preserve">
-    <value>UpgradeTab</value>
-  </data>
-  <data name="UpgradeTab.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>630, 320</value>
+  <data name="&gt;&gt;ErrorMessageLabel.Name" xml:space="preserve">
+    <value>ErrorMessageLabel</value>
   </data>
   <data name="&gt;&gt;ErrorMessageLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;ErrorMessageLabel.Parent" xml:space="preserve">
+    <value>ErrorTab</value>
   </data>
-  <data name="LoadingLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="ErrorTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>560, 157</value>
-  </data>
-  <data name="&gt;&gt;UpgradeMessageLabel.Parent" xml:space="preserve">
-    <value>UpgradeTab</value>
-  </data>
-  <data name="&gt;&gt;Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Panel2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ErrorMessageLabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="LoadingLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="UpgradeUpgradeButton.Text" xml:space="preserve">
-    <value>Upgrade it</value>
-  </data>
-  <data name="UpgradeMessageLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="&gt;&gt;LoadingLabel.Name" xml:space="preserve">
-    <value>LoadingLabel</value>
-  </data>
-  <data name="UpgradeUpgradeButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="ErrorDeleteButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
+  </data>
+  <data name="ErrorDeleteButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="ErrorDeleteButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>313, 92</value>
+  </data>
+  <data name="ErrorDeleteButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 15, 0</value>
+  </data>
+  <data name="ErrorDeleteButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 30</value>
   </data>
   <data name="ErrorDeleteButton.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;UpgradeTab.Parent" xml:space="preserve">
+  <data name="ErrorDeleteButton.Text" xml:space="preserve">
+    <value>Delete it</value>
+  </data>
+  <data name="&gt;&gt;ErrorDeleteButton.Name" xml:space="preserve">
+    <value>ErrorDeleteButton</value>
+  </data>
+  <data name="&gt;&gt;ErrorDeleteButton.Type" xml:space="preserve">
+    <value>Zumwani.CommonLibrary.Controls.MetroButton, Zumwani.CommonLibrary, Version=1.0.2.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ErrorDeleteButton.Parent" xml:space="preserve">
+    <value>ErrorTab</value>
+  </data>
+  <data name="&gt;&gt;ErrorDeleteButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ErrorIgnoreButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="ErrorIgnoreButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="ErrorIgnoreButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-4, 92</value>
+  </data>
+  <data name="ErrorIgnoreButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="ErrorIgnoreButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 30</value>
+  </data>
+  <data name="ErrorIgnoreButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="ErrorIgnoreButton.Text" xml:space="preserve">
+    <value>Ignore it</value>
+  </data>
+  <data name="&gt;&gt;ErrorIgnoreButton.Name" xml:space="preserve">
+    <value>ErrorIgnoreButton</value>
+  </data>
+  <data name="&gt;&gt;ErrorIgnoreButton.Type" xml:space="preserve">
+    <value>Zumwani.CommonLibrary.Controls.MetroButton, Zumwani.CommonLibrary, Version=1.0.2.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ErrorIgnoreButton.Parent" xml:space="preserve">
+    <value>ErrorTab</value>
+  </data>
+  <data name="&gt;&gt;ErrorIgnoreButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ErrorTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 26</value>
+  </data>
+  <data name="ErrorTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>544, 118</value>
+  </data>
+  <data name="ErrorTab.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ErrorTab.Text" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="&gt;&gt;ErrorTab.Name" xml:space="preserve">
+    <value>ErrorTab</value>
+  </data>
+  <data name="&gt;&gt;ErrorTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ErrorTab.Parent" xml:space="preserve">
     <value>PanoramaTabControl1</value>
+  </data>
+  <data name="&gt;&gt;ErrorTab.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="UpgradeMessageLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
   </data>
   <data name="UpgradeMessageLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="ErrorMessageLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="UpgradeMessageLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>544, 117</value>
+  </data>
+  <data name="UpgradeMessageLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="UpgradeMessageLabel.Text" xml:space="preserve">
+    <value>The playlist '{0}' could not be loaded. It was generated using a different generator version than the installed one. 
+Generator version: '{1}', Playlist version: '{2}'.
+
+What do you wish to do?</value>
+  </data>
+  <data name="&gt;&gt;UpgradeMessageLabel.Name" xml:space="preserve">
+    <value>UpgradeMessageLabel</value>
+  </data>
+  <data name="&gt;&gt;UpgradeMessageLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UpgradeMessageLabel.Parent" xml:space="preserve">
+    <value>UpgradeTab</value>
+  </data>
+  <data name="&gt;&gt;UpgradeMessageLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="UpgradeDeleteButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="UpgradeDeleteButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="UpgradeDeleteButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>308, 131</value>
+  </data>
+  <data name="UpgradeDeleteButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>15, 15, 15, 15</value>
+  </data>
+  <data name="UpgradeDeleteButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 30</value>
+  </data>
+  <data name="UpgradeDeleteButton.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="UpgradeDeleteButton.Text" xml:space="preserve">
+    <value>Delete it</value>
+  </data>
+  <data name="&gt;&gt;UpgradeDeleteButton.Name" xml:space="preserve">
+    <value>UpgradeDeleteButton</value>
+  </data>
+  <data name="&gt;&gt;UpgradeDeleteButton.Type" xml:space="preserve">
+    <value>Zumwani.CommonLibrary.Controls.MetroButton, Zumwani.CommonLibrary, Version=1.0.2.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;UpgradeDeleteButton.Parent" xml:space="preserve">
+    <value>UpgradeTab</value>
+  </data>
+  <data name="&gt;&gt;UpgradeDeleteButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="UpgradeIgnoreButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="UpgradeIgnoreButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="UpgradeIgnoreButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-4, 131</value>
+  </data>
+  <data name="UpgradeIgnoreButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 20, 20, 0</value>
+  </data>
+  <data name="UpgradeIgnoreButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 30</value>
+  </data>
+  <data name="UpgradeIgnoreButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="UpgradeIgnoreButton.Text" xml:space="preserve">
+    <value>Ignore it</value>
+  </data>
+  <data name="&gt;&gt;UpgradeIgnoreButton.Name" xml:space="preserve">
+    <value>UpgradeIgnoreButton</value>
+  </data>
+  <data name="&gt;&gt;UpgradeIgnoreButton.Type" xml:space="preserve">
+    <value>Zumwani.CommonLibrary.Controls.MetroButton, Zumwani.CommonLibrary, Version=1.0.2.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;UpgradeIgnoreButton.Parent" xml:space="preserve">
+    <value>UpgradeTab</value>
+  </data>
+  <data name="&gt;&gt;UpgradeIgnoreButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="UpgradeUpgradeButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="UpgradeUpgradeButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="UpgradeUpgradeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>438, 131</value>
+  </data>
+  <data name="UpgradeUpgradeButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="UpgradeUpgradeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 30</value>
+  </data>
+  <data name="UpgradeUpgradeButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="UpgradeUpgradeButton.Text" xml:space="preserve">
+    <value>Upgrade it</value>
+  </data>
+  <data name="&gt;&gt;UpgradeUpgradeButton.Name" xml:space="preserve">
+    <value>UpgradeUpgradeButton</value>
+  </data>
+  <data name="&gt;&gt;UpgradeUpgradeButton.Type" xml:space="preserve">
+    <value>Zumwani.CommonLibrary.Controls.MetroButton, Zumwani.CommonLibrary, Version=1.0.2.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;UpgradeUpgradeButton.Parent" xml:space="preserve">
+    <value>UpgradeTab</value>
+  </data>
+  <data name="&gt;&gt;UpgradeUpgradeButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="UpgradeTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 26</value>
+  </data>
+  <data name="UpgradeTab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="UpgradeTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>544, 157</value>
+  </data>
+  <data name="UpgradeTab.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="UpgradeTab.Text" xml:space="preserve">
+    <value>Upgrade</value>
+  </data>
+  <data name="&gt;&gt;UpgradeTab.Name" xml:space="preserve">
+    <value>UpgradeTab</value>
+  </data>
+  <data name="&gt;&gt;UpgradeTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UpgradeTab.Parent" xml:space="preserve">
+    <value>PanoramaTabControl1</value>
+  </data>
+  <data name="&gt;&gt;UpgradeTab.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="PanoramaTabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="PanoramaTabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 101</value>
+  </data>
+  <data name="PanoramaTabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 148</value>
+  </data>
+  <data name="PanoramaTabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;PanoramaTabControl1.Name" xml:space="preserve">
+    <value>PanoramaTabControl1</value>
+  </data>
+  <data name="&gt;&gt;PanoramaTabControl1.Type" xml:space="preserve">
+    <value>Zumwani.CommonLibrary.Controls.PanoramaTabControl, Zumwani.CommonLibrary, Version=1.0.2.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;PanoramaTabControl1.Parent" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;PanoramaTabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
   <data name="Panel2.Location" type="System.Drawing.Point, System.Drawing">
     <value>30, 71</value>
   </data>
+  <data name="Panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 30</value>
+  </data>
+  <data name="Panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;Panel2.Name" xml:space="preserve">
+    <value>Panel2</value>
+  </data>
+  <data name="&gt;&gt;Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel2.Parent" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ProgressBar1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="ProgressBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 70</value>
+  </data>
+  <data name="ProgressBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 1</value>
+  </data>
+  <data name="ProgressBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;ProgressBar1.Name" xml:space="preserve">
     <value>ProgressBar1</value>
   </data>
-  <data name="RetryButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
+  <data name="&gt;&gt;ProgressBar1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ErrorOKButton.Type" xml:space="preserve">
-    <value>Zumwani.CommonLibrary.Controls.MetroButton, Zumwani.CommonLibrary, Version=1.0.2.1, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;ProgressBar1.Parent" xml:space="preserve">
+    <value>Panel1</value>
   </data>
-  <data name="ErrorDeleteButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
+  <data name="&gt;&gt;ProgressBar1.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;PanoramaTabControl1.ZOrder" xml:space="preserve">
+  <data name="LoadingLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="LoadingLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 14pt</value>
+  </data>
+  <data name="LoadingLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="LoadingLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 3, 10</value>
+  </data>
+  <data name="LoadingLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 40</value>
+  </data>
+  <data name="LoadingLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="LoadingLabel.Text" xml:space="preserve">
+    <value>Loading</value>
+  </data>
+  <data name="LoadingLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;LoadingLabel.Name" xml:space="preserve">
+    <value>LoadingLabel</value>
+  </data>
+  <data name="&gt;&gt;LoadingLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LoadingLabel.Parent" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;LoadingLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="Panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="Panel1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>30, 30, 30, 30</value>
+  </data>
+  <data name="Panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>612, 279</value>
+  </data>
+  <data name="Panel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
+  <data name="&gt;&gt;Panel1.Name" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="BackgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
   <metadata name="DotTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>180, 17</value>
   </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>sv-SE</value>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
-  <metadata name="BackgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 17</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>614, 281</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>630, 320</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>500, 120</value>
+  </data>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>SplashScreen</value>
+  </data>
+  <data name="&gt;&gt;BackgroundWorker1.Name" xml:space="preserve">
+    <value>BackgroundWorker1</value>
+  </data>
+  <data name="&gt;&gt;BackgroundWorker1.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DotTimer.Name" xml:space="preserve">
+    <value>DotTimer</value>
+  </data>
+  <data name="&gt;&gt;DotTimer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SplashScreen</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Zumwani.CommonLibrary.Templates.Window, Zumwani.CommonLibrary, Version=1.0.2.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
 </root>

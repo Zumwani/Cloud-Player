@@ -19,17 +19,6 @@ Public Class MainWindow
 
     Private Sub MainWindow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        MsgBox(SoundCloudClient.Authenticate().AccessToken)
-
-        'Dim a As New SoundCloud.NET.SoundCloudClient(New SoundCloud.NET.SoundCloudCredentials("454972d9aec9bedff9a95d59a9076411", "1b5f909fbb3a378fbcc5f6ceb7672a86"))
-
-        'Dim b = SoundCloud.NET.Track.Search("Raku Mugetsu", Nothing, SoundCloud.NET.Filter.Public, "", "", Nothing, Nothing, Nothing, Nothing, DateTime.MinValue, DateTime.Now, Nothing, Nothing, Nothing)
-
-        'For Each t In b
-        '    MsgBox(t.Title)
-        'Next
-
-
         If My.Settings.WindowPosition Is Nothing Then
             My.Settings.WindowPosition = New WindowPositionInfo
         End If
@@ -131,6 +120,14 @@ Public Class MainWindow
         End If
     End Sub
 
+    Private Sub PlaylistOptionsShadowPanel_Paint(sender As Object, e As PaintEventArgs) Handles PlaylistOptionsShadowPanel.Paint
+        If e.ClipRectangle.Width > 0 And e.ClipRectangle.Height > 0 Then
+            Using Brush As New LinearGradientBrush(e.ClipRectangle, Color.FromArgb(40, 40, 40), PlaylistOptionsShadowPanel.BackColor, LinearGradientMode.Vertical)
+                e.Graphics.FillRectangle(Brush, e.ClipRectangle)
+            End Using
+        End If
+    End Sub
+
     Private Sub RefreshUI() Handles MyBase.SizeChanged, MyBase.ResizeEnd
 
         If Not WindowState = FormWindowState.Minimized And Visible Then
@@ -175,35 +172,30 @@ Public Class MainWindow
             End If
 
             PlaylistOptionsPanel.Left = rect.Left
-            If ContentPanel.VerticalScroll.Visible Then
-                PlaylistOptionsPanel.Width = rect.Width - 17
-            Else
-                PlaylistOptionsPanel.Width = rect.Width
-                'TODO: Set proper width of playlist options panel
-            End If
+            PlaylistOptionsPanel.Width = rect.Width
 
 
             ContentPanel.Invalidate()
             MediaPlayer1.Invalidate()
 
-            Using G As Graphics = Graphics.FromHwnd(0)
-
-                G.CompositingQuality = CompositingQuality.HighSpeed
-
-                rect = ContentPanel.RectangleToScreen(PlaylistOptionsPanel.Bounds)
-                rect = New Rectangle(rect.Left, rect.Top - 10, rect.Width, 10)
-                Using Brush As New LinearGradientBrush(rect, Color.Transparent, PlaylistOptionsPanel.BackColor, LinearGradientMode.Vertical)
-                    G.FillRectangle(Brush, rect)
-                End Using
-            End Using
-
-
-
-
+            'DrawShadow()
+            'DrawShadow()
 
         End If
 
     End Sub
+
+    'Private Sub DrawShadow()
+    '    Using G As Graphics = Graphics.FromHwnd(0)
+    '        G.CompositingQuality = CompositingQuality.HighSpeed
+
+    '        Dim rect As Rectangle = ContentPanel.RectangleToScreen(PlaylistOptionsPanel.Bounds)
+    '        rect = New Rectangle(rect.Left, rect.Top - 10, rect.Width, 10)
+    '        Using Brush As New LinearGradientBrush(rect, Color.Transparent, PlaylistOptionsPanel.BackColor, LinearGradientMode.Vertical)
+    '            G.FillRectangle(Brush, rect)
+    '        End Using
+    '    End Using
+    'End Sub
 
 #End Region
 #Region "UI functionality"
@@ -381,19 +373,23 @@ Public Class MainWindow
 
     Public Sub PopulateList()
 
-        List.SuspendLayout()
+        If PlaylistManager IsNot Nothing Then
 
-        List.Controls.Clear()
-        For Each p In PlaylistManager.Playlists
-            List.Controls.Add(CreateItem(p))
-        Next
+            List.SuspendLayout()
 
-        OpenPlaylist = Nothing
-        RefreshUI()
+            List.Controls.Clear()
+            For Each p In PlaylistManager.Playlists
+                List.Controls.Add(CreateItem(p))
+            Next
 
-        List.ResumeLayout()
+            OpenPlaylist = Nothing
+            RefreshUI()
 
-        ToolTip1.SetToolTip(AddButton, Locale.MainWindow_AddPlaylist)
+            List.ResumeLayout()
+
+            ToolTip1.SetToolTip(AddButton, Locale.MainWindow_AddPlaylist)
+
+        End If
 
     End Sub
 
@@ -725,5 +721,9 @@ Public Class MainWindow
     End Sub
 
 #End Region
+
+    Private Sub MainWindow_Paint() Handles List.Paint, List.Scroll
+        'DrawShadow()
+    End Sub
 
 End Class

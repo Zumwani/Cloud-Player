@@ -61,7 +61,55 @@ Public Class SettingsDialog
 
     End Sub
 
-    Private Sub PlaylistTab_Enter(sender As Object, e As EventArgs) Handles PlaylistTab.Enter
+    Private Sub TabHeader1_TabClicked(e As CommonLibrary.Controls.TabHeader.TabClickedEventArgs) Handles TabHeader1.TabClicked
+
+        If e.TabPage Is PlaylistTab Then
+            GetPlaylists()
+        End If
+
+    End Sub
+
+    Private Sub ObjectListView1_SelectionChanged(sender As Object, e As EventArgs) Handles ObjectListView1.SelectionChanged
+        ExportButton.Enabled = (ObjectListView1.SelectedObject IsNot Nothing)
+    End Sub
+
+    Private Sub ImportButton_Click(sender As Object, e As EventArgs) Handles ImportButton.Click
+
+        Dim d As New OpenFileDialog
+        With d
+            .AddExtension = True
+            .AutoUpgradeEnabled = True
+            .CheckFileExists = True
+            .Filter = "Playlists (*.pl)|*.pl|XML Files (*.xml)|*.xml|All Files|*.*"
+            .Multiselect = False
+            .Title = "Choose a playlist to import..."
+        End With
+
+        If d.ShowDialog = Windows.Forms.DialogResult.OK Then
+            MainWindow.PlaylistManager.Add(PlaylistGenerator.Load(New IO.FileInfo(d.FileName), False))
+        End If
+
         GetPlaylists()
+
+    End Sub
+
+    Private Sub ExportButton_Click(sender As Object, e As EventArgs) Handles ExportButton.Click
+
+        Dim d As New SaveFileDialog
+        With d
+            .AddExtension = True
+            .AutoUpgradeEnabled = True
+            .DefaultExt = ".pl"
+            .OverwritePrompt = True
+            .FileName = CType(ObjectListView1.SelectedObject, Playlist).Title
+            .InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
+            .Filter = "Playlist file (*.pl)|*.pl|XML document (*.xml)|*.xml|Text file (*.txt)|.txt"
+            .Title = "Select location to export " + CType(ObjectListView1.SelectedObject, Playlist).Title + " to..."
+        End With
+
+        If d.ShowDialog(Me) = Windows.Forms.DialogResult.OK Then
+            PlaylistGenerator.Save(ObjectListView1.SelectedObject, d.FileName)
+        End If
+
     End Sub
 End Class

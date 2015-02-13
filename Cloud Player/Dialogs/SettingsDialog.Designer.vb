@@ -33,21 +33,21 @@ Partial Class SettingsDialog
         Me.PanoramaTabControl1 = New Zumwani.CommonLibrary.Controls.PanoramaTabControl()
         Me.GeneralTab = New System.Windows.Forms.TabPage()
         Me.PlaylistTab = New System.Windows.Forms.TabPage()
-        Me.MetroButton3 = New Zumwani.CommonLibrary.Controls.MetroButton()
-        Me.MetroButton2 = New Zumwani.CommonLibrary.Controls.MetroButton()
-        Me.MetroButton1 = New Zumwani.CommonLibrary.Controls.MetroButton()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.TabHeader1 = New Zumwani.CommonLibrary.Controls.TabHeader()
         Me.ObjectListView1 = New BrightIdeasSoftware.ObjectListView()
         Me.TitleColumn = CType(New BrightIdeasSoftware.OLVColumn(), BrightIdeasSoftware.OLVColumn)
         Me.VideoCountColumn = CType(New BrightIdeasSoftware.OLVColumn(), BrightIdeasSoftware.OLVColumn)
         Me.PathColumn = CType(New BrightIdeasSoftware.OLVColumn(), BrightIdeasSoftware.OLVColumn)
+        Me.ExportButton = New Zumwani.CommonLibrary.Controls.MetroButton()
+        Me.ImportButton = New Zumwani.CommonLibrary.Controls.MetroButton()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.TabHeader1 = New Zumwani.CommonLibrary.Controls.TabHeader()
         Me.PlaylistContextMenu = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenLocationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ExportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.DeleteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.PanoramaTabControl1.SuspendLayout()
         Me.GeneralTab.SuspendLayout()
         Me.PlaylistTab.SuspendLayout()
@@ -163,9 +163,8 @@ Partial Class SettingsDialog
         '
         Me.PlaylistTab.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.PlaylistTab.Controls.Add(Me.ObjectListView1)
-        Me.PlaylistTab.Controls.Add(Me.MetroButton3)
-        Me.PlaylistTab.Controls.Add(Me.MetroButton2)
-        Me.PlaylistTab.Controls.Add(Me.MetroButton1)
+        Me.PlaylistTab.Controls.Add(Me.ExportButton)
+        Me.PlaylistTab.Controls.Add(Me.ImportButton)
         Me.PlaylistTab.Controls.Add(Me.CheckBox1)
         Me.PlaylistTab.Location = New System.Drawing.Point(0, 0)
         Me.PlaylistTab.Name = "PlaylistTab"
@@ -174,88 +173,27 @@ Partial Class SettingsDialog
         Me.PlaylistTab.TabIndex = 1
         Me.PlaylistTab.Text = "Playlists"
         '
-        'MetroButton3
-        '
-        Me.MetroButton3.BackColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.MetroButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.MetroButton3.FlatAppearance.BorderSize = 0
-        Me.MetroButton3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.MetroButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.MetroButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.MetroButton3.Location = New System.Drawing.Point(30, 323)
-        Me.MetroButton3.Name = "MetroButton3"
-        Me.MetroButton3.Size = New System.Drawing.Size(150, 30)
-        Me.MetroButton3.TabIndex = 8
-        Me.MetroButton3.Text = "Reload all playlists"
-        Me.MetroButton3.UseVisualStyleBackColor = False
-        '
-        'MetroButton2
-        '
-        Me.MetroButton2.BackColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.MetroButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.MetroButton2.FlatAppearance.BorderSize = 0
-        Me.MetroButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.MetroButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.MetroButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.MetroButton2.Location = New System.Drawing.Point(422, 323)
-        Me.MetroButton2.Name = "MetroButton2"
-        Me.MetroButton2.Size = New System.Drawing.Size(150, 30)
-        Me.MetroButton2.TabIndex = 7
-        Me.MetroButton2.Text = "Export playlist"
-        Me.MetroButton2.UseVisualStyleBackColor = False
-        '
-        'MetroButton1
-        '
-        Me.MetroButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.MetroButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.MetroButton1.FlatAppearance.BorderSize = 0
-        Me.MetroButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.MetroButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.MetroButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.MetroButton1.Location = New System.Drawing.Point(422, 287)
-        Me.MetroButton1.Name = "MetroButton1"
-        Me.MetroButton1.Size = New System.Drawing.Size(150, 30)
-        Me.MetroButton1.TabIndex = 6
-        Me.MetroButton1.Text = "Import playlist"
-        Me.MetroButton1.UseVisualStyleBackColor = False
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(30, 287)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(197, 23)
-        Me.CheckBox1.TabIndex = 5
-        Me.CheckBox1.Text = "Delete playlists permanently"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
-        'TabHeader1
-        '
-        Me.TabHeader1.ColorHover = System.Drawing.Color.FromArgb(CType(CType(198, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.TabHeader1.ColorSelected = System.Drawing.Color.White
-        Me.TabHeader1.ColorUnselected = System.Drawing.Color.FromArgb(CType(CType(129, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(129, Byte), Integer))
-        Me.TabHeader1.DisabledTabPages = New String(-1) {}
-        Me.TabHeader1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.TabHeader1.Font = New System.Drawing.Font("Segoe UI Semilight", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.TabHeader1.HiddenTabPages = New String(-1) {}
-        Me.TabHeader1.Location = New System.Drawing.Point(0, 0)
-        Me.TabHeader1.Name = "TabHeader1"
-        Me.TabHeader1.Size = New System.Drawing.Size(605, 40)
-        Me.TabHeader1.TabControl = Me.PanoramaTabControl1
-        Me.TabHeader1.TabIndex = 11
-        '
         'ObjectListView1
         '
         Me.ObjectListView1.AllColumns.Add(Me.TitleColumn)
         Me.ObjectListView1.AllColumns.Add(Me.VideoCountColumn)
         Me.ObjectListView1.AllColumns.Add(Me.PathColumn)
         Me.ObjectListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.TitleColumn, Me.VideoCountColumn, Me.PathColumn})
+        Me.ObjectListView1.Cursor = System.Windows.Forms.Cursors.Default
         Me.ObjectListView1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ObjectListView1.FullRowSelect = True
         Me.ObjectListView1.Location = New System.Drawing.Point(30, 30)
         Me.ObjectListView1.Name = "ObjectListView1"
+        Me.ObjectListView1.OwnerDraw = True
+        Me.ObjectListView1.ShowGroups = False
         Me.ObjectListView1.Size = New System.Drawing.Size(545, 251)
         Me.ObjectListView1.TabIndex = 11
         Me.ObjectListView1.UseCompatibleStateImageBehavior = False
+        Me.ObjectListView1.UseExplorerTheme = True
+        Me.ObjectListView1.UseHotItem = True
+        Me.ObjectListView1.UseHyperlinks = True
+        Me.ObjectListView1.UseTranslucentHotItem = True
+        Me.ObjectListView1.UseTranslucentSelection = True
         Me.ObjectListView1.View = System.Windows.Forms.View.Details
         '
         'TitleColumn
@@ -272,9 +210,67 @@ Partial Class SettingsDialog
         '
         'PathColumn
         '
-        Me.PathColumn.AspectName = "Location"
+        Me.PathColumn.AspectName = "GetLocation"
         Me.PathColumn.FillsFreeSpace = True
+        Me.PathColumn.Hyperlink = True
         Me.PathColumn.Text = "Path:"
+        '
+        'ExportButton
+        '
+        Me.ExportButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer))
+        Me.ExportButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer))
+        Me.ExportButton.FlatAppearance.BorderSize = 0
+        Me.ExportButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.ExportButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.ExportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ExportButton.Location = New System.Drawing.Point(422, 323)
+        Me.ExportButton.Name = "ExportButton"
+        Me.ExportButton.Size = New System.Drawing.Size(150, 30)
+        Me.ExportButton.TabIndex = 7
+        Me.ExportButton.Text = "Export playlist"
+        Me.ExportButton.UseVisualStyleBackColor = False
+        '
+        'ImportButton
+        '
+        Me.ImportButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer))
+        Me.ImportButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(55, Byte), Integer))
+        Me.ImportButton.FlatAppearance.BorderSize = 0
+        Me.ImportButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.ImportButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.ImportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ImportButton.Location = New System.Drawing.Point(422, 287)
+        Me.ImportButton.Name = "ImportButton"
+        Me.ImportButton.Size = New System.Drawing.Size(150, 30)
+        Me.ImportButton.TabIndex = 6
+        Me.ImportButton.Text = "Import playlist"
+        Me.ImportButton.UseVisualStyleBackColor = False
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(30, 287)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(197, 23)
+        Me.CheckBox1.TabIndex = 5
+        Me.CheckBox1.Text = "Delete playlists permanently"
+        Me.ToolTip1.SetToolTip(Me.CheckBox1, "Delete the playlist file rather than move it to the recycle bin when removing pla" & _
+        "ylists.")
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'TabHeader1
+        '
+        Me.TabHeader1.ColorHover = System.Drawing.Color.FromArgb(CType(CType(198, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(198, Byte), Integer))
+        Me.TabHeader1.ColorSelected = System.Drawing.Color.White
+        Me.TabHeader1.ColorUnselected = System.Drawing.Color.FromArgb(CType(CType(129, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(129, Byte), Integer))
+        Me.TabHeader1.DisabledTabPages = New String(-1) {}
+        Me.TabHeader1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.TabHeader1.Font = New System.Drawing.Font("Segoe UI Semilight", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.TabHeader1.HiddenTabPages = New String(-1) {}
+        Me.TabHeader1.Location = New System.Drawing.Point(0, 0)
+        Me.TabHeader1.Name = "TabHeader1"
+        Me.TabHeader1.Size = New System.Drawing.Size(605, 40)
+        Me.TabHeader1.TabControl = Me.PanoramaTabControl1
+        Me.TabHeader1.TabIndex = 11
         '
         'PlaylistContextMenu
         '
@@ -297,22 +293,26 @@ Partial Class SettingsDialog
         Me.OpenLocationToolStripMenuItem.Size = New System.Drawing.Size(164, 24)
         Me.OpenLocationToolStripMenuItem.Text = "Open location"
         '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(161, 6)
-        '
         'ExportToolStripMenuItem
         '
         Me.ExportToolStripMenuItem.Name = "ExportToolStripMenuItem"
         Me.ExportToolStripMenuItem.Size = New System.Drawing.Size(164, 24)
         Me.ExportToolStripMenuItem.Text = "Export"
         '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(161, 6)
+        '
         'DeleteToolStripMenuItem
         '
         Me.DeleteToolStripMenuItem.Name = "DeleteToolStripMenuItem"
         Me.DeleteToolStripMenuItem.Size = New System.Drawing.Size(164, 24)
         Me.DeleteToolStripMenuItem.Text = "Delete"
+        '
+        'ToolTip1
+        '
+        Me.ToolTip1.BackColor = System.Drawing.Color.White
         '
         'SettingsDialog
         '
@@ -345,9 +345,8 @@ Partial Class SettingsDialog
     Friend WithEvents GeneralTab As System.Windows.Forms.TabPage
     Friend WithEvents PlaylistTab As System.Windows.Forms.TabPage
     Friend WithEvents TabHeader1 As Zumwani.CommonLibrary.Controls.TabHeader
-    Friend WithEvents MetroButton3 As Zumwani.CommonLibrary.Controls.MetroButton
-    Friend WithEvents MetroButton2 As Zumwani.CommonLibrary.Controls.MetroButton
-    Friend WithEvents MetroButton1 As Zumwani.CommonLibrary.Controls.MetroButton
+    Friend WithEvents ExportButton As Zumwani.CommonLibrary.Controls.MetroButton
+    Friend WithEvents ImportButton As Zumwani.CommonLibrary.Controls.MetroButton
     Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
     Friend WithEvents ObjectListView1 As BrightIdeasSoftware.ObjectListView
     Friend WithEvents TitleColumn As BrightIdeasSoftware.OLVColumn
@@ -359,4 +358,5 @@ Partial Class SettingsDialog
     Friend WithEvents ExportToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents DeleteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
 End Class

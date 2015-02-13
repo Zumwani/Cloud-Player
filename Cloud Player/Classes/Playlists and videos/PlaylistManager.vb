@@ -33,6 +33,19 @@ Public Class PlaylistManager
     End Property
 
 #End Region
+#Region "Methods"
+
+    Public Function Import(File As FileInfo) As Playlist
+        Return Me.Add(PlaylistGenerator.Load(File))
+    End Function
+
+    Public Sub Export(Playlist As Playlist, Directory As DirectoryInfo)
+        Dim file As New FileInfo(Playlist.GetLocation)
+        'file.CopyTo()
+        'PlaylistGenerator.Save(Directory + )
+    End Sub
+
+#End Region
 #Region "Collection"
 
     Public ReadOnly Property Playlist(Index As Integer) As Playlist
@@ -78,7 +91,7 @@ Public Class PlaylistManager
             _Playlists.Remove(Playlist)
             RemoveHandler Playlist.CollectionChanged, PlaylistCollectionChangedEventHandler
 
-            Dim f As IO.FileInfo = PlaylistStore.GetFile(Playlist.ID.ToString + ".xml")
+            Dim f As IO.FileInfo = PlaylistStore.GetFile(Playlist.ID.ToString + ".pl")
 
             If f.Exists Then
                 If My.Settings.DeletePlaylistsPermanently Then

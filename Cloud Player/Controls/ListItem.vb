@@ -365,7 +365,7 @@ Public Class ListItem
             If TypeOf AssociatedObject Is Video Then
                 Process.Start(CType(AssociatedObject, Video).Location)
             ElseIf TypeOf AssociatedObject Is Playlist Then
-                Process.Start(PlaylistStore.FullName, "-select," + CType(AssociatedObject, Playlist).ID.ToString + ".xml")
+                Process.Start(PlaylistStore.FullName, "-select," + CType(AssociatedObject, Playlist).ID.ToString + ".pl")
             End If
         End If
     End Sub

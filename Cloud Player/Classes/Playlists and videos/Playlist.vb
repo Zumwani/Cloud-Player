@@ -96,9 +96,13 @@ Public NotInheritable Class Playlist
 
     Public Sub Save()
         If MainWindow.PlaylistManager.Contains(Me) Then
-            PlaylistGenerator.Save(Me)
+            PlaylistGenerator.Save(Me, PlaylistStore.GetFile(Me.ID.ToString + ".pl").FullName)
         End If
     End Sub
+
+    Public Function GetLocation() As String
+        Return PlaylistStore.FullName + "\" + ID.ToString + ".pl"
+    End Function
 
 #End Region
 

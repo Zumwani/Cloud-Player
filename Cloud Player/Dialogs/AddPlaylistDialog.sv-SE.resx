@@ -118,11 +118,36 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BrowseButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BrowseButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ThumbnailBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt</value>
+  </data>
+  <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt</value>
+  </data>
+  <data name="Label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>289, 19</value>
   </data>
   <data name="Label2.Text" xml:space="preserve">
     <value>Sökväg eller länk till en bild för spelningslistan:</value>
+  </data>
+  <data name="TitleBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt</value>
+  </data>
+  <data name="Label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt</value>
+  </data>
+  <data name="Label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 19</value>
@@ -130,11 +155,29 @@
   <data name="Label1.Text" xml:space="preserve">
     <value>Titel för spelningslistan:</value>
   </data>
-  <data name="CreateNewTab.Text" xml:space="preserve">
+  <data name="LocalTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>30, 15, 30, 30</value>
+  </data>
+  <data name="LocalTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>904, 391</value>
+  </data>
+  <data name="LocalTab.Text" xml:space="preserve">
     <value>Skapa ny</value>
   </data>
   <data name="Or_ImportFromTab.Text" xml:space="preserve">
     <value>...Eller importera från:</value>
+  </data>
+  <data name="YouTubeSearchResultBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt</value>
+  </data>
+  <data name="YouTubeSearchBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt</value>
+  </data>
+  <data name="Label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt</value>
+  </data>
+  <data name="Label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>107, 19</value>
@@ -142,11 +185,41 @@
   <data name="Label4.Text" xml:space="preserve">
     <value>Skriv någonting:</value>
   </data>
+  <data name="TextBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>402, 20</value>
+  </data>
+  <data name="Label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="CancelButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt</value>
+  </data>
+  <data name="CancelButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="CancelButton.Text" xml:space="preserve">
     <value>Avbryt</value>
   </data>
+  <data name="AddButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt</value>
+  </data>
+  <data name="AddButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="AddButton.Text" xml:space="preserve">
     <value>Lägg till</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Lägg till spelningslista...</value>

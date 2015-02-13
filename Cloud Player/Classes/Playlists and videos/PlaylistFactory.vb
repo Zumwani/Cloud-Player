@@ -1,8 +1,6 @@
-﻿Imports NicoNico.Net
-Imports System.Xml
+﻿Imports System.Xml
 Imports System.IO
 Imports Google.Apis.YouTube.v3
-Imports NND.Net
 
 Public Class PlaylistFactory
 
@@ -14,7 +12,7 @@ Public Class PlaylistFactory
         Return New Playlist(Title, Thumbnail)
     End Function
 
-    Public Shared Function CreateFromYouTubePlaylist(Playlist As Data.SearchResult) As Playlist
+    Public Shared Function CreateFromYouTubePlaylist(Playlist As Data.SearchResult, GetVideos As Boolean) As Playlist
 
         With Playlist
 
@@ -25,21 +23,64 @@ Public Class PlaylistFactory
 
             Dim p As Playlist = CreateNew(.Snippet.Title, thumb)
 
-            Dim request As New Google.Apis.YouTube.v3.PlaylistItemsResource.ListRequest(YouTubeService, "contentDetails")
-            request.PlaylistId = .Id.PlaylistId
-            request.MaxResults = 50
+            If GetVideos Then
 
-            For Each vid In GetAllResults(request)
-                Dim vrequest As New Google.Apis.YouTube.v3.VideosResource.ListRequest(YouTubeService, "snippet")
-                vrequest.MaxResults = 1
-                vrequest.Id = vid.ContentDetails.VideoId
+                Dim request As New Google.Apis.YouTube.v3.PlaylistItemsResource.ListRequest(YouTubeService, "contentDetails")
+                request.PlaylistId = .Id.PlaylistId
+                request.MaxResults = 50
 
-                Dim vresponse = vrequest.Execute
-                If vresponse.Items.Count = 1 Then
-                    p.Add(VideoFactory.CreateFromYouTubeVideo(vresponse.Items(0)))
-                End If
+                For Each vid In GetAllResults(request)
 
-            Next
+                    Dim vrequest As New Google.Apis.YouTube.v3.VideosResource.ListRequest(YouTubeService, "snippet")
+                    vrequest.MaxResults = 1
+                    vrequest.Id = vid.ContentDetails.VideoId
+
+                    Dim vresponse = vrequest.Execute
+                    If vresponse.Items.Count = 1 Then
+                        p.Add(VideoFactory.CreateFromYouTubeVideo(vresponse.Items(0)))
+                    End If
+
+                Next
+
+            End If
+
+            Return p
+
+        End With
+
+    End Function
+
+    Public Shared Function CreateFromYouTubePlaylist(Playlist As Data.Playlist, GetVideos As Boolean) As Playlist
+
+        With Playlist
+
+            Dim thumb As String = ""
+            If .Snippet.Thumbnails.Default IsNot Nothing Then
+                thumb = .Snippet.Thumbnails.Default.Url
+            End If
+
+            Dim p As Playlist = CreateNew(.Snippet.Title, thumb)
+
+            If GetVideos Then
+
+                Dim request As New Google.Apis.YouTube.v3.PlaylistItemsResource.ListRequest(YouTubeService, "contentDetails")
+                request.PlaylistId = .Id
+                request.MaxResults = 50
+
+                For Each vid In GetAllResults(request)
+
+                    Dim vrequest As New Google.Apis.YouTube.v3.VideosResource.ListRequest(YouTubeService, "snippet")
+                    vrequest.MaxResults = 1
+                    vrequest.Id = vid.ContentDetails.VideoId
+
+                    Dim vresponse = vrequest.Execute
+                    If vresponse.Items.Count = 1 Then
+                        p.Add(VideoFactory.CreateFromYouTubeVideo(vresponse.Items(0)))
+                    End If
+
+                Next
+
+            End If
 
             Return p
 
@@ -90,7 +131,7 @@ Public Class PlaylistFactory
     'End Function
 
     Public Shared Function FromDisk(File As FileInfo) As Playlist
-        If File.Extension = ".xml" Then
+        If File.Extension = ".pl" Then
             If File.Exists Then
 
                 Dim xml As New XmlDocument

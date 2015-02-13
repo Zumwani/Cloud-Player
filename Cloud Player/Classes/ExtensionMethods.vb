@@ -97,6 +97,11 @@ Module ExtensionMethods
         Return -1
     End Function
 
+    <Extension()> _
+    Public Function Split(ByVal input As String, ByVal ParamArray delimiter As String()) As String()
+        Return input.Split(delimiter, StringSplitOptions.None)
+    End Function
+
     <Extension>
     Public Function ToHTMLColor(Color As Color) As String
         Return ColorTranslator.ToHtml(Color)
