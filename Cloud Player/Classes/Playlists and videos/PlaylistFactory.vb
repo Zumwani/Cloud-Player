@@ -14,99 +14,99 @@ Public Class PlaylistFactory
 
     Public Shared Function CreateFromYouTubePlaylist(Playlist As Data.SearchResult, GetVideos As Boolean) As Playlist
 
-        With Playlist
+        'With Playlist
 
-            Dim thumb As String = ""
-            If .Snippet.Thumbnails.Default IsNot Nothing Then
-                thumb = .Snippet.Thumbnails.Default.Url
-            End If
+        '    Dim thumb As String = ""
+        '    If .Snippet.Thumbnails.Default IsNot Nothing Then
+        '        thumb = .Snippet.Thumbnails.Default.Url
+        '    End If
 
-            Dim p As Playlist = CreateNew(.Snippet.Title, thumb)
+        '    Dim p As Playlist = CreateNew(.Snippet.Title, thumb)
 
-            If GetVideos Then
+        '    If GetVideos Then
 
-                Dim request As New Google.Apis.YouTube.v3.PlaylistItemsResource.ListRequest(YouTubeService, "contentDetails")
-                request.PlaylistId = .Id.PlaylistId
-                request.MaxResults = 50
+        '        Dim request As New Google.Apis.YouTube.v3.PlaylistItemsResource.ListRequest(YouTubeService, "contentDetails")
+        '        request.PlaylistId = .Id.PlaylistId
+        '        request.MaxResults = 50
 
-                For Each vid In GetAllResults(request)
+        '        For Each vid In GetAllResults(request)
 
-                    Dim vrequest As New Google.Apis.YouTube.v3.VideosResource.ListRequest(YouTubeService, "snippet")
-                    vrequest.MaxResults = 1
-                    vrequest.Id = vid.ContentDetails.VideoId
+        '            Dim vrequest As New Google.Apis.YouTube.v3.VideosResource.ListRequest(YouTubeService, "snippet")
+        '            vrequest.MaxResults = 1
+        '            vrequest.Id = vid.ContentDetails.VideoId
 
-                    Dim vresponse = vrequest.Execute
-                    If vresponse.Items.Count = 1 Then
-                        p.Add(VideoFactory.CreateFromYouTubeVideo(vresponse.Items(0)))
-                    End If
+        '            Dim vresponse = vrequest.Execute
+        '            If vresponse.Items.Count = 1 Then
+        '                p.Add(VideoFactory.CreateFromYouTubeVideo(vresponse.Items(0)))
+        '            End If
 
-                Next
+        '        Next
 
-            End If
+        '    End If
 
-            Return p
+        '    Return p
 
-        End With
+        'End With
 
     End Function
 
     Public Shared Function CreateFromYouTubePlaylist(Playlist As Data.Playlist, GetVideos As Boolean) As Playlist
 
-        With Playlist
+        'With Playlist
 
-            Dim thumb As String = ""
-            If .Snippet.Thumbnails.Default IsNot Nothing Then
-                thumb = .Snippet.Thumbnails.Default.Url
-            End If
+        '    Dim thumb As String = ""
+        '    If .Snippet.Thumbnails.Default IsNot Nothing Then
+        '        thumb = .Snippet.Thumbnails.Default.Url
+        '    End If
 
-            Dim p As Playlist = CreateNew(.Snippet.Title, thumb)
+        '    Dim p As Playlist = CreateNew(.Snippet.Title, thumb)
 
-            If GetVideos Then
+        '    If GetVideos Then
 
-                Dim request As New Google.Apis.YouTube.v3.PlaylistItemsResource.ListRequest(YouTubeService, "contentDetails")
-                request.PlaylistId = .Id
-                request.MaxResults = 50
+        '        Dim request As New Google.Apis.YouTube.v3.PlaylistItemsResource.ListRequest(YouTubeService, "contentDetails")
+        '        request.PlaylistId = .Id
+        '        request.MaxResults = 50
 
-                For Each vid In GetAllResults(request)
+        '        For Each vid In GetAllResults(request)
 
-                    Dim vrequest As New Google.Apis.YouTube.v3.VideosResource.ListRequest(YouTubeService, "snippet")
-                    vrequest.MaxResults = 1
-                    vrequest.Id = vid.ContentDetails.VideoId
+        '            Dim vrequest As New Google.Apis.YouTube.v3.VideosResource.ListRequest(YouTubeService, "snippet")
+        '            vrequest.MaxResults = 1
+        '            vrequest.Id = vid.ContentDetails.VideoId
 
-                    Dim vresponse = vrequest.Execute
-                    If vresponse.Items.Count = 1 Then
-                        p.Add(VideoFactory.CreateFromYouTubeVideo(vresponse.Items(0)))
-                    End If
+        '            Dim vresponse = vrequest.Execute
+        '            If vresponse.Items.Count = 1 Then
+        '                p.Add(VideoFactory.CreateFromYouTubeVideo(vresponse.Items(0)))
+        '            End If
 
-                Next
+        '        Next
 
-            End If
+        '    End If
 
-            Return p
+        '    Return p
 
-        End With
+        'End With
 
     End Function
 
     Private Shared Function GetAllResults(Request As Google.Apis.YouTube.v3.PlaylistItemsResource.ListRequest) As List(Of Data.PlaylistItem)
 
-        Dim l As New List(Of Data.PlaylistItem)
+        'Dim l As New List(Of Data.PlaylistItem)
 
-        Request.PageToken = ""
-        Dim response As Data.PlaylistItemListResponse = Request.Execute
+        'Request.PageToken = ""
+        'Dim response As Data.PlaylistItemListResponse = Request.Execute
 
-        l.AddRange(response.Items)
+        'l.AddRange(response.Items)
 
-        'TODO: See if there is a better way
-        For i As Integer = 2 To 100
-            If Not response.NextPageToken = "" Then
-                Request.PageToken = response.NextPageToken
-                response = Request.Execute
-                l.AddRange(response.Items)
-            End If
-        Next
+        ''TODO: See if there is a better way
+        'For i As Integer = 2 To 100
+        '    If Not response.NextPageToken = "" Then
+        '        Request.PageToken = response.NextPageToken
+        '        response = Request.Execute
+        '        l.AddRange(response.Items)
+        '    End If
+        'Next
 
-        Return l
+        'Return l
 
     End Function
 

@@ -49,7 +49,7 @@ Public Module App
                           "Press Enter to continue...")
 
                     If Console.ReadKey.Key = ConsoleKey.Enter Then
-                        Console.WriteLine("osakspoakf")
+
                     End If
 
                 End If

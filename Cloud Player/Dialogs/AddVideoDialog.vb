@@ -156,30 +156,30 @@ Public Class AddVideoDialog
 
     Private Sub DoYouTubeSearch()
 
-        Dim SearchString As String = YouTubeSearchBox.Text
+        'Dim SearchString As String = YouTubeSearchBox.Text
 
-        If Not SearchString = "" Then
-            YouTubeSearchResultBox.Controls.Clear()
+        'If Not SearchString = "" Then
+        '    YouTubeSearchResultBox.Controls.Clear()
 
-            Dim request As New SearchResource.ListRequest(YouTubeService, "snippet")
-            request.Q = SearchString
-            request.MaxResults = 20
+        '    Dim request As New SearchResource.ListRequest(YouTubeService, "snippet")
+        '    request.Q = SearchString
+        '    request.MaxResults = 20
 
-            Dim v As New List(Of Data.SearchResult)
+        '    Dim v As New List(Of Data.SearchResult)
 
-            Dim response = request.Execute
+        '    Dim response = request.Execute
 
-            For Each item In response.Items
-                If item.Id.Kind = "youtube#video" Then
-                    v.Add(item)
-                End If
-            Next
+        '    For Each item In response.Items
+        '        If item.Id.Kind = "youtube#video" Then
+        '            v.Add(item)
+        '        End If
+        '    Next
 
-            For Each item In v
-                YouTubeSearchResultBox.Controls.Add(CreateItem(VideoFactory.CreateFromYouTubeVideo(item)))
-            Next
+        '    For Each item In v
+        '        YouTubeSearchResultBox.Controls.Add(CreateItem(VideoFactory.CreateFromYouTubeVideo(item)))
+        '    Next
 
-        End If
+        'End If
     End Sub
 
     Private Sub YouTubeSearchBox_TextChanged(sender As Object, e As EventArgs) Handles YouTubeSearchBox.TextChanged

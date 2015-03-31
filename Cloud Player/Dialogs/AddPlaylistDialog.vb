@@ -162,33 +162,33 @@ Public Class AddPlaylistDialog
 
     Private Sub DoYouTubeSearch()
 
-        Dim SearchString As String = YouTubeSearchBox.Text
+        'Dim SearchString As String = YouTubeSearchBox.Text
 
-        If Not SearchString = "" Then
-            YouTubeSearchResultBox.SuspendLayout()
-            YouTubeSearchResultBox.Controls.Clear()
+        'If Not SearchString = "" Then
+        '    YouTubeSearchResultBox.SuspendLayout()
+        '    YouTubeSearchResultBox.Controls.Clear()
 
-            Dim request As New SearchResource.ListRequest(YouTubeService, "snippet")
-            request.Q = SearchString
-            request.MaxResults = 20
-            request.Type = "playlist"
+        '    Dim request As New SearchResource.ListRequest(YouTubeService, "snippet")
+        '    request.Q = SearchString
+        '    request.MaxResults = 20
+        '    request.Type = "playlist"
 
-            Dim response = request.Execute
+        '    Dim response = request.Execute
 
-            Dim l As New List(Of String)
+        '    Dim l As New List(Of String)
 
-            For Each item In response.Items
-                If Not item.Id.PlaylistId = "" Then
-                    YouTubeSearchResultBox.Controls.Add(CreateItem(PlaylistFactory.CreateFromYouTubePlaylist(item, False), item.Id.PlaylistId))
-                    l.Add(item.Id.PlaylistId)
-                End If
-            Next
+        '    For Each item In response.Items
+        '        If Not item.Id.PlaylistId = "" Then
+        '            YouTubeSearchResultBox.Controls.Add(CreateItem(PlaylistFactory.CreateFromYouTubePlaylist(item, False), item.Id.PlaylistId))
+        '            l.Add(item.Id.PlaylistId)
+        '        End If
+        '    Next
 
-            YouTubeItems = l.ToArray
+        '    YouTubeItems = l.ToArray
 
-            YouTubeSearchResultBox.ResumeLayout()
+        '    YouTubeSearchResultBox.ResumeLayout()
 
-        End If
+        'End If
     End Sub
 
     Private Sub YouTubeBox_TextChanged(sender As Object, e As EventArgs) Handles YouTubeSearchBox.TextChanged
@@ -214,13 +214,13 @@ Public Class AddPlaylistDialog
     End Sub
 
     Private Sub YouTube_PlaylistFinalize(PlaylistTag As Object)
-        Dim request As New PlaylistsResource.ListRequest(YouTubeService, "snippet")
-        request.MaxResults = 1
-        request.Id = CurrentPlaylistTag
+        'Dim request As New PlaylistsResource.ListRequest(YouTubeService, "snippet")
+        'request.MaxResults = 1
+        'request.Id = CurrentPlaylistTag
 
-        Dim response = request.Execute
+        'Dim response = request.Execute
 
-        Playlist = PlaylistFactory.CreateFromYouTubePlaylist(response.Items(0), True)
+        'Playlist = PlaylistFactory.CreateFromYouTubePlaylist(response.Items(0), True)
     End Sub
 
 #End Region

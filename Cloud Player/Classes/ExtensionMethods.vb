@@ -107,8 +107,8 @@ Module ExtensionMethods
         Return ColorTranslator.ToHtml(Color)
     End Function
 
-    Public ReadOnly YouTubeService As Google.Apis.Services.BaseClientService = _
-   New YouTubeService(New Services.BaseClientService.Initializer With {.ApplicationName = "Cloud Player", .ApiKey = "AIzaSyCVtDXEsF96YRzvVtv5kEzqRuqOymiYQmI"})
+    ' Public ReadOnly YouTubeService As Google.Apis.Services.BaseClientService = _
+    'New YouTubeService(New Services.BaseClientService.Initializer With {.ApplicationName = "Cloud Player", .ApiKey = "AIzaSyCVtDXEsF96YRzvVtv5kEzqRuqOymiYQmI"})
 
     Public ReadOnly SoundCloudClient As New SoundCloud.NET.SoundCloudClient(New SoundCloud.NET.SoundCloudCredentials("454972d9aec9bedff9a95d59a9076411", "1b5f909fbb3a378fbcc5f6ceb7672a86", "andreas.ingeholm@hotmail.com", "0kmyJ5bhEm7Q"))
 
