@@ -2,38 +2,38 @@
 
 #Region "Constructor"
 
-    Public Sub New(Location As Uri, Service As String, Title As String, Creator As String, Length As TimeSpan, Thumbnail As String)
-        Me._Location = Location
-        Me._Service = Service
-        Me._Title = Title
-        Me._Creator = Creator
-        Me._Length = Length
-        Me._Thumbnail = Thumbnail
+    Public Sub New(Source As Uri, Service As String, Title As String, Uploader As String, Length As TimeSpan, Thumb As String)
+        Me.Source = Source
+        Me.Service = Service
+        Me.Title = Title
+        Me.Uploader = Uploader
+        Me.Length = Length
+        Me._Thumb = Thumb
     End Sub
 
 #End Region
 #Region "Properties"
 
-    Public Property Location As Uri
+    Public Property Source As Uri
     Public Property Service As String
     Public Property Title As String
-    Public Property Creator As String
+    Public Property Uploader As String
     Public Property Length As TimeSpan
 
-    Private _Thumbnail As String
-    Public Property Thumbnail As String
+    Private _Thumb As String
+    Public Property Thumb As String
         Get
-            If Not _Thumbnail.Contains("%ThumbnailStore%") Then
-                Return _Thumbnail
+            If Not _Thumb.Contains("%ThumbnailStore%") Then
+                Return _Thumb
             Else
-                Return _Thumbnail.Replace("%ThumbnailStore", ThumbnailStore.FullName)
+                Return _Thumb.Replace("%ThumbnailStore", ThumbnailStore.FullName)
             End If
         End Get
         Set(value As String)
             If Not value.Contains(ThumbnailStore.FullName) Then
-                _Thumbnail = value
+                _Thumb = value
             Else
-                _Thumbnail = value.Replace(ThumbnailStore.FullName, "%ThumbnailStore%")
+                _Thumb = value.Replace(ThumbnailStore.FullName, "%ThumbnailStore%")
             End If
         End Set
     End Property
@@ -48,46 +48,7 @@
     End Property
 
     Public Shared Function GetFriendlyLength(TimeSpan As TimeSpan) As String
-
-        'Length is the value in seconds. For some reason doing it this method returns 1 second to much, subtracting 1 second from the timespan fixes that.
-        Dim a As String
-
-        Dim h As Integer = TimeSpan.Hours
-        Dim m As Integer = TimeSpan.Minutes
-        Dim s As Integer = TimeSpan.Seconds
-
-        If Not h = 0 Then
-
-            a = h.ToString + ":"
-
-            If m.ToString.Length = 1 Then
-                a += "0" + m.ToString
-            Else
-                a += m.ToString
-            End If
-
-            a += ":"
-
-            If s.ToString.Length = 1 Then
-                a += "0" + s.ToString
-            Else
-                a += s.ToString
-            End If
-
-        Else
-
-            a = m.ToString + ":"
-
-            If s.ToString.Length = 1 Then
-                a += "0" + s.ToString
-            Else
-                a += s.ToString
-            End If
-
-        End If
-
-        Return a
-
+        Return TimeSpan.ToString("HH'h'MM'm'SS's'")
     End Function
 
 #End Region

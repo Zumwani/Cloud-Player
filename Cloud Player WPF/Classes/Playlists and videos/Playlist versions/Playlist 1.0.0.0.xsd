@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Playlist">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Title" type="xs:string" />
+        <xs:element name="ID" type="xs:string" />
+        <xs:element name="Thumb" />
+        <xs:element name="Videos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="Video">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Source" type="xs:string" />
+                    <xs:element name="Service" type="xs:string" />
+                    <xs:element name="Title" type="xs:string" />
+                    <xs:element name="Uploader" type="xs:string" />
+                    <xs:element name="Length" type="xs:time" />
+                    <xs:element name="Thumb" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="PlaylistGeneratorVersion" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

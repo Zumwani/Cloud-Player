@@ -31,6 +31,7 @@ Partial Class MainWindow
         Me.CurrentlyPlayingButton = New System.Windows.Forms.Button()
         Me.ContentPanel = New System.Windows.Forms.Panel()
         Me.InnerContentPanel = New System.Windows.Forms.Panel()
+        Me.PlaylistOptionsShadowPanel = New System.Windows.Forms.Panel()
         Me.PlaylistTitleLabel = New System.Windows.Forms.Label()
         Me.VideoGradientPanel = New System.Windows.Forms.Panel()
         Me.List = New System.Windows.Forms.FlowLayoutPanel()
@@ -42,7 +43,7 @@ Partial Class MainWindow
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PlaylistOptionsShadowPanel = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.ContentPanel.SuspendLayout()
         Me.InnerContentPanel.SuspendLayout()
         Me.PlaylistOptionsPanel.SuspendLayout()
@@ -112,6 +113,11 @@ Partial Class MainWindow
         resources.ApplyResources(Me.InnerContentPanel, "InnerContentPanel")
         Me.InnerContentPanel.Name = "InnerContentPanel"
         '
+        'PlaylistOptionsShadowPanel
+        '
+        resources.ApplyResources(Me.PlaylistOptionsShadowPanel, "PlaylistOptionsShadowPanel")
+        Me.PlaylistOptionsShadowPanel.Name = "PlaylistOptionsShadowPanel"
+        '
         'PlaylistTitleLabel
         '
         Me.PlaylistTitleLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
@@ -138,6 +144,7 @@ Partial Class MainWindow
         '
         resources.ApplyResources(Me.PlaylistOptionsPanel, "PlaylistOptionsPanel")
         Me.PlaylistOptionsPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.PlaylistOptionsPanel.Controls.Add(Me.Button1)
         Me.PlaylistOptionsPanel.Controls.Add(Me.SettingsButton)
         Me.PlaylistOptionsPanel.Controls.Add(Me.Label4)
         Me.PlaylistOptionsPanel.Controls.Add(Me.AddButton)
@@ -176,10 +183,11 @@ Partial Class MainWindow
         Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
         resources.ApplyResources(Me.ToolStripMenuItem4, "ToolStripMenuItem4")
         '
-        'PlaylistOptionsShadowPanel
+        'Button1
         '
-        resources.ApplyResources(Me.PlaylistOptionsShadowPanel, "PlaylistOptionsShadowPanel")
-        Me.PlaylistOptionsShadowPanel.Name = "PlaylistOptionsShadowPanel"
+        resources.ApplyResources(Me.Button1, "Button1")
+        Me.Button1.Name = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'MainWindow
         '
@@ -221,5 +229,6 @@ Partial Class MainWindow
     Friend WithEvents MediaPlayer1 As Zumwani.CloudPlayer.MediaPlayer
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents PlaylistOptionsShadowPanel As System.Windows.Forms.Panel
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 
 End Class

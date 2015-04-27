@@ -12,12 +12,12 @@ Option Strict On
 Option Explicit On
 
 
-Namespace My
+Namespace My.Settings
     
     <Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "12.0.0.0"),  _
      Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
-    Partial Friend NotInheritable Class MySettings
+    Partial Public NotInheritable Class MySettings
         Inherits Global.System.Configuration.ApplicationSettingsBase
         
         Private Shared defaultInstance As MySettings = CType(Global.System.Configuration.ApplicationSettingsBase.Synchronized(New MySettings()),MySettings)
@@ -135,9 +135,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.Zumwani.CloudPlayer.My.MySettings
+        Friend ReadOnly Property Settings() As Global.Zumwani.CloudPlayer.My.Settings.MySettings
             Get
-                Return Global.Zumwani.CloudPlayer.My.MySettings.Default
+                Return Global.Zumwani.CloudPlayer.My.Settings.MySettings.Default
             End Get
         End Property
     End Module

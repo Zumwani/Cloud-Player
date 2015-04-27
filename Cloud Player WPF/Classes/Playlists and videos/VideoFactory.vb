@@ -47,11 +47,11 @@ Public Class VideoFactory
     '    End With
     'End Function
 
-    Public Shared Function CreateFromSoundCloudTrack(Track As SoundCloud.NET.Track) As Video
-        With Track
-            Return New Video(New Uri(.StreamUrl), "SoundCloud", .Title, .User.UserName, Nothing, "")
-        End With
-    End Function
+    'Public Shared Function CreateFromSoundCloudTrack(Track As SoundCloud.NET.Track) As Video
+    '    With Track
+    '        Return New Video(New Uri(.StreamUrl), "SoundCloud", .Title, .User.UserName, Nothing, "")
+    '    End With
+    'End Function
 
     Private Shared Function GetVideoFileLength(File As String) As TimeSpan
 

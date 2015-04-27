@@ -21,19 +21,24 @@ Imports System
 '''<summary>
 '''  A strongly-typed resource class, for looking up localized strings, etc.
 '''</summary>
-<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0"), _
- Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
- Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute()> _
-Partial Class MainWindow
-
+<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0"),  _
+ Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+ Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute()>  _
+Friend Class MainWindow
+    
     Private Shared resourceMan As Global.System.Resources.ResourceManager
-
+    
     Private Shared resourceCulture As Global.System.Globalization.CultureInfo
-
+    
+    <Global.System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")>  _
+    Friend Sub New()
+        MyBase.New
+    End Sub
+    
     '''<summary>
     '''  Returns the cached ResourceManager instance used by this class.
     '''</summary>
-    <Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)> _
+    <Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
     Friend Shared ReadOnly Property ResourceManager() As Global.System.Resources.ResourceManager
         Get
             If Object.ReferenceEquals(resourceMan, Nothing) Then
@@ -43,101 +48,101 @@ Partial Class MainWindow
             Return resourceMan
         End Get
     End Property
-
+    
     '''<summary>
     '''  Overrides the current thread's CurrentUICulture property for all
     '''  resource lookups using this strongly typed resource class.
     '''</summary>
-    <Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)> _
+    <Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
     Friend Shared Property Culture() As Global.System.Globalization.CultureInfo
         Get
             Return resourceCulture
         End Get
-        Set(value As Global.System.Globalization.CultureInfo)
+        Set
             resourceCulture = value
         End Set
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.ImageLayout similar to Center.
     '''</summary>
     Friend Shared ReadOnly Property AddButton_BackgroundImageLayout() As System.Windows.Forms.ImageLayout
         Get
             Dim obj As Object = ResourceManager.GetObject("AddButton.BackgroundImageLayout", resourceCulture)
-            Return CType(obj, System.Windows.Forms.ImageLayout)
+            Return CType(obj,System.Windows.Forms.ImageLayout)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.DockStyle similar to Right.
     '''</summary>
     Friend Shared ReadOnly Property AddButton_Dock() As System.Windows.Forms.DockStyle
         Get
             Dim obj As Object = ResourceManager.GetObject("AddButton.Dock", resourceCulture)
-            Return CType(obj, System.Windows.Forms.DockStyle)
+            Return CType(obj,System.Windows.Forms.DockStyle)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.FlatStyle similar to Flat.
     '''</summary>
     Friend Shared ReadOnly Property AddButton_FlatStyle() As System.Windows.Forms.FlatStyle
         Get
             Dim obj As Object = ResourceManager.GetObject("AddButton.FlatStyle", resourceCulture)
-            Return CType(obj, System.Windows.Forms.FlatStyle)
+            Return CType(obj,System.Windows.Forms.FlatStyle)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.ImeMode similar to NoControl.
     '''</summary>
     Friend Shared ReadOnly Property AddButton_ImeMode() As System.Windows.Forms.ImeMode
         Get
             Dim obj As Object = ResourceManager.GetObject("AddButton.ImeMode", resourceCulture)
-            Return CType(obj, System.Windows.Forms.ImeMode)
+            Return CType(obj,System.Windows.Forms.ImeMode)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Point similar to {X=405,Y=5}.
     '''</summary>
     Friend Shared ReadOnly Property AddButton_Location() As System.Drawing.Point
         Get
             Dim obj As Object = ResourceManager.GetObject("AddButton.Location", resourceCulture)
-            Return CType(obj, System.Drawing.Point)
+            Return CType(obj,System.Drawing.Point)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.Padding similar to {Left=5,Top=5,Right=5,Bottom=5}.
     '''</summary>
     Friend Shared ReadOnly Property AddButton_Margin() As System.Windows.Forms.Padding
         Get
             Dim obj As Object = ResourceManager.GetObject("AddButton.Margin", resourceCulture)
-            Return CType(obj, System.Windows.Forms.Padding)
+            Return CType(obj,System.Windows.Forms.Padding)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Size similar to {Width=30, Height=30}.
     '''</summary>
     Friend Shared ReadOnly Property AddButton_Size() As System.Drawing.Size
         Get
             Dim obj As Object = ResourceManager.GetObject("AddButton.Size", resourceCulture)
-            Return CType(obj, System.Drawing.Size)
+            Return CType(obj,System.Drawing.Size)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Int32 similar to 13.
     '''</summary>
     Friend Shared ReadOnly Property AddButton_TabIndex() As Integer
         Get
             Dim obj As Object = ResourceManager.GetObject("AddButton.TabIndex", resourceCulture)
-            Return CType(obj, Integer)
+            Return CType(obj,Integer)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized string similar to Add [video\playlist].
     '''</summary>
@@ -146,147 +151,186 @@ Partial Class MainWindow
             Return ResourceManager.GetString("AddButton.ToolTip", resourceCulture)
         End Get
     End Property
-
+    
+    '''<summary>
+    '''  Looks up a localized resource of type System.Drawing.Point similar to {X=256,Y=6}.
+    '''</summary>
+    Friend Shared ReadOnly Property Button1_Location() As System.Drawing.Point
+        Get
+            Dim obj As Object = ResourceManager.GetObject("Button1.Location", resourceCulture)
+            Return CType(obj,System.Drawing.Point)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Looks up a localized resource of type System.Drawing.Size similar to {Width=75, Height=23}.
+    '''</summary>
+    Friend Shared ReadOnly Property Button1_Size() As System.Drawing.Size
+        Get
+            Dim obj As Object = ResourceManager.GetObject("Button1.Size", resourceCulture)
+            Return CType(obj,System.Drawing.Size)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Looks up a localized resource of type System.Int32 similar to 18.
+    '''</summary>
+    Friend Shared ReadOnly Property Button1_TabIndex() As Integer
+        Get
+            Dim obj As Object = ResourceManager.GetObject("Button1.TabIndex", resourceCulture)
+            Return CType(obj,Integer)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Looks up a localized string similar to Button1.
+    '''</summary>
+    Friend Shared ReadOnly Property Button1_Text() As String
+        Get
+            Return ResourceManager.GetString("Button1.Text", resourceCulture)
+        End Get
+    End Property
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Boolean similar to True.
     '''</summary>
     Friend Shared ReadOnly Property ContentPanel_AutoScroll() As Boolean
         Get
             Dim obj As Object = ResourceManager.GetObject("ContentPanel.AutoScroll", resourceCulture)
-            Return CType(obj, Boolean)
+            Return CType(obj,Boolean)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.DockStyle similar to Fill.
     '''</summary>
     Friend Shared ReadOnly Property ContentPanel_Dock() As System.Windows.Forms.DockStyle
         Get
             Dim obj As Object = ResourceManager.GetObject("ContentPanel.Dock", resourceCulture)
-            Return CType(obj, System.Windows.Forms.DockStyle)
+            Return CType(obj,System.Windows.Forms.DockStyle)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Point similar to {X=0,Y=0}.
     '''</summary>
     Friend Shared ReadOnly Property ContentPanel_Location() As System.Drawing.Point
         Get
             Dim obj As Object = ResourceManager.GetObject("ContentPanel.Location", resourceCulture)
-            Return CType(obj, System.Drawing.Point)
+            Return CType(obj,System.Drawing.Point)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Size similar to {Width=681, Height=633}.
     '''</summary>
     Friend Shared ReadOnly Property ContentPanel_Size() As System.Drawing.Size
         Get
             Dim obj As Object = ResourceManager.GetObject("ContentPanel.Size", resourceCulture)
-            Return CType(obj, System.Drawing.Size)
+            Return CType(obj,System.Drawing.Size)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Int32 similar to 6.
     '''</summary>
     Friend Shared ReadOnly Property ContentPanel_TabIndex() As Integer
         Get
             Dim obj As Object = ResourceManager.GetObject("ContentPanel.TabIndex", resourceCulture)
-            Return CType(obj, Integer)
+            Return CType(obj,Integer)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Bitmap.
     '''</summary>
     Friend Shared ReadOnly Property CurrentlyPlayingButton_BackgroundImage() As System.Drawing.Bitmap
         Get
             Dim obj As Object = ResourceManager.GetObject("CurrentlyPlayingButton.BackgroundImage", resourceCulture)
-            Return CType(obj, System.Drawing.Bitmap)
+            Return CType(obj,System.Drawing.Bitmap)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.ImageLayout similar to Center.
     '''</summary>
     Friend Shared ReadOnly Property CurrentlyPlayingButton_BackgroundImageLayout() As System.Windows.Forms.ImageLayout
         Get
             Dim obj As Object = ResourceManager.GetObject("CurrentlyPlayingButton.BackgroundImageLayout", resourceCulture)
-            Return CType(obj, System.Windows.Forms.ImageLayout)
+            Return CType(obj,System.Windows.Forms.ImageLayout)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.DockStyle similar to Left.
     '''</summary>
     Friend Shared ReadOnly Property CurrentlyPlayingButton_Dock() As System.Windows.Forms.DockStyle
         Get
             Dim obj As Object = ResourceManager.GetObject("CurrentlyPlayingButton.Dock", resourceCulture)
-            Return CType(obj, System.Windows.Forms.DockStyle)
+            Return CType(obj,System.Windows.Forms.DockStyle)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.FlatStyle similar to Flat.
     '''</summary>
     Friend Shared ReadOnly Property CurrentlyPlayingButton_FlatStyle() As System.Windows.Forms.FlatStyle
         Get
             Dim obj As Object = ResourceManager.GetObject("CurrentlyPlayingButton.FlatStyle", resourceCulture)
-            Return CType(obj, System.Windows.Forms.FlatStyle)
+            Return CType(obj,System.Windows.Forms.FlatStyle)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.ImeMode similar to NoControl.
     '''</summary>
     Friend Shared ReadOnly Property CurrentlyPlayingButton_ImeMode() As System.Windows.Forms.ImeMode
         Get
             Dim obj As Object = ResourceManager.GetObject("CurrentlyPlayingButton.ImeMode", resourceCulture)
-            Return CType(obj, System.Windows.Forms.ImeMode)
+            Return CType(obj,System.Windows.Forms.ImeMode)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Point similar to {X=5,Y=5}.
     '''</summary>
     Friend Shared ReadOnly Property CurrentlyPlayingButton_Location() As System.Drawing.Point
         Get
             Dim obj As Object = ResourceManager.GetObject("CurrentlyPlayingButton.Location", resourceCulture)
-            Return CType(obj, System.Drawing.Point)
+            Return CType(obj,System.Drawing.Point)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.Padding similar to {Left=5,Top=5,Right=5,Bottom=5}.
     '''</summary>
     Friend Shared ReadOnly Property CurrentlyPlayingButton_Margin() As System.Windows.Forms.Padding
         Get
             Dim obj As Object = ResourceManager.GetObject("CurrentlyPlayingButton.Margin", resourceCulture)
-            Return CType(obj, System.Windows.Forms.Padding)
+            Return CType(obj,System.Windows.Forms.Padding)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Size similar to {Width=30, Height=30}.
     '''</summary>
     Friend Shared ReadOnly Property CurrentlyPlayingButton_Size() As System.Drawing.Size
         Get
             Dim obj As Object = ResourceManager.GetObject("CurrentlyPlayingButton.Size", resourceCulture)
-            Return CType(obj, System.Drawing.Size)
+            Return CType(obj,System.Drawing.Size)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Int32 similar to 12.
     '''</summary>
     Friend Shared ReadOnly Property CurrentlyPlayingButton_TabIndex() As Integer
         Get
             Dim obj As Object = ResourceManager.GetObject("CurrentlyPlayingButton.TabIndex", resourceCulture)
-            Return CType(obj, Integer)
+            Return CType(obj,Integer)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized string similar to View currently playing.
     '''</summary>
@@ -295,417 +339,417 @@ Partial Class MainWindow
             Return ResourceManager.GetString("CurrentlyPlayingButton.ToolTip", resourceCulture)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Point similar to {X=120,Y=0}.
     '''</summary>
     Friend Shared ReadOnly Property InnerContentPanel_Location() As System.Drawing.Point
         Get
             Dim obj As Object = ResourceManager.GetObject("InnerContentPanel.Location", resourceCulture)
-            Return CType(obj, System.Drawing.Point)
+            Return CType(obj,System.Drawing.Point)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Size similar to {Width=440, Height=590}.
     '''</summary>
     Friend Shared ReadOnly Property InnerContentPanel_Size() As System.Drawing.Size
         Get
             Dim obj As Object = ResourceManager.GetObject("InnerContentPanel.Size", resourceCulture)
-            Return CType(obj, System.Drawing.Size)
+            Return CType(obj,System.Drawing.Size)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Int32 similar to 6.
     '''</summary>
     Friend Shared ReadOnly Property InnerContentPanel_TabIndex() As Integer
         Get
             Dim obj As Object = ResourceManager.GetObject("InnerContentPanel.TabIndex", resourceCulture)
-            Return CType(obj, Integer)
+            Return CType(obj,Integer)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.DockStyle similar to Left.
     '''</summary>
     Friend Shared ReadOnly Property Label3_Dock() As System.Windows.Forms.DockStyle
         Get
             Dim obj As Object = ResourceManager.GetObject("Label3.Dock", resourceCulture)
-            Return CType(obj, System.Windows.Forms.DockStyle)
+            Return CType(obj,System.Windows.Forms.DockStyle)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.ImeMode similar to NoControl.
     '''</summary>
     Friend Shared ReadOnly Property Label3_ImeMode() As System.Windows.Forms.ImeMode
         Get
             Dim obj As Object = ResourceManager.GetObject("Label3.ImeMode", resourceCulture)
-            Return CType(obj, System.Windows.Forms.ImeMode)
+            Return CType(obj,System.Windows.Forms.ImeMode)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Point similar to {X=35,Y=5}.
     '''</summary>
     Friend Shared ReadOnly Property Label3_Location() As System.Drawing.Point
         Get
             Dim obj As Object = ResourceManager.GetObject("Label3.Location", resourceCulture)
-            Return CType(obj, System.Drawing.Point)
+            Return CType(obj,System.Drawing.Point)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Size similar to {Width=5, Height=30}.
     '''</summary>
     Friend Shared ReadOnly Property Label3_Size() As System.Drawing.Size
         Get
             Dim obj As Object = ResourceManager.GetObject("Label3.Size", resourceCulture)
-            Return CType(obj, System.Drawing.Size)
+            Return CType(obj,System.Drawing.Size)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Int32 similar to 16.
     '''</summary>
     Friend Shared ReadOnly Property Label3_TabIndex() As Integer
         Get
             Dim obj As Object = ResourceManager.GetObject("Label3.TabIndex", resourceCulture)
-            Return CType(obj, Integer)
+            Return CType(obj,Integer)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.DockStyle similar to Left.
     '''</summary>
     Friend Shared ReadOnly Property Label4_Dock() As System.Windows.Forms.DockStyle
         Get
             Dim obj As Object = ResourceManager.GetObject("Label4.Dock", resourceCulture)
-            Return CType(obj, System.Windows.Forms.DockStyle)
+            Return CType(obj,System.Windows.Forms.DockStyle)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.ImeMode similar to NoControl.
     '''</summary>
     Friend Shared ReadOnly Property Label4_ImeMode() As System.Windows.Forms.ImeMode
         Get
             Dim obj As Object = ResourceManager.GetObject("Label4.ImeMode", resourceCulture)
-            Return CType(obj, System.Windows.Forms.ImeMode)
+            Return CType(obj,System.Windows.Forms.ImeMode)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Point similar to {X=70,Y=5}.
     '''</summary>
     Friend Shared ReadOnly Property Label4_Location() As System.Drawing.Point
         Get
             Dim obj As Object = ResourceManager.GetObject("Label4.Location", resourceCulture)
-            Return CType(obj, System.Drawing.Point)
+            Return CType(obj,System.Drawing.Point)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Size similar to {Width=15, Height=30}.
     '''</summary>
     Friend Shared ReadOnly Property Label4_Size() As System.Drawing.Size
         Get
             Dim obj As Object = ResourceManager.GetObject("Label4.Size", resourceCulture)
-            Return CType(obj, System.Drawing.Size)
+            Return CType(obj,System.Drawing.Size)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Int32 similar to 17.
     '''</summary>
     Friend Shared ReadOnly Property Label4_TabIndex() As Integer
         Get
             Dim obj As Object = ResourceManager.GetObject("Label4.TabIndex", resourceCulture)
-            Return CType(obj, Integer)
+            Return CType(obj,Integer)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Boolean similar to True.
     '''</summary>
     Friend Shared ReadOnly Property List_AutoSize() As Boolean
         Get
             Dim obj As Object = ResourceManager.GetObject("List.AutoSize", resourceCulture)
-            Return CType(obj, Boolean)
+            Return CType(obj,Boolean)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.AutoSizeMode similar to GrowAndShrink.
     '''</summary>
     Friend Shared ReadOnly Property List_AutoSizeMode() As System.Windows.Forms.AutoSizeMode
         Get
             Dim obj As Object = ResourceManager.GetObject("List.AutoSizeMode", resourceCulture)
-            Return CType(obj, System.Windows.Forms.AutoSizeMode)
+            Return CType(obj,System.Windows.Forms.AutoSizeMode)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.FlowDirection similar to TopDown.
     '''</summary>
     Friend Shared ReadOnly Property List_FlowDirection() As System.Windows.Forms.FlowDirection
         Get
             Dim obj As Object = ResourceManager.GetObject("List.FlowDirection", resourceCulture)
-            Return CType(obj, System.Windows.Forms.FlowDirection)
+            Return CType(obj,System.Windows.Forms.FlowDirection)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Point similar to {X=0,Y=334}.
     '''</summary>
     Friend Shared ReadOnly Property List_Location() As System.Drawing.Point
         Get
             Dim obj As Object = ResourceManager.GetObject("List.Location", resourceCulture)
-            Return CType(obj, System.Drawing.Point)
+            Return CType(obj,System.Drawing.Point)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Size similar to {Width=0, Height=0}.
     '''</summary>
     Friend Shared ReadOnly Property List_Size() As System.Drawing.Size
         Get
             Dim obj As Object = ResourceManager.GetObject("List.Size", resourceCulture)
-            Return CType(obj, System.Drawing.Size)
+            Return CType(obj,System.Drawing.Size)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Int32 similar to 3.
     '''</summary>
     Friend Shared ReadOnly Property List_TabIndex() As Integer
         Get
             Dim obj As Object = ResourceManager.GetObject("List.TabIndex", resourceCulture)
-            Return CType(obj, Integer)
+            Return CType(obj,Integer)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.DockStyle similar to Top.
     '''</summary>
     Friend Shared ReadOnly Property MediaPlayer1_Dock() As System.Windows.Forms.DockStyle
         Get
             Dim obj As Object = ResourceManager.GetObject("MediaPlayer1.Dock", resourceCulture)
-            Return CType(obj, System.Windows.Forms.DockStyle)
+            Return CType(obj,System.Windows.Forms.DockStyle)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Point similar to {X=0,Y=0}.
     '''</summary>
     Friend Shared ReadOnly Property MediaPlayer1_Location() As System.Drawing.Point
         Get
             Dim obj As Object = ResourceManager.GetObject("MediaPlayer1.Location", resourceCulture)
-            Return CType(obj, System.Drawing.Point)
+            Return CType(obj,System.Drawing.Point)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Size similar to {Width=440, Height=300}.
     '''</summary>
     Friend Shared ReadOnly Property MediaPlayer1_Size() As System.Drawing.Size
         Get
             Dim obj As Object = ResourceManager.GetObject("MediaPlayer1.Size", resourceCulture)
-            Return CType(obj, System.Drawing.Size)
+            Return CType(obj,System.Drawing.Size)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Int32 similar to 8.
     '''</summary>
     Friend Shared ReadOnly Property MediaPlayer1_TabIndex() As Integer
         Get
             Dim obj As Object = ResourceManager.GetObject("MediaPlayer1.TabIndex", resourceCulture)
-            Return CType(obj, Integer)
+            Return CType(obj,Integer)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.AnchorStyles similar to Bottom.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistOptionsPanel_Anchor() As System.Windows.Forms.AnchorStyles
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistOptionsPanel.Anchor", resourceCulture)
-            Return CType(obj, System.Windows.Forms.AnchorStyles)
+            Return CType(obj,System.Windows.Forms.AnchorStyles)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Point similar to {X=120,Y=593}.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistOptionsPanel_Location() As System.Drawing.Point
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistOptionsPanel.Location", resourceCulture)
-            Return CType(obj, System.Drawing.Point)
+            Return CType(obj,System.Drawing.Point)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.Padding similar to {Left=0,Top=0,Right=0,Bottom=0}.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistOptionsPanel_Margin() As System.Windows.Forms.Padding
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistOptionsPanel.Margin", resourceCulture)
-            Return CType(obj, System.Windows.Forms.Padding)
+            Return CType(obj,System.Windows.Forms.Padding)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.Padding similar to {Left=5,Top=5,Right=5,Bottom=5}.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistOptionsPanel_Padding() As System.Windows.Forms.Padding
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistOptionsPanel.Padding", resourceCulture)
-            Return CType(obj, System.Windows.Forms.Padding)
+            Return CType(obj,System.Windows.Forms.Padding)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Size similar to {Width=440, Height=40}.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistOptionsPanel_Size() As System.Drawing.Size
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistOptionsPanel.Size", resourceCulture)
-            Return CType(obj, System.Drawing.Size)
+            Return CType(obj,System.Drawing.Size)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Int32 similar to 4.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistOptionsPanel_TabIndex() As Integer
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistOptionsPanel.TabIndex", resourceCulture)
-            Return CType(obj, Integer)
+            Return CType(obj,Integer)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.DockStyle similar to Bottom.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistOptionsShadowPanel_Dock() As System.Windows.Forms.DockStyle
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistOptionsShadowPanel.Dock", resourceCulture)
-            Return CType(obj, System.Windows.Forms.DockStyle)
+            Return CType(obj,System.Windows.Forms.DockStyle)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Point similar to {X=0,Y=580}.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistOptionsShadowPanel_Location() As System.Drawing.Point
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistOptionsShadowPanel.Location", resourceCulture)
-            Return CType(obj, System.Drawing.Point)
+            Return CType(obj,System.Drawing.Point)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Size similar to {Width=440, Height=10}.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistOptionsShadowPanel_Size() As System.Drawing.Size
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistOptionsShadowPanel.Size", resourceCulture)
-            Return CType(obj, System.Drawing.Size)
+            Return CType(obj,System.Drawing.Size)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Int32 similar to 7.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistOptionsShadowPanel_TabIndex() As Integer
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistOptionsShadowPanel.TabIndex", resourceCulture)
-            Return CType(obj, Integer)
+            Return CType(obj,Integer)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.ImageLayout similar to Center.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistsButton_BackgroundImageLayout() As System.Windows.Forms.ImageLayout
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistsButton.BackgroundImageLayout", resourceCulture)
-            Return CType(obj, System.Windows.Forms.ImageLayout)
+            Return CType(obj,System.Windows.Forms.ImageLayout)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.DockStyle similar to Left.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistsButton_Dock() As System.Windows.Forms.DockStyle
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistsButton.Dock", resourceCulture)
-            Return CType(obj, System.Windows.Forms.DockStyle)
+            Return CType(obj,System.Windows.Forms.DockStyle)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.FlatStyle similar to Flat.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistsButton_FlatStyle() As System.Windows.Forms.FlatStyle
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistsButton.FlatStyle", resourceCulture)
-            Return CType(obj, System.Windows.Forms.FlatStyle)
+            Return CType(obj,System.Windows.Forms.FlatStyle)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.ImeMode similar to NoControl.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistsButton_ImeMode() As System.Windows.Forms.ImeMode
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistsButton.ImeMode", resourceCulture)
-            Return CType(obj, System.Windows.Forms.ImeMode)
+            Return CType(obj,System.Windows.Forms.ImeMode)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Point similar to {X=40,Y=5}.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistsButton_Location() As System.Drawing.Point
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistsButton.Location", resourceCulture)
-            Return CType(obj, System.Drawing.Point)
+            Return CType(obj,System.Drawing.Point)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.Padding similar to {Left=5,Top=5,Right=5,Bottom=5}.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistsButton_Margin() As System.Windows.Forms.Padding
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistsButton.Margin", resourceCulture)
-            Return CType(obj, System.Windows.Forms.Padding)
+            Return CType(obj,System.Windows.Forms.Padding)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Size similar to {Width=30, Height=30}.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistsButton_Size() As System.Drawing.Size
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistsButton.Size", resourceCulture)
-            Return CType(obj, System.Drawing.Size)
+            Return CType(obj,System.Drawing.Size)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Int32 similar to 11.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistsButton_TabIndex() As Integer
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistsButton.TabIndex", resourceCulture)
-            Return CType(obj, Integer)
+            Return CType(obj,Integer)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized string similar to View playlists.
     '''</summary>
@@ -714,77 +758,77 @@ Partial Class MainWindow
             Return ResourceManager.GetString("PlaylistsButton.ToolTip", resourceCulture)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.DockStyle similar to Top.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistTitleLabel_Dock() As System.Windows.Forms.DockStyle
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistTitleLabel.Dock", resourceCulture)
-            Return CType(obj, System.Windows.Forms.DockStyle)
+            Return CType(obj,System.Windows.Forms.DockStyle)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Font similar to [Font: Name=Segoe UI Semilight, Size=14, Units=3, GdiCharSet=1, GdiVerticalFont=False].
     '''</summary>
     Friend Shared ReadOnly Property PlaylistTitleLabel_Font() As System.Drawing.Font
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistTitleLabel.Font", resourceCulture)
-            Return CType(obj, System.Drawing.Font)
+            Return CType(obj,System.Drawing.Font)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.ImeMode similar to NoControl.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistTitleLabel_ImeMode() As System.Windows.Forms.ImeMode
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistTitleLabel.ImeMode", resourceCulture)
-            Return CType(obj, System.Windows.Forms.ImeMode)
+            Return CType(obj,System.Windows.Forms.ImeMode)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Point similar to {X=0,Y=310}.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistTitleLabel_Location() As System.Drawing.Point
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistTitleLabel.Location", resourceCulture)
-            Return CType(obj, System.Drawing.Point)
+            Return CType(obj,System.Drawing.Point)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.Padding similar to {Left=0,Top=0,Right=0,Bottom=0}.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistTitleLabel_Margin() As System.Windows.Forms.Padding
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistTitleLabel.Margin", resourceCulture)
-            Return CType(obj, System.Windows.Forms.Padding)
+            Return CType(obj,System.Windows.Forms.Padding)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Size similar to {Width=440, Height=24}.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistTitleLabel_Size() As System.Drawing.Size
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistTitleLabel.Size", resourceCulture)
-            Return CType(obj, System.Drawing.Size)
+            Return CType(obj,System.Drawing.Size)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Int32 similar to 4.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistTitleLabel_TabIndex() As Integer
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistTitleLabel.TabIndex", resourceCulture)
-            Return CType(obj, Integer)
+            Return CType(obj,Integer)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized string similar to {0}.
     '''</summary>
@@ -793,97 +837,97 @@ Partial Class MainWindow
             Return ResourceManager.GetString("PlaylistTitleLabel.Text", resourceCulture)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Boolean similar to False.
     '''</summary>
     Friend Shared ReadOnly Property PlaylistTitleLabel_Visible() As Boolean
         Get
             Dim obj As Object = ResourceManager.GetObject("PlaylistTitleLabel.Visible", resourceCulture)
-            Return CType(obj, Boolean)
+            Return CType(obj,Boolean)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.ImageLayout similar to Center.
     '''</summary>
     Friend Shared ReadOnly Property SettingsButton_BackgroundImageLayout() As System.Windows.Forms.ImageLayout
         Get
             Dim obj As Object = ResourceManager.GetObject("SettingsButton.BackgroundImageLayout", resourceCulture)
-            Return CType(obj, System.Windows.Forms.ImageLayout)
+            Return CType(obj,System.Windows.Forms.ImageLayout)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.DockStyle similar to Left.
     '''</summary>
     Friend Shared ReadOnly Property SettingsButton_Dock() As System.Windows.Forms.DockStyle
         Get
             Dim obj As Object = ResourceManager.GetObject("SettingsButton.Dock", resourceCulture)
-            Return CType(obj, System.Windows.Forms.DockStyle)
+            Return CType(obj,System.Windows.Forms.DockStyle)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.FlatStyle similar to Flat.
     '''</summary>
     Friend Shared ReadOnly Property SettingsButton_FlatStyle() As System.Windows.Forms.FlatStyle
         Get
             Dim obj As Object = ResourceManager.GetObject("SettingsButton.FlatStyle", resourceCulture)
-            Return CType(obj, System.Windows.Forms.FlatStyle)
+            Return CType(obj,System.Windows.Forms.FlatStyle)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.ImeMode similar to NoControl.
     '''</summary>
     Friend Shared ReadOnly Property SettingsButton_ImeMode() As System.Windows.Forms.ImeMode
         Get
             Dim obj As Object = ResourceManager.GetObject("SettingsButton.ImeMode", resourceCulture)
-            Return CType(obj, System.Windows.Forms.ImeMode)
+            Return CType(obj,System.Windows.Forms.ImeMode)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Point similar to {X=85,Y=5}.
     '''</summary>
     Friend Shared ReadOnly Property SettingsButton_Location() As System.Drawing.Point
         Get
             Dim obj As Object = ResourceManager.GetObject("SettingsButton.Location", resourceCulture)
-            Return CType(obj, System.Drawing.Point)
+            Return CType(obj,System.Drawing.Point)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.Padding similar to {Left=5,Top=5,Right=5,Bottom=5}.
     '''</summary>
     Friend Shared ReadOnly Property SettingsButton_Margin() As System.Windows.Forms.Padding
         Get
             Dim obj As Object = ResourceManager.GetObject("SettingsButton.Margin", resourceCulture)
-            Return CType(obj, System.Windows.Forms.Padding)
+            Return CType(obj,System.Windows.Forms.Padding)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Size similar to {Width=30, Height=30}.
     '''</summary>
     Friend Shared ReadOnly Property SettingsButton_Size() As System.Drawing.Size
         Get
             Dim obj As Object = ResourceManager.GetObject("SettingsButton.Size", resourceCulture)
-            Return CType(obj, System.Drawing.Size)
+            Return CType(obj,System.Drawing.Size)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Int32 similar to 15.
     '''</summary>
     Friend Shared ReadOnly Property SettingsButton_TabIndex() As Integer
         Get
             Dim obj As Object = ResourceManager.GetObject("SettingsButton.TabIndex", resourceCulture)
-            Return CType(obj, Integer)
+            Return CType(obj,Integer)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized string similar to View settings.
     '''</summary>
@@ -892,17 +936,17 @@ Partial Class MainWindow
             Return ResourceManager.GetString("SettingsButton.ToolTip", resourceCulture)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Size similar to {Width=203, Height=22}.
     '''</summary>
     Friend Shared ReadOnly Property ToolStripMenuItem1_Size() As System.Drawing.Size
         Get
             Dim obj As Object = ResourceManager.GetObject("ToolStripMenuItem1.Size", resourceCulture)
-            Return CType(obj, System.Drawing.Size)
+            Return CType(obj,System.Drawing.Size)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized string similar to ToolStripMenuItem1.
     '''</summary>
@@ -911,17 +955,17 @@ Partial Class MainWindow
             Return ResourceManager.GetString("ToolStripMenuItem1.Text", resourceCulture)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Size similar to {Width=203, Height=22}.
     '''</summary>
     Friend Shared ReadOnly Property ToolStripMenuItem2_Size() As System.Drawing.Size
         Get
             Dim obj As Object = ResourceManager.GetObject("ToolStripMenuItem2.Size", resourceCulture)
-            Return CType(obj, System.Drawing.Size)
+            Return CType(obj,System.Drawing.Size)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized string similar to ToolStripMenuItem2.
     '''</summary>
@@ -930,17 +974,17 @@ Partial Class MainWindow
             Return ResourceManager.GetString("ToolStripMenuItem2.Text", resourceCulture)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Size similar to {Width=203, Height=22}.
     '''</summary>
     Friend Shared ReadOnly Property ToolStripMenuItem3_Size() As System.Drawing.Size
         Get
             Dim obj As Object = ResourceManager.GetObject("ToolStripMenuItem3.Size", resourceCulture)
-            Return CType(obj, System.Drawing.Size)
+            Return CType(obj,System.Drawing.Size)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized string similar to ToolStripMenuItem3.
     '''</summary>
@@ -949,17 +993,17 @@ Partial Class MainWindow
             Return ResourceManager.GetString("ToolStripMenuItem3.Text", resourceCulture)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Size similar to {Width=203, Height=22}.
     '''</summary>
     Friend Shared ReadOnly Property ToolStripMenuItem4_Size() As System.Drawing.Size
         Get
             Dim obj As Object = ResourceManager.GetObject("ToolStripMenuItem4.Size", resourceCulture)
-            Return CType(obj, System.Drawing.Size)
+            Return CType(obj,System.Drawing.Size)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized string similar to ToolStripMenuItem4.
     '''</summary>
@@ -968,54 +1012,54 @@ Partial Class MainWindow
             Return ResourceManager.GetString("ToolStripMenuItem4.Text", resourceCulture)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Point similar to {X=17,Y=17}.
     '''</summary>
     Friend Shared ReadOnly Property ToolTip1_TrayLocation() As System.Drawing.Point
         Get
             Dim obj As Object = ResourceManager.GetObject("ToolTip1.TrayLocation", resourceCulture)
-            Return CType(obj, System.Drawing.Point)
+            Return CType(obj,System.Drawing.Point)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Windows.Forms.DockStyle similar to Top.
     '''</summary>
     Friend Shared ReadOnly Property VideoGradientPanel_Dock() As System.Windows.Forms.DockStyle
         Get
             Dim obj As Object = ResourceManager.GetObject("VideoGradientPanel.Dock", resourceCulture)
-            Return CType(obj, System.Windows.Forms.DockStyle)
+            Return CType(obj,System.Windows.Forms.DockStyle)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Point similar to {X=0,Y=300}.
     '''</summary>
     Friend Shared ReadOnly Property VideoGradientPanel_Location() As System.Drawing.Point
         Get
             Dim obj As Object = ResourceManager.GetObject("VideoGradientPanel.Location", resourceCulture)
-            Return CType(obj, System.Drawing.Point)
+            Return CType(obj,System.Drawing.Point)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Drawing.Size similar to {Width=440, Height=10}.
     '''</summary>
     Friend Shared ReadOnly Property VideoGradientPanel_Size() As System.Drawing.Size
         Get
             Dim obj As Object = ResourceManager.GetObject("VideoGradientPanel.Size", resourceCulture)
-            Return CType(obj, System.Drawing.Size)
+            Return CType(obj,System.Drawing.Size)
         End Get
     End Property
-
+    
     '''<summary>
     '''  Looks up a localized resource of type System.Int32 similar to 7.
     '''</summary>
     Friend Shared ReadOnly Property VideoGradientPanel_TabIndex() As Integer
         Get
             Dim obj As Object = ResourceManager.GetObject("VideoGradientPanel.TabIndex", resourceCulture)
-            Return CType(obj, Integer)
+            Return CType(obj,Integer)
         End Get
     End Property
 End Class

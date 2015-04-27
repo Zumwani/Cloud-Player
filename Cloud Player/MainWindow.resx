@@ -160,7 +160,7 @@
     <value>PlaylistOptionsPanel</value>
   </data>
   <data name="&gt;&gt;SettingsButton.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="AddButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
@@ -199,7 +199,7 @@
     <value>PlaylistOptionsPanel</value>
   </data>
   <data name="&gt;&gt;AddButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="PlaylistsButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
@@ -238,7 +238,7 @@
     <value>PlaylistOptionsPanel</value>
   </data>
   <data name="&gt;&gt;PlaylistsButton.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="CurrentlyPlayingButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -296,7 +296,7 @@
     <value>PlaylistOptionsPanel</value>
   </data>
   <data name="&gt;&gt;CurrentlyPlayingButton.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="ContentPanel.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -434,7 +434,7 @@
     <value>MediaPlayer1</value>
   </data>
   <data name="&gt;&gt;MediaPlayer1.Type" xml:space="preserve">
-    <value>Zumwani.CloudPlayer.MediaPlayer, Cloud Player, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Zumwani.CloudPlayer.MediaPlayer, Cloud Player, Version=0.2.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;MediaPlayer1.Parent" xml:space="preserve">
     <value>InnerContentPanel</value>
@@ -490,55 +490,28 @@
   <data name="PlaylistOptionsPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom</value>
   </data>
-  <data name="&gt;&gt;Label4.Name" xml:space="preserve">
-    <value>Label4</value>
+  <data name="Button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>256, 6</value>
   </data>
-  <data name="&gt;&gt;Label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
-  <data name="&gt;&gt;Label4.Parent" xml:space="preserve">
+  <data name="Button1.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="Button1.Text" xml:space="preserve">
+    <value>Button1</value>
+  </data>
+  <data name="&gt;&gt;Button1.Name" xml:space="preserve">
+    <value>Button1</value>
+  </data>
+  <data name="&gt;&gt;Button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button1.Parent" xml:space="preserve">
     <value>PlaylistOptionsPanel</value>
   </data>
-  <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Label3.Name" xml:space="preserve">
-    <value>Label3</value>
-  </data>
-  <data name="&gt;&gt;Label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
-    <value>PlaylistOptionsPanel</value>
-  </data>
-  <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="PlaylistOptionsPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 593</value>
-  </data>
-  <data name="PlaylistOptionsPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="PlaylistOptionsPanel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="PlaylistOptionsPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 40</value>
-  </data>
-  <data name="PlaylistOptionsPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;PlaylistOptionsPanel.Name" xml:space="preserve">
-    <value>PlaylistOptionsPanel</value>
-  </data>
-  <data name="&gt;&gt;PlaylistOptionsPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PlaylistOptionsPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PlaylistOptionsPanel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Button1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="Label4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -566,7 +539,7 @@
     <value>PlaylistOptionsPanel</value>
   </data>
   <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="Label3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
@@ -593,7 +566,34 @@
     <value>PlaylistOptionsPanel</value>
   </data>
   <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="PlaylistOptionsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 593</value>
+  </data>
+  <data name="PlaylistOptionsPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="PlaylistOptionsPanel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="PlaylistOptionsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 40</value>
+  </data>
+  <data name="PlaylistOptionsPanel.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
+  </data>
+  <data name="&gt;&gt;PlaylistOptionsPanel.Name" xml:space="preserve">
+    <value>PlaylistOptionsPanel</value>
+  </data>
+  <data name="&gt;&gt;PlaylistOptionsPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PlaylistOptionsPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PlaylistOptionsPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="ToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>203, 22</value>

@@ -3,7 +3,7 @@ Imports System.Text.RegularExpressions
 Imports System.Runtime.InteropServices
 Imports System.Net
 
-Public Class MainWindow
+Partial Class MainWindow
     Inherits Zumwani.CommonLibrary.Templates.Window
 
     Private Sub ScrollHelper_EventHandler()
@@ -726,4 +726,11 @@ Public Class MainWindow
         'DrawShadow()
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Try
+            MediaPlayer1.PlayVideo(Clipboard.GetText)
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
 End Class

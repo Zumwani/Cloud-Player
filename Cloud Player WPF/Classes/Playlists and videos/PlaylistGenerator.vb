@@ -6,35 +6,35 @@ Public Class PlaylistGenerator
 
 #Region "Generator"
 
-    Public Shared ReadOnly GeneratorVersion As String = "1.0.0.3"
+    Public Const GeneratorVersion As String = "1.0.0.0"
 
     Public Shared Function GenerateXml(Playlist As Playlist) As XmlDocument
         With Playlist
 
-            Dim videolocation As New Dictionary(Of Integer, String)
+            Dim videosource As New Dictionary(Of Integer, Uri)
             Dim videoservice As New Dictionary(Of Integer, String)
             Dim videotitle As New Dictionary(Of Integer, String)
-            Dim videocreator As New Dictionary(Of Integer, String)
+            Dim videouploader As New Dictionary(Of Integer, String)
             Dim videolength As New Dictionary(Of Integer, TimeSpan)
-            Dim videothumbnail As New Dictionary(Of Integer, String)
+            Dim videothumb As New Dictionary(Of Integer, String)
 
             Dim i As Integer = 0
             For Each vid In .Videos
-                videolocation.Add(i, vid.Location.ToString)
+                videosource.Add(i, vid.Source)
                 videoservice.Add(i, vid.Service)
                 videotitle.Add(i, vid.Title)
-                videocreator.Add(i, vid.Creator)
+                videouploader.Add(i, vid.Uploader)
                 videolength.Add(i, vid.Length)
-                videothumbnail.Add(i, vid.Thumbnail)
+                videothumb.Add(i, vid.Thumb)
                 i += 1
             Next
 
-            Return (GenerateXml(.Title, .ID, .Thumbnail, videolocation, videoservice, videotitle, videocreator, videolength, videothumbnail))
+            Return (GenerateXml(.Title, .ID, .Thumbnail, videosource, videoservice, videotitle, videouploader, videolength, videothumb))
 
         End With
     End Function
 
-    Private Shared Function GenerateXml(Title As String, ID As Guid, Thumbnail As String, VideoLocations As Dictionary(Of Integer, String), videoservice As Dictionary(Of Integer, String), videotitle As Dictionary(Of Integer, String), videocreator As Dictionary(Of Integer, String), videolength As Dictionary(Of Integer, TimeSpan), videothumbnail As Dictionary(Of Integer, String)) As XmlDocument
+    Private Shared Function GenerateXml(Title As String, ID As Guid, Thumb As String, videosource As Dictionary(Of Integer, Uri), videoservice As Dictionary(Of Integer, String), videotitle As Dictionary(Of Integer, String), videocreator As Dictionary(Of Integer, String), videolength As Dictionary(Of Integer, TimeSpan), videothumb As Dictionary(Of Integer, String)) As XmlDocument
 
         Dim xml As New XmlDocument
 
@@ -47,32 +47,32 @@ Public Class PlaylistGenerator
         rootnode.Attributes.Append(at)
 
         Dim titlenode As XmlNode = rootnode.AppendChild(xml.CreateElement("Title"))
-        Dim guidnode As XmlNode = rootnode.AppendChild(xml.CreateElement("GUID"))
-        Dim thumbnailnode As XmlNode = rootnode.AppendChild(xml.CreateElement("Thumbnail"))
+        Dim idnode As XmlNode = rootnode.AppendChild(xml.CreateElement("ID"))
+        Dim thumbnode As XmlNode = rootnode.AppendChild(xml.CreateElement("Thumb"))
 
         titlenode.InnerText = Title
-        guidnode.InnerText = ID.ToString
-        thumbnailnode.InnerText = Thumbnail
+        idnode.InnerText = ID.ToString
+        thumbnode.InnerText = Thumb
 
         Dim videosnode As XmlNode = rootnode.AppendChild(xml.CreateElement("Videos"))
 
-        For i As Integer = 0 To VideoLocations.Count - 1
+        For i As Integer = 0 To videosource.Count - 1
 
             Dim node As XmlNode = videosnode.AppendChild(xml.CreateElement("Video"))
 
-            Dim locationnode As XmlNode = node.AppendChild(xml.CreateElement("Location"))
+            Dim sourcenode As XmlNode = node.AppendChild(xml.CreateElement("Source"))
             Dim servicenode As XmlNode = node.AppendChild(xml.CreateElement("Service"))
             Dim vtitlenode As XmlNode = node.AppendChild(xml.CreateElement("Title"))
-            Dim creatornode As XmlNode = node.AppendChild(xml.CreateElement("Creator"))
+            Dim uploadernode As XmlNode = node.AppendChild(xml.CreateElement("Uploader"))
             Dim lengthnode As XmlNode = node.AppendChild(xml.CreateElement("Length"))
-            Dim vthumbnailnode As XmlNode = node.AppendChild(xml.CreateElement("Thumbnail"))
+            Dim vthumbnode As XmlNode = node.AppendChild(xml.CreateElement("Thumb"))
 
-            locationnode.InnerText = VideoLocations(i).ToString
+            sourcenode.InnerText = videosource(i).ToString
             servicenode.InnerText = videoservice(i)
             vtitlenode.InnerText = videotitle(i)
-            creatornode.InnerText = videocreator(i)
+            uploadernode.InnerText = videocreator(i)
             lengthnode.InnerText = videolength(i).ToString
-            vthumbnailnode.InnerText = videothumbnail(i)
+            thumbnode.InnerText = videothumb(i)
 
         Next
 
@@ -80,7 +80,7 @@ Public Class PlaylistGenerator
 
     End Function
 
-    Private Shared Function ParseXml(XmlDocument As XmlDocument, File As FileInfo) As Playlist
+    Private Shared Function ParseXml(XmlDocument As XmlDocument, Source As Uri) As Playlist
 
         Dim ver As String = GetGeneratorVersionOfPlaylist(XmlDocument)
 
@@ -88,49 +88,49 @@ Public Class PlaylistGenerator
 
             'Check if the generator version is supported
             If CheckGeneratorVersion(XmlDocument) = False Then
-                Throw New ParseException("Playlist was generated with a different version than the current.", File, GeneratorVersion, ver, New NotImplementedException)
+                Throw New ParseException("Playlist was generated with a different version than the current.", Source, GeneratorVersion, ver, New NotImplementedException)
             End If
 
             Dim title As String = DecodeXML(XmlDocument("Playlist")("Title").InnerText)
-            Dim id As Guid = Guid.Parse(XmlDocument("Playlist")("GUID").InnerText)
-            Dim thumbnail As String = DecodeXML(XmlDocument("Playlist")("Thumbnail").InnerText)
+            Dim id As Guid = Guid.Parse(XmlDocument("Playlist")("ID").InnerText)
+            Dim thumb As String = DecodeXML(XmlDocument("Playlist")("Thumb").InnerText)
 
             Dim videos As New List(Of Video)
 
             For Each node As XmlNode In XmlDocument("Playlist")("Videos")
 
-                Dim Service As String = DecodeXML(node("Service").InnerText)
-                Dim location As String = node("Location").InnerText
-                Dim vTitle As String = node("Title").InnerText
-                Dim Creator As String = DecodeXML(node("Creator").InnerText)
-                Dim Length As TimeSpan = TimeSpan.Parse(node("Length").InnerText)
-                Dim vThumbnail As String = DecodeXML(node("Thumbnail").InnerText)
+                Dim videosource As String = node("Source").InnerText
+                Dim videoservice As String = DecodeXML(node("Service").InnerText)
+                Dim videotitle As String = node("Title").InnerText
+                Dim videouploader As String = DecodeXML(node("Uploader").InnerText)
+                Dim videolength As TimeSpan = TimeSpan.Parse(node("Length").InnerText)
+                Dim videothumbnail As String = DecodeXML(node("Thumb").InnerText)
 
-                videos.Add(New Video(New Uri(location), Service, vTitle, Creator, Length, vThumbnail))
+                videos.Add(New Video(New Uri(videosource), videoservice, videotitle, videouploader, videolength, videothumbnail))
 
             Next
 
-            Return New Playlist(id, title, thumbnail, videos.ToArray)
+            Return New Playlist(id, title, thumb, videos.ToArray)
 
         Catch e As NullReferenceException
             'The xml is probably not a valid playlist file
             Log.Write("PlaylistManager", e.Message)
-            Throw New ParseException("The file was not of a valid playlist format.", File, GeneratorVersion, ver, e)
+            Throw New ParseException("The file was not of a valid playlist format.", Source, GeneratorVersion, ver, e)
         Catch ex As XmlException
             'The xml file could not be parsed
             Log.Write("PlaylistManager", ex.Message)
-            Throw New ParseException("The file was not of a valid playlist format.", File, GeneratorVersion, ver, ex)
+            Throw New ParseException("The file was not of a valid playlist format.", Source, GeneratorVersion, ver, ex)
         Catch ex1 As NotSupportedException
             'The file was created with a other version of the generator than the current one.
             Log.Write("PlaylistManager", ex1.Message)
-            Throw New ParseException("The file was created with a different generator version than the current one.", File, GeneratorVersion, ver, ex1)
+            Throw New ParseException("The file was created with a different generator version than the current one.", Source, GeneratorVersion, ver, ex1)
         End Try
 
     End Function
 
     Private Shared Function DecodeXML(ByVal s As String) As String
-        If Len(s) = 0 Then Return ""
-        Dim decodedString As String = ""
+        If Len(s) = 0 Then Return String.Empty
+        Dim decodedString As String = String.Empty
         Dim readersettings = New System.Xml.XmlReaderSettings
         readersettings.ConformanceLevel = Xml.ConformanceLevel.Fragment
         Dim ms = New System.IO.StringReader(s)
@@ -144,42 +144,35 @@ Public Class PlaylistGenerator
 #End Region
 #Region "Functions"
 
-    Public Shared Function Load(File As FileInfo, Optional ThrowOnError As Boolean = True) As Playlist
+    Public Shared Function Load(Source As Uri) As Playlist
 
         'Validate the file before continuing
         Try
-            If ValidateFile(File, True) = False Then
+            If ValidateFile(Source, True) = False Then
                 Return Nothing
             End If
         Catch ex As FileNotFoundException
             'File does not exist
-            If ThrowOnError Then
-                Throw New ParseException("File does not exist.", File, GeneratorVersion, "Unknown", ex)
-            End If
+            Throw New ParseException(Locale.Locale.FileNotFound, Source, GeneratorVersion, Locale.Locale.Unknown, ex)
         Catch ex1 As ArgumentException
             'File does not have correct fileextension
-            Throw New ParseException("File was not of a proper playlist format", File, GeneratorVersion, "Unknown", ex1)
+            Throw New ParseException(Locale.Locale.FileWasNotOfProperPlatlistFormat, Source, GeneratorVersion, Locale.Locale.Unknown, ex1)
         End Try
 
         Try
 
             'Load document
             Dim xml As New XmlDocument
-            xml.Load(File.FullName)
+            xml.Load(Source.LocalPath)
 
-            Return ParseXml(xml, File)
+            Return ParseXml(xml, Source)
 
         Catch ex As ParseException
             'An error occured while parsing
-            If ThrowOnError Then
-                Throw ex
-            End If
-
+            Throw ex
         Catch ex1 As XmlException
             'Could not load file as xml
-            If ThrowOnError Then
-                Throw New ParseException("File was not of a proper playlist format.", File, GeneratorVersion, "Unknown", ex1)
-            End If
+            Throw New ParseException(Locale.Locale.FileWasNotOfProperPlatlistFormat, Source, GeneratorVersion, Locale.Locale.Unknown, ex1)
         End Try
 
         Return Nothing
@@ -195,7 +188,7 @@ Public Class PlaylistGenerator
 
     Private Shared Function GetGeneratorVersionOfPlaylist(XmlDocument As XmlDocument) As String
 
-        Dim fileversion As String = "Unknown"
+        Dim fileversion As String = Locale.Locale.Unknown
 
         If XmlDocument("Playlist").GetAttribute("PlaylistGeneratorVersion") IsNot Nothing Then
             fileversion = XmlDocument("Playlist").GetAttribute("PlaylistGeneratorVersion")
@@ -205,9 +198,9 @@ Public Class PlaylistGenerator
 
     End Function
 
-    Private Shared Function ValidateFile(File As FileInfo, ThrowOnError As Boolean) As Boolean
+    Private Shared Function ValidateFile(Source As Uri, ThrowOnError As Boolean) As Boolean
 
-        If Not File.Exists Then
+        If Not File.Exists(Source.LocalPath) Then
             If ThrowOnError Then
                 Throw New FileNotFoundException
             Else
@@ -215,7 +208,7 @@ Public Class PlaylistGenerator
             End If
         End If
 
-        If Not File.Extension = ".pl" Then
+        If Not Path.GetExtension(Source.LocalPath) = ".xml" Then
 
             If ThrowOnError Then
                 Throw New ArgumentException
@@ -257,16 +250,16 @@ Public Class PlaylistGenerator
             End Get
         End Property
 
-        Private _File As FileInfo
-        Public ReadOnly Property File As FileInfo
+        Private _Source As Uri
+        Public ReadOnly Property Source As Uri
             Get
-                Return _File
+                Return _Source
             End Get
         End Property
 
-        Sub New(Message As String, File As FileInfo, GeneratorVersion As String, PlaylistVersion As String, InnerException As Exception)
+        Sub New(Message As String, Source As Uri, GeneratorVersion As String, PlaylistVersion As String, InnerException As Exception)
             MyBase.New(Message, InnerException)
-            _File = File
+            _Source = Source
             _GeneratorVersion = GeneratorVersion
             _PlaylistVersion = PlaylistVersion
         End Sub
@@ -276,17 +269,17 @@ Public Class PlaylistGenerator
 #End Region
 #Region "Upgrade"
 
-    Public Shared Sub UpgradePlaylist(File As String)
+    Public Shared Sub UpgradePlaylist(Source As Uri)
 
         Try
 
             Dim xml As New XmlDocument
-            xml.Load(File)
+            xml.Load(Source.LocalPath)
 
-            IO.File.Move(File, BackupDir.FullName + "\" + File.Split("\").Last)
+            IO.File.Move(Source.LocalPath, BackupDir.FullName + "\" + Path.GetExtension(Source.LocalPath))
 
             xml = UpgradePlaylist(xml)
-            xml.Save(File)
+            xml.Save(Source.LocalPath)
 
         Catch ex As Exception
             Throw ex
@@ -295,37 +288,38 @@ Public Class PlaylistGenerator
     End Sub
 
     Private Shared Function UpgradePlaylist(XmlDocument As XmlDocument) As XmlDocument
+        'TODO: Move out of source code (xml template document?)
 
         'Declare properties of current version
         Dim title As String = ""
         Dim id As Guid = Nothing
-        Dim thumbnail As String = ""
+        Dim thumb As String = ""
 
-        Dim videolocation As New Dictionary(Of Integer, String)
+        Dim videosource As New Dictionary(Of Integer, Uri)
         Dim videoservice As New Dictionary(Of Integer, String)
         Dim videotitle As New Dictionary(Of Integer, String)
-        Dim videocreator As New Dictionary(Of Integer, String)
+        Dim videouploader As New Dictionary(Of Integer, String)
         Dim videolength As New Dictionary(Of Integer, TimeSpan)
-        Dim videothumbnail As New Dictionary(Of Integer, String)
+        Dim videothumb As New Dictionary(Of Integer, String)
 
         Dim version As String = GetGeneratorVersionOfPlaylist(XmlDocument)
 
         'Get values
         Select Case version
 
-            Case Is = "1.0.0.1a"
+            Case Is = "1.0.0.0"
 
                 title = GetTextFromNode(XmlDocument("Playlist")("Title"))
-                Guid.TryParse(GetTextFromNode(XmlDocument("Playlist")("GUID")), id)
-                thumbnail = GetTextFromNode(XmlDocument("Playlist")("Thumbnail"))
+                Guid.TryParse(GetTextFromNode(XmlDocument("Playlist")("ID")), id)
+                thumb = GetTextFromNode(XmlDocument("Playlist")("Thumb"))
 
                 Dim i As Integer = 0
                 For Each Video As XmlNode In XmlDocument("Playlist")("Videos")
-                    videolocation.Add(i, GetTextFromNode(Video("Link")))
-                    videoservice.Add(i, GetTextFromNode(Video("ServiceProvider")))
+                    videosource.Add(i, New Uri(GetTextFromNode(Video("Source"))))
+                    videoservice.Add(i, GetTextFromNode(Video("Service")))
                     videotitle.Add(i, GetTextFromNode(Video("Title")))
-                    videocreator.Add(i, GetTextFromNode(Video("Uploader")))
-                    videothumbnail.Add(i, GetTextFromNode(Video("Thumbnail")))
+                    videouploader.Add(i, GetTextFromNode(Video("Uploader")))
+                    videothumb.Add(i, GetTextFromNode(Video("Thumb")))
 
                     Dim ts As TimeSpan
                     If TimeSpan.TryParse(GetTextFromNode(Video("Length")), ts) = True Then
@@ -341,7 +335,7 @@ Public Class PlaylistGenerator
         End Select
 
         'Generate new xmldocument using the values
-        Dim Xml As XmlDocument = GenerateXml(title, id, thumbnail, videolocation, videoservice, videotitle, videocreator, videolength, videothumbnail)
+        Dim Xml As XmlDocument = GenerateXml(title, id, thumb, videosource, videoservice, videotitle, videouploader, videolength, videothumb)
         Return Xml
 
     End Function

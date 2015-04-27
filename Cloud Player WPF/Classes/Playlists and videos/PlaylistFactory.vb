@@ -130,18 +130,14 @@ Public Class PlaylistFactory
 
     'End Function
 
-    Public Shared Function FromDisk(File As FileInfo) As Playlist
-        If File.Extension = ".pl" Then
-            If File.Exists Then
+    Public Shared Function FromDisk(Source As Uri) As Playlist
+        If Path.GetExtension(Source.LocalPath) = ".xml" And File.Exists(Source.LocalPath) Then
 
-                Dim xml As New XmlDocument
-                xml.Load(File.FullName)
+            Dim xml As New XmlDocument
+            xml.Load(Source.LocalPath)
 
-                Return PlaylistGenerator.Load(File)
+            Return PlaylistGenerator.Load(Source)
 
-            Else
-                Throw New FileNotFoundException
-            End If
         Else
             Throw New ArgumentException("File was not a valid playlist file.")
         End If

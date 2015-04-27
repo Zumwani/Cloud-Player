@@ -88,16 +88,12 @@ Public NotInheritable Class Playlist
         End Get
     End Property
 
-    Public ReadOnly Property FriendlyLength As String
-        Get
-            Return Video.GetFriendlyLength(Length)
-        End Get
-    End Property
-
+    ''' <summary>Save playlist to disk.</summary>
     Public Sub Save()
-        PlaylistGenerator.Save(Me, PlaylistStore.GetFile(Me.ID.ToString + ".pl").FullName)
+        PlaylistGenerator.Save(Me, PlaylistStore.FullName + "\" + Me.ID.ToString + ".xml")
     End Sub
 
+    ''' <summary>Gets the location on disk.</summary>
     Public Function GetLocation() As String
         Return PlaylistStore.FullName + "\" + ID.ToString + ".pl"
     End Function
