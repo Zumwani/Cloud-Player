@@ -1,6 +1,8 @@
 # Cloud-Player
 *This is a gymnasial project for a software engineering course.*
 
+Note: This project will probably not be worked any more on, so don't expect it to ever be finished or even have any bugs fixed.
+
 Cloud Player is a media player that attempts to solve the problem of having music (and podcasts or similar) across multple services such as YouTube or SoundCloud. Right now it only supports local media and YouTube, but I would wish to add more in the future. 
 
 Another problem Cloud Player tries to solve is the problem of only having one screen and wanting to watch podcasts (or simply normal videos) while working on something else. On Windows (I wouldn´t know about other OSes) this is a pain in the arse and I generally give up on the idea. And since I have found no other application to do this I want to make an attempt to solve this in Cloud Player aswell.
@@ -15,7 +17,6 @@ Things that it does right now:
 
 Things that I´m working on/ will be worked on (besides bugs and problems mentioned above):
 -------------
-- WPF conversion (it currently uses WinForms as I did not know WPF when I started this project, but has since begun learning it; current priority)
 - An update system that integrates with GitHub.
 - Use the video stream from the online services rather than their player.
 - A search system for local media.
